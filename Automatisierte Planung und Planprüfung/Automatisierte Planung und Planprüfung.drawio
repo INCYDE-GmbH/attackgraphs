@@ -1,0 +1,183 @@
+<mxfile host="Electron" modified="2022-01-24T10:42:11.362Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="gCK0wNQevBYj6kaMPJSV" compressed="false" version="15.7.3" type="device">
+  <diagram id="jLZkieyW3AFqTRxJEDt1" name="Seite-1">
+    <mxGraphModel dx="-358" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-3" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-3" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Verletzung der körperlichen Unversehrtheit" id="efBT3XxfbWkx_M3Lsu19-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="1770" y="140" width="170" height="48" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-4" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2160" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-4" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2470" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <object label="Reputationsschaden Betreiber" id="efBT3XxfbWkx_M3Lsu19-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="2210" y="140" width="190" height="48" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-5" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-5" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2470" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <object label="Einschränkung einer kritischen Dienstleistung" id="efBT3XxfbWkx_M3Lsu19-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="2440" y="140" width="190" height="48" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-6" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2160" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-6" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2470" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <object label="Verletzung von Gesetzen und Verordnungen" id="efBT3XxfbWkx_M3Lsu19-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="2680" y="140" width="190" height="48" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-13" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="efBT3XxfbWkx_M3Lsu19-7" target="8U_8wvUCqnKFDiD6axn3-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-7" target="8U_8wvUCqnKFDiD6axn3-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efBT3XxfbWkx_M3Lsu19-7" value="Prüfungsmodell manipulieren" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2550" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-11" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-8" target="8U_8wvUCqnKFDiD6axn3-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8U_8wvUCqnKFDiD6axn3-10" target="8U_8wvUCqnKFDiD6axn3-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Digitalen Zwilling manipulieren" id="efBT3XxfbWkx_M3Lsu19-8">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="2008" y="380" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-9" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-7" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-10" value="De-Synchronisation des Modells von der Realität" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1976" y="525" width="184" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-17" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-12" target="-USMrEy12YP6Dv1XTXEw-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-19" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-12" target="-USMrEy12YP6Dv1XTXEw-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-12" value="Regeln verfälschen" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2370" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-15" target="-USMrEy12YP6Dv1XTXEw-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-15" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-15" target="-USMrEy12YP6Dv1XTXEw-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-15" value="Ergebnis fälschen" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2741" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8U_8wvUCqnKFDiD6axn3-18" value="Datenaustausch manipulieren" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2080" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-USMrEy12YP6Dv1XTXEw-1" target="-USMrEy12YP6Dv1XTXEw-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-USMrEy12YP6Dv1XTXEw-1" target="-USMrEy12YP6Dv1XTXEw-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-1" value="Datenerfassung manipulieren" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1900" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-10" target="-USMrEy12YP6Dv1XTXEw-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2094" y="595" as="sourcePoint" />
+            <mxPoint x="2150" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-3" value="Digitalisierung der Bestandspläne manipulieren" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="810" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-4" value="Digitalisierung der Umwelt manipulieren&#xa;(Lidar-/Laser-Scanner, Bilderkennung)" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="1990" y="810" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-7" value="Ausgabe manipulierter Bauplan" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2650" y="690" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-14" value="Ausgabe gefälschtes Zertifikat" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2830" y="690" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-16" value="Formales Modell manipulieren" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2280" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-USMrEy12YP6Dv1XTXEw-18" value="ML-Modell manipulieren" style="whiteSpace=wrap;fillColor=#FEE599;" parent="1" vertex="1">
+          <mxGeometry x="2450" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDSWvJv89EqFTmo-1Rvo-1" value="Angriffsziel&#xa;Automatisierte Planung und Planprüfung" style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
+          <mxGeometry x="2200" y="30" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g43z33kbfmnq2KOF_cTI-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-1" target="efBT3XxfbWkx_M3Lsu19-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g43z33kbfmnq2KOF_cTI-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-1" target="efBT3XxfbWkx_M3Lsu19-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Verletzung von Eigentum" id="g43z33kbfmnq2KOF_cTI-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="2910" y="140" width="170" height="48" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="g43z33kbfmnq2KOF_cTI-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-5" target="efBT3XxfbWkx_M3Lsu19-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g43z33kbfmnq2KOF_cTI-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-5" target="efBT3XxfbWkx_M3Lsu19-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Finanzieller Schaden Betreiber" id="g43z33kbfmnq2KOF_cTI-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="1976" y="140" width="190" height="48" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

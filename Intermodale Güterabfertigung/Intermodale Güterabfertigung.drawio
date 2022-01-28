@@ -1,0 +1,335 @@
+<mxfile host="Electron" modified="2021-11-05T15:24:26.263Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.4.0 Chrome/91.0.4472.164 Electron/13.5.0 Safari/537.36" etag="dDXasAXksufSsshn_4Cg" compressed="false" version="15.4.0" type="device">
+  <diagram id="5mQjVeAMLh9t2EBukIg2" name="Page-1">
+    <mxGraphModel dx="236" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uPvtzUqCq0j5UhJlTc7c-1" value="Angriffsziel&#xa;Intermodale Güterabfertigung" style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
+          <mxGeometry x="1470" y="60" width="224" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPvtzUqCq0j5UhJlTc7c-36" value="Finanzieller Schaden&#xa;Spediteur" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1750" y="198.5" width="180" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="uPvtzUqCq0j5UhJlTc7c-37" target="R6WVVmCsbirwpY2aszBr-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uPvtzUqCq0j5UhJlTc7c-37" value="Reputationsschaden Betreiber" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="197" width="180" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="R6WVVmCsbirwpY2aszBr-9" target="R6WVVmCsbirwpY2aszBr-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-9" value="Einschränkung einer kritischen Dienstleistung" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1096" y="197" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-12" value="Manipulation von&#xa;Kupplungs- und Platooningvorgängen" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1076" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-13" value="siehe Anwendungsfall Virtuelles Kuppeln" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1096" y="420" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-15" value="Störung der Disposition" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1270" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-17" value="siehe Anwendungsfall Virtuelles Kuppeln" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1295" y="420" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-18" value="Störung der Übergänge zwischen Verkehrsträgern " style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1514" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-50" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="R6WVVmCsbirwpY2aszBr-19" target="ZH2xkwuACPXZ106gGI3k-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-19" value="Manipulation der Fahrsteuerung und Fahrwegsicherung" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2250" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="R6WVVmCsbirwpY2aszBr-20" target="23QAtZuuFXu5DVPB2mr8-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-20" value="Störung der Kommunikation zwischen Verkehrsträgern " style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1590" y="540" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="R6WVVmCsbirwpY2aszBr-21" target="ZH2xkwuACPXZ106gGI3k-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R6WVVmCsbirwpY2aszBr-21" value="Störung der Frachtübergabe zwischen Verkehrsträgern " style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1106" y="540" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-16" value="" style="endArrow=classic;" parent="1" source="uPvtzUqCq0j5UhJlTc7c-37" target="R6WVVmCsbirwpY2aszBr-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1447" y="250" as="sourcePoint" />
+            <mxPoint x="1580" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-17" value="" style="endArrow=classic;" parent="1" source="uPvtzUqCq0j5UhJlTc7c-37" target="R6WVVmCsbirwpY2aszBr-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1440" y="251" as="sourcePoint" />
+            <mxPoint x="1490" y="201" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-19" value="" style="endArrow=classic;" parent="1" source="R6WVVmCsbirwpY2aszBr-9" target="R6WVVmCsbirwpY2aszBr-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1150" y="251" as="sourcePoint" />
+            <mxPoint x="1200" y="201" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-20" value="" style="endArrow=classic;" parent="1" source="uPvtzUqCq0j5UhJlTc7c-36" target="R6WVVmCsbirwpY2aszBr-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1660" y="420" as="sourcePoint" />
+            <mxPoint x="1710" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-21" value="" style="endArrow=classic;" parent="1" source="uPvtzUqCq0j5UhJlTc7c-36" target="R6WVVmCsbirwpY2aszBr-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1790" y="301" as="sourcePoint" />
+            <mxPoint x="1840" y="251" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-25" value="" style="endArrow=classic;" parent="1" source="uPvtzUqCq0j5UhJlTc7c-37" target="R6WVVmCsbirwpY2aszBr-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1440" y="249" as="sourcePoint" />
+            <mxPoint x="1490" y="199" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-26" value="" style="endArrow=classic;" parent="1" source="R6WVVmCsbirwpY2aszBr-18" target="R6WVVmCsbirwpY2aszBr-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1660" y="420" as="sourcePoint" />
+            <mxPoint x="1710" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-27" value="" style="endArrow=classic;" parent="1" source="R6WVVmCsbirwpY2aszBr-18" target="R6WVVmCsbirwpY2aszBr-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1660" y="420" as="sourcePoint" />
+            <mxPoint x="1710" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-29" value="Roboterassisten physisch sabotieren / zerstören" style="verticalAlign=middle;align=center;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#FEE599;" parent="1" vertex="1">
+          <mxGeometry x="1196" y="880.66" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-30" value="" style="endArrow=classic;fontColor=#FEE599;startArrow=none;startFill=0;endFill=1;entryX=0.589;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ZH2xkwuACPXZ106gGI3k-35" target="ZH2xkwuACPXZ106gGI3k-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2005" y="733.16" as="sourcePoint" />
+            <mxPoint x="1910" y="780.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-31" value="" style="endArrow=classic;fontColor=#FEE599;startArrow=none;startFill=0;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ZH2xkwuACPXZ106gGI3k-35" target="ZH2xkwuACPXZ106gGI3k-29" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2036.774745762712" y="711.16" as="sourcePoint" />
+            <mxPoint x="2159.69" y="763.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-33" value="Steuerungsdaten am Roboterassistenten manipulieren" style="verticalAlign=middle;align=center;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#FEE599;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="880.66" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-35" value="Roboterassistenten manipulieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1106" y="685.16" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-37" value="" style="endArrow=classic;" parent="1" source="uPvtzUqCq0j5UhJlTc7c-36" target="R6WVVmCsbirwpY2aszBr-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1790" y="248" as="sourcePoint" />
+            <mxPoint x="1369" y="346" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-40" value="Manipulation von Nahfeld-Sensoren am Fahrzeug (u.a. für Geschwindigkeits-und Abstandsmessung)" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#FEFFFF;" parent="1" vertex="1">
+          <mxGeometry x="2070" y="663.66" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-41" value="Manipulation&#xa;von Sensordaten" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="1890" y="832.16" width="160" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-42" value="Blockade der&#xa;Sensoren" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2090" y="838.16" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-44" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-40" target="ZH2xkwuACPXZ106gGI3k-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1990" y="633.16" as="sourcePoint" />
+            <mxPoint x="2040" y="583.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-46" value="" style="endArrow=classic;entryX=0.433;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ZH2xkwuACPXZ106gGI3k-40" target="ZH2xkwuACPXZ106gGI3k-42" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1997" y="613.16" as="sourcePoint" />
+            <mxPoint x="2090" y="693.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-47" value="Störung der&#xa;V2V-Kommunikation" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2190" y="546" width="150" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-51" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-47" target="ZH2xkwuACPXZ106gGI3k-40" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2240.2466367713005" y="611.16" as="sourcePoint" />
+            <mxPoint x="2080" y="563.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-52" value="GNSS Jamming" style="verticalAlign=middle;align=center;fillColor=#fee599;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2400" y="838.16" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-53" value="GNSS Spoofing" style="verticalAlign=middle;align=center;fillColor=#fee599;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2560" y="838.16" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-54" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-40" target="ZH2xkwuACPXZ106gGI3k-52" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2040" y="733.16" as="sourcePoint" />
+            <mxPoint x="2090" y="683.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-55" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-40" target="ZH2xkwuACPXZ106gGI3k-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2060" y="733.16" as="sourcePoint" />
+            <mxPoint x="2110" y="683.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-56" value="Störung der&#xa;V2I-Kommunikation" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2400" y="546" width="150" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-57" value="" style="endArrow=classic;" parent="1" source="R6WVVmCsbirwpY2aszBr-19" target="ZH2xkwuACPXZ106gGI3k-56" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2035" y="403" as="sourcePoint" />
+            <mxPoint x="2090" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NPFuKhv-xPipO6x-4qv1-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="ZH2xkwuACPXZ106gGI3k-58" target="NPFuKhv-xPipO6x-4qv1-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-58" value="Manipulation&#xa;von FRMCS" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="2230" y="838.16" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-61" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-56" target="ZH2xkwuACPXZ106gGI3k-52" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2459.3575418994415" y="611.16" as="sourcePoint" />
+            <mxPoint x="2290" y="833.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-62" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-56" target="ZH2xkwuACPXZ106gGI3k-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2473.659217877095" y="611.16" as="sourcePoint" />
+            <mxPoint x="2390" y="593.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZH2xkwuACPXZ106gGI3k-63" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-40" target="ZH2xkwuACPXZ106gGI3k-58" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2040" y="733.16" as="sourcePoint" />
+            <mxPoint x="2390" y="593.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-1" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-56" target="ZH2xkwuACPXZ106gGI3k-58" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2250" y="558" as="sourcePoint" />
+            <mxPoint x="2700" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-2" value="FRMCS Jamming" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2400" y="963.16" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-3" value="Manipulation&#xa;der FRMCS-Datenübertragung an der Mobilstation" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2210" y="963.16" width="171" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-4" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-58" target="NAQ2Gekegl35qWDSiIZY-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2710" y="823.16" as="sourcePoint" />
+            <mxPoint x="2830" y="853.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-5" value="" style="endArrow=classic;exitX=0.517;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ZH2xkwuACPXZ106gGI3k-58" target="NAQ2Gekegl35qWDSiIZY-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2690" y="823.16" as="sourcePoint" />
+            <mxPoint x="2740" y="773.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="NAQ2Gekegl35qWDSiIZY-6" target="23QAtZuuFXu5DVPB2mr8-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-6" value="Störung der Satellitenfunk-Kommunikation" style="whiteSpace=wrap;rounded=0;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="2760" y="663.66" width="120" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-7" value="" style="endArrow=classic;" parent="1" source="ZH2xkwuACPXZ106gGI3k-56" target="NAQ2Gekegl35qWDSiIZY-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2550" y="610.0009090909094" as="sourcePoint" />
+            <mxPoint x="2410" y="593.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-8" value="Manipulation von Daten auf der Satellitenfunk-Strecke" style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2720" y="838.16" width="120" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-9" value="Satellitenfunk Jamming" style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2990" y="838.16" width="120" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-10" value="" style="endArrow=classic;" parent="1" source="NAQ2Gekegl35qWDSiIZY-6" target="NAQ2Gekegl35qWDSiIZY-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2360" y="663.16" as="sourcePoint" />
+            <mxPoint x="2720" y="711.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-12" value="" style="endArrow=classic;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NAQ2Gekegl35qWDSiIZY-6" target="NAQ2Gekegl35qWDSiIZY-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2750" y="723.16" as="sourcePoint" />
+            <mxPoint x="2800" y="673.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-13" value="Verfügbarkeit des Netzwerkes beschränken" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1580" y="685.16" width="170" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-14" value="" style="endArrow=classic;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="R6WVVmCsbirwpY2aszBr-20" target="NAQ2Gekegl35qWDSiIZY-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1539" y="653.1600000000002" as="sourcePoint" />
+            <mxPoint x="1660" y="683.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-15" value="Störung der&#xa;Netzwerkverbindungen" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#FEE599;" parent="1" vertex="1">
+          <mxGeometry x="1595" y="800" width="140" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-16" value="" style="endArrow=classic;" parent="1" source="NAQ2Gekegl35qWDSiIZY-13" target="NAQ2Gekegl35qWDSiIZY-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1960" y="673.16" as="sourcePoint" />
+            <mxPoint x="2010" y="623.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-17" value="Logistikdaten manipulieren" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1316" y="685.16" width="160" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-18" value="" style="endArrow=classic;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="R6WVVmCsbirwpY2aszBr-20" target="NAQ2Gekegl35qWDSiIZY-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1539" y="653.1600000000002" as="sourcePoint" />
+            <mxPoint x="1770" y="623.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-19" value="Manipulation der Datenübertragung" style="verticalAlign=middle;align=center;fillColor=#fee599;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="806.5" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-20" value="" style="endArrow=classic;entryX=0.52;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NAQ2Gekegl35qWDSiIZY-17" target="NAQ2Gekegl35qWDSiIZY-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1410" y="734.16" as="sourcePoint" />
+            <mxPoint x="1760" y="633.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-21" value="Manipulation der Daten beim Verkehrsträger" style="verticalAlign=middle;align=center;fillColor=#fee599;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1418" y="806.5" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NAQ2Gekegl35qWDSiIZY-22" value="" style="endArrow=classic;entryX=0.353;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NAQ2Gekegl35qWDSiIZY-17" target="NAQ2Gekegl35qWDSiIZY-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1410" y="733.16" as="sourcePoint" />
+            <mxPoint x="1760" y="633.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NPFuKhv-xPipO6x-4qv1-1" value="Manipulation&#xa;der FRMCS-Datenübertragung auf der Luftschnittstelle" style="verticalAlign=middle;align=center;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2020" y="963.16" width="171" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="23QAtZuuFXu5DVPB2mr8-5" target="ZH2xkwuACPXZ106gGI3k-52" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="23QAtZuuFXu5DVPB2mr8-5" target="ZH2xkwuACPXZ106gGI3k-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-5" value="Lokalisierung der Frachteinheiten behindern" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="685.16" width="170" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-9" value="Manipulation des Satellitenfunk an der Funktstelle" style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="2860" y="838.16" width="120" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="23QAtZuuFXu5DVPB2mr8-15" value="Ich finde die Idee mit den Roboterassistenten ziemlich gut und würde sie behalten, obwohl wir sie im Anwendungsfall gar nicht beschreiben." style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="926" y="626.74" width="170" height="126.34" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

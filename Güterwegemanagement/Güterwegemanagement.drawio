@@ -1,0 +1,276 @@
+<mxfile host="Electron" modified="2021-12-14T09:12:31.154Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="6_T9HBYMLBvdyV65joFS" compressed="false" version="15.7.3" type="device">
+  <diagram name="Zeichenblatt-1" id="Zeichenblatt-1">
+    <mxGraphModel dx="572" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" value="Verbinder" parent="0" />
+        <mxCell id="pCnNo5EmcwS2ose940Cv-153" value="Angriffsziel&#xa;Güterwegemanagement" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;shape=trapezoid;size=0.07500000000000001;" parent="1" vertex="1">
+          <mxGeometry x="2070" y="40" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-29" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="klrI8ASNvey-aRUypi-8-154" target="GibcG0ukoYKMALdT_NOP-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="klrI8ASNvey-aRUypi-8-154" value="Unbrauchbarmachung der Bedarfsanmeldungen der Betreiber" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1036" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-17" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-2" target="GibcG0ukoYKMALdT_NOP-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-2" value="Reputationsschaden Betreiber" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1620" y="140" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-18" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-3" target="klrI8ASNvey-aRUypi-8-154" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-3" value="Chaos schüren" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="140" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-26" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-4" target="GibcG0ukoYKMALdT_NOP-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-4" value="Marktmanipulation&#xa;zum Schaden/Vorteil einer Gruppe" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2880" y="140" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-63" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-5" target="GibcG0ukoYKMALdT_NOP-62" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-5" value="Manipulation der Informationen über die Fracht&#xa;(Lieferzeit, -ort, -anforderugen, ...)" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1782" y="340" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-6" value="Manipulation der Messdaten zum Ist-Zustand der Lieferung" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2090" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-7" value="Manipulation Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege " style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2265" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-43" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-8" target="GibcG0ukoYKMALdT_NOP-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-8" value="Störung der Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege " style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2474" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-14" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-9" target="GibcG0ukoYKMALdT_NOP-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-15" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-9" target="GibcG0ukoYKMALdT_NOP-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-9" value="Finanzieller Schaden Betreiber" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2160" y="140" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-16" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-9" target="GibcG0ukoYKMALdT_NOP-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2296.6226415094343" y="198" as="sourcePoint" />
+            <mxPoint x="2330.471698113208" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-23" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-2" target="GibcG0ukoYKMALdT_NOP-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2246.276595744681" y="110" as="sourcePoint" />
+            <mxPoint x="2267.9787234042556" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-24" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-9" target="GibcG0ukoYKMALdT_NOP-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2256.276595744681" y="120" as="sourcePoint" />
+            <mxPoint x="2277.9787234042556" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-56" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-25" target="GibcG0ukoYKMALdT_NOP-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-25" value="Manipulation ausgewählter Datensätze mit Bedarfsinformationen der Fracht (Ort, Lieferzeit, ...)" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2730" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-30" value="Manipulation Datenbestand Rechenzentrum" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-31" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="klrI8ASNvey-aRUypi-8-154" target="GibcG0ukoYKMALdT_NOP-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1152.7142857142858" y="409.99999999999955" as="sourcePoint" />
+            <mxPoint x="1036.8000000000006" y="439.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-32" value="Denial of Service Rechenzentrum" style="fillColor=#d7e3bf;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="880" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-33" value="Manipulation Lokalisierungsinformationen" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-35" value="Manipulation Datenbestand Rechenzentrum" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2260" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-37" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-6" target="GibcG0ukoYKMALdT_NOP-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1702.7142857142858" y="409.99999999999955" as="sourcePoint" />
+            <mxPoint x="1745" y="449.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-38" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-7" target="GibcG0ukoYKMALdT_NOP-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2163" y="409.99999999999955" as="sourcePoint" />
+            <mxPoint x="2147" y="449.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-40" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-6" target="GibcG0ukoYKMALdT_NOP-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2214.0000000000005" y="409.99999999999955" as="sourcePoint" />
+            <mxPoint x="2266" y="449.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-41" value="Zugriff Daten Rechenzentrum" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2474" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-42" value="Wissen über Datensatz, Ziel und Art der notwendigen Manipulation (Verständnis Algorithmus)" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="3170" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-47" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-44" target="GibcG0ukoYKMALdT_NOP-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3082.5" y="390" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-44" value="Zielgerichtete &#xa;Manipulation Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege " style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="3080" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-45" value="Zugriff Daten Rechenzentrum" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="3000" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-48" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-46" target="GibcG0ukoYKMALdT_NOP-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object id="GibcG0ukoYKMALdT_NOP-46">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=or;whiteSpace=wrap;html=1;rotation=-90;" parent="1" vertex="1">
+            <mxGeometry x="3140" y="420" width="30" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-49" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-46" target="GibcG0ukoYKMALdT_NOP-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3094.2857142857138" y="465" as="sourcePoint" />
+            <mxPoint x="3076.428571428571" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-50" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-4" target="GibcG0ukoYKMALdT_NOP-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2581.8349514563106" y="198" as="sourcePoint" />
+            <mxPoint x="2726.4563106796113" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-51" value="Strategisches und logisches Wissen zur &quot;unauffälligen&quot; Manipulation" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="2810" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-53" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-54" target="GibcG0ukoYKMALdT_NOP-57" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2799.2857142857147" y="619.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <object id="GibcG0ukoYKMALdT_NOP-54">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=or;whiteSpace=wrap;html=1;rotation=-90;" parent="1" vertex="1">
+            <mxGeometry x="2790" y="420" width="30" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-55" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-54" target="GibcG0ukoYKMALdT_NOP-51" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2764.2857142857138" y="465" as="sourcePoint" />
+            <mxPoint x="2746.428571428571" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-60" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-57" target="GibcG0ukoYKMALdT_NOP-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-61" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-57" target="GibcG0ukoYKMALdT_NOP-58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-57" value="Zugriff &quot;Meldeportal&quot; für Bedarfsmeldung" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2650" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-58" value="Angriff auf das Meldeportal (Online-Portal) selbst" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="2550" y="610" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-59" value="Erschleichen der Zugriffsdaten eines Lieferanten" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="2730" y="610" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-62" value="Manipulation Datenbestand Rechenzentrum" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1870" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-64" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-66" target="GibcG0ukoYKMALdT_NOP-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-65" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-66" target="GibcG0ukoYKMALdT_NOP-80" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-66" value="Zugriff &quot;Meldeportal&quot; für Bedarfsmeldung" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1702" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-68" value="Erschleichen der Zugriffsdaten eines Lieferanten" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1782" y="570" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-69" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-5" target="GibcG0ukoYKMALdT_NOP-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1962.0000000000002" y="410" as="sourcePoint" />
+            <mxPoint x="1958" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-70" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-2" target="klrI8ASNvey-aRUypi-8-154" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1500.9999999999995" y="198" as="sourcePoint" />
+            <mxPoint x="1501" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-71" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-9" target="klrI8ASNvey-aRUypi-8-154" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1889" y="162" as="sourcePoint" />
+            <mxPoint x="1550.3500000000004" y="347.4200000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-76" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-72" target="GibcG0ukoYKMALdT_NOP-75" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-72" value="Falsche Eingabe von Kapazitätsverfügbarkeiten Betreiber-intern (zu hoch/zu niedrig)" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1370" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-74" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-2" target="GibcG0ukoYKMALdT_NOP-72" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1995.922330097087" y="198" as="sourcePoint" />
+            <mxPoint x="1970.0970873786405" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-75" value="Missbrauch von Rechten oder Admin-Zugriff" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1220" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-78" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.377;entryY=0.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GibcG0ukoYKMALdT_NOP-72" target="GibcG0ukoYKMALdT_NOP-79" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1415.4000000000005" y="409.99999999999955" as="sourcePoint" />
+            <mxPoint x="1486" y="439.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-79" value="Zugriff &quot;Meldeportal&quot; für Bedarfsmeldung" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-80" value="Angriff auf das Meldeportal (Online-Portal) selbst" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1590" y="570" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-81" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-79" target="OEw5c0MragIOnn9nujKi-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-82" value="Manipulation Datenbestand Rechenzentrum" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GibcG0ukoYKMALdT_NOP-83" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GibcG0ukoYKMALdT_NOP-72" target="GibcG0ukoYKMALdT_NOP-82" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1904.7857142857142" y="410" as="sourcePoint" />
+            <mxPoint x="1824.5" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OEw5c0MragIOnn9nujKi-1" value="Angriff auf das Meldeportal (Online-Portal) selbst" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="570" width="150" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

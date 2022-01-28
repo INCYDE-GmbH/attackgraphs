@@ -1,0 +1,219 @@
+<mxfile host="Electron" modified="2021-12-21T09:51:01.941Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="AcGJPkYuPAMxDkPecVSV" compressed="false" version="15.7.3" type="device">
+  <diagram id="18T-zkGLtZhJzbRKgW8F" name="Seite-1">
+    <mxGraphModel dx="1422" dy="875" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mxATmi012RiIu9O2vkhX-1" value="Angriffsziel&#xa;Ferngesteuerte Fahrzeuge ohne Intelligenz" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="930" y="37" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-2" value="Täuschung der Störungserkennung&#xa;(Falsche physische Hindernisse aufstellen)" style="rounded=0;whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="923.5" y="295" width="231" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="mxATmi012RiIu9O2vkhX-3" target="mxATmi012RiIu9O2vkhX-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="mxATmi012RiIu9O2vkhX-3" target="_hXKhvRjGUk6XDiFUar--5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-3" value="Vortäuschen einer betrieblichen Störung&#xa;(bspw. Türstörung)" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1521" y="295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-4" target="mxATmi012RiIu9O2vkhX-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-4" value="Manipulation der Fahrzeug-BZ-Kommunikation&#xa;(Safety-Rückfallebene vorhanden)" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="19" y="295" width="198" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-5" target="mxATmi012RiIu9O2vkhX-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-5" value="Störung der Fahrzeug-BZ-Kommunikation" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1723" y="295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="mxATmi012RiIu9O2vkhX-6" target="mxATmi012RiIu9O2vkhX-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-6" target="mxATmi012RiIu9O2vkhX-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-6" target="mxATmi012RiIu9O2vkhX-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="962" y="367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-6" target="mxATmi012RiIu9O2vkhX-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-6" value="Einschränkung einer kritischen Dienstleistung" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1486" y="135" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-35" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-8" target="mxATmi012RiIu9O2vkhX-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-8" target="mxATmi012RiIu9O2vkhX-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--6" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-8" target="_hXKhvRjGUk6XDiFUar--5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-8" value="Täuschung der Fahrwegbeobachtung&#xa;Verhinderung der Hindernisserkennung" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="665" y="295" width="148" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-9" target="mxATmi012RiIu9O2vkhX-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-13" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-9" target="mxATmi012RiIu9O2vkhX-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-9" target="mxATmi012RiIu9O2vkhX-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-9" value="Verletzung der körperlichen Unversehrtheit" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="327" y="135" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-19" value="Manipulation der Fahrsteuerung&#xa;(siehe Anwendungsfall ATO)" style="rounded=0;whiteSpace=wrap;fillColor=#fee599;" parent="1" vertex="1">
+          <mxGeometry x="338" y="295" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-22" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-21" target="mxATmi012RiIu9O2vkhX-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-21" target="mxATmi012RiIu9O2vkhX-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-24" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-21" target="mxATmi012RiIu9O2vkhX-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-21" target="mxATmi012RiIu9O2vkhX-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-21" target="mxATmi012RiIu9O2vkhX-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-21" target="mxATmi012RiIu9O2vkhX-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mxATmi012RiIu9O2vkhX-21" target="mxATmi012RiIu9O2vkhX-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-21" value="Reputationsschaden Betreiber" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1139" y="135" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-30" value="Jamming&#xa;FRMCS/Satellitenfunk" style="rounded=0;whiteSpace=wrap;fillColor=#fee599;" parent="1" vertex="1">
+          <mxGeometry x="1703" y="422" width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-32" value="Spoofing&#xa;FRMCS/Satellitenfunk" style="rounded=0;whiteSpace=wrap;fillColor=#fee599;" parent="1" vertex="1">
+          <mxGeometry x="38" y="422" width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--2" style="rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-34" target="_hXKhvRjGUk6XDiFUar--1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-34" target="_hXKhvRjGUk6XDiFUar--3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-34" value="Einspielen falscher Sensordaten" style="whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="683" y="421" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-36" target="mxATmi012RiIu9O2vkhX-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-36" value="Verhinderung der Hindernismeldung&#xa;Fälschung der Freimeldung" style="whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="322" y="421" width="154" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="mxATmi012RiIu9O2vkhX-39" target="mxATmi012RiIu9O2vkhX-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-9" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="mxATmi012RiIu9O2vkhX-39" target="_hXKhvRjGUk6XDiFUar--5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-39" value="Vortäuschen oder Herbeiführen eines Hindernis" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1307" y="295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-46" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-41" target="mxATmi012RiIu9O2vkhX-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-48" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-41" target="mxATmi012RiIu9O2vkhX-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--17" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="mxATmi012RiIu9O2vkhX-41" target="_hXKhvRjGUk6XDiFUar--16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-41" value="" style="shape=or;whiteSpace=wrap;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="380" y="514" width="33" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-45" value="Vortäuschung der Betriebsbereitschaft&#xa;(Lebenszeichen, Fail-Safe)" style="whiteSpace=wrap;rounded=0;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="237" y="597" width="154" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mxATmi012RiIu9O2vkhX-47" value="Einschleusen/Löschen von plausiblen Nachrichten" style="whiteSpace=wrap;rounded=0;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="401" y="597" width="154" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--1" value="Einspielen am Sensor&#xa;(Messwerte Lidar, Temperatur etc.)" style="whiteSpace=wrap;rounded=0;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="595" y="597" width="149" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--3" value="Montieren eines kompromittierten Sensors" style="whiteSpace=wrap;rounded=0;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="779" y="597" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="_hXKhvRjGUk6XDiFUar--5" target="_hXKhvRjGUk6XDiFUar--7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--5" value="Sensor emulieren" style="whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1078" y="421" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--12" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="_hXKhvRjGUk6XDiFUar--7" target="_hXKhvRjGUk6XDiFUar--11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--14" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="_hXKhvRjGUk6XDiFUar--7" target="_hXKhvRjGUk6XDiFUar--13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--7" value="" style="shape=or;whiteSpace=wrap;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="1121.5" y="514" width="33" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--11" value="Zugriff&#xa;Bordnetzwerk" style="whiteSpace=wrap;rounded=0;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1007" y="597" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--13" value="Vortäuschen eines Sensors&#xa;(Lidar, Radar, Kamera etc.)" style="whiteSpace=wrap;rounded=0;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1149" y="597" width="147" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_hXKhvRjGUk6XDiFUar--16" value="Zugriff Bordnetzwerk" style="whiteSpace=wrap;rounded=0;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="81" y="597" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XZWROA1QBjQc2BFCzc3x-1" value="Ist Jamming hier mit inbegriffen?" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="158" y="366" width="183" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="XZWROA1QBjQc2BFCzc3x-2" value="" style="endArrow=classic;rounded=0;fontColor=#FF3333;exitX=0.519;exitY=-0.111;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF3333;" parent="1" source="XZWROA1QBjQc2BFCzc3x-1" target="mxATmi012RiIu9O2vkhX-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="116" y="217" as="sourcePoint" />
+            <mxPoint x="166" y="167" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-1" value="MH: ATO Abuse-Cases müssen noch&#xa;beschrieben werden. Dann hier nochmal prüfen." style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;glass=0;sketch=0;shadow=0;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="116.5" y="384" width="266" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C86PUB9HSNDWb6o74AGg-6" target="mxATmi012RiIu9O2vkhX-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-13" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C86PUB9HSNDWb6o74AGg-6" target="mxATmi012RiIu9O2vkhX-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C86PUB9HSNDWb6o74AGg-6" target="mxATmi012RiIu9O2vkhX-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C86PUB9HSNDWb6o74AGg-6" target="mxATmi012RiIu9O2vkhX-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C86PUB9HSNDWb6o74AGg-6" target="mxATmi012RiIu9O2vkhX-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-17" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C86PUB9HSNDWb6o74AGg-6" target="mxATmi012RiIu9O2vkhX-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C86PUB9HSNDWb6o74AGg-6" target="mxATmi012RiIu9O2vkhX-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C86PUB9HSNDWb6o74AGg-6" value="Finanzieller Schaden Betreiber" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="763" y="135" width="190" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

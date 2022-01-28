@@ -1,0 +1,152 @@
+<mxfile host="Electron" modified="2021-12-21T10:34:58.796Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="o3Zg5oTxSvpPclfJuQud" compressed="false" version="15.7.3" type="device">
+  <diagram id="jtEWjEJLr_3nwjV8xUw6" name="Seite-1">
+    <mxGraphModel dx="1422" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-15SaIJ1APMnmhbEbIku-1" value="Angriffsziel&#xa;Reisendenlenkung durch den Bahnhof" style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
+          <mxGeometry x="980" y="40" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="-15SaIJ1APMnmhbEbIku-2" target="6N23MCBrWHuTn4E1IJ8b-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="-15SaIJ1APMnmhbEbIku-2" target="6N23MCBrWHuTn4E1IJ8b-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-15SaIJ1APMnmhbEbIku-2" value="Falsche Führung durch Roboterassistenten" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="780" y="430" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uznBHEq51SKw7-3nmw6W-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="-15SaIJ1APMnmhbEbIku-3" target="uznBHEq51SKw7-3nmw6W-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="-15SaIJ1APMnmhbEbIku-3" target="uznBHEq51SKw7-3nmw6W-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-15SaIJ1APMnmhbEbIku-3" value="Auslastungserkennung manipulieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="240" y="430" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uznBHEq51SKw7-3nmw6W-1" value="Jamming der drahtlosen Kommunikation" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="550" y="430" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-9" target="6N23MCBrWHuTn4E1IJ8b-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="uznBHEq51SKw7-3nmw6W-2" target="6N23MCBrWHuTn4E1IJ8b-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uznBHEq51SKw7-3nmw6W-2" value="Individuelles Bewegungsprofil erstellen" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1430" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uznBHEq51SKw7-3nmw6W-4" value="Vorhersage des maschinellen Lernens manipulieren" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="330" y="564" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uznBHEq51SKw7-3nmw6W-6" value="Kameras kompromittieren" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="130" y="564" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="uznBHEq51SKw7-3nmw6W-9" target="-15SaIJ1APMnmhbEbIku-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-4" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="uznBHEq51SKw7-3nmw6W-9" target="6N23MCBrWHuTn4E1IJ8b-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1298.181818181818" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uznBHEq51SKw7-3nmw6W-9" value="Reisenden fehlleiten&#xa;(nicht ans Ziel bringen)" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="925" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-6" target="6N23MCBrWHuTn4E1IJ8b-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-6" target="6N23MCBrWHuTn4E1IJ8b-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-6" value="Falsche Empfehlung auf Automated Personal Assistant" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1075" y="430" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-7" target="6N23MCBrWHuTn4E1IJ8b-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-7" value="Bewegungen des Roboterassistenten belauschen" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1350" y="430" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-9" target="6N23MCBrWHuTn4E1IJ8b-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-9" value="" style="shape=or;whiteSpace=wrap;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="1490" y="360" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-17" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-11" target="6N23MCBrWHuTn4E1IJ8b-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-11" target="6N23MCBrWHuTn4E1IJ8b-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-11" value="Nutzung des Roboterassistenten einer Person zuordnen" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1620" y="430" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-13" value="Kommunikationsnetz belauschen" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1350" y="590" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-16" value="Bilder von stationären Kameras auswerten" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1520" y="590" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-19" value="Sensorik (Kamera, Bluetooth etc.) des Roboterassistenten auswerten" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1740" y="590" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-22" target="uznBHEq51SKw7-3nmw6W-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-22" value="Verfügbarkeit der Reisendenlenkung beschränken" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="550" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-24" value="Roboterassistent kompromittieren" style="whiteSpace=wrap;fillColor=#fee599;" parent="1" vertex="1">
+          <mxGeometry x="660" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-26" value="Kommunikationsnetz kompromittieren" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="990" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-27" value="Automated Personal Assistant kompromittieren" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1165" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-30" value="Falsche Vorgabe durch kompromittiertes Leitsystem kommunizieren" style="whiteSpace=wrap;fillColor=#fee599;" parent="1" vertex="1">
+          <mxGeometry x="830" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-33" target="uznBHEq51SKw7-3nmw6W-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-35" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-33" target="6N23MCBrWHuTn4E1IJ8b-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-33" target="6N23MCBrWHuTn4E1IJ8b-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-33" value="Reputationsschaden Betreiber" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="514" y="170" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-36" target="uznBHEq51SKw7-3nmw6W-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1505" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-36" value="Verletzung der Privatsphäre" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1394" y="170" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-39" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="6N23MCBrWHuTn4E1IJ8b-38" target="-15SaIJ1APMnmhbEbIku-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6N23MCBrWHuTn4E1IJ8b-38" value="Umständliche Wege der Reisenden provozieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="240" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ct-nt5V5BDNBA0uoIoL_-2" value="Strafvereitelung" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="944.5" y="160" width="111" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="ct-nt5V5BDNBA0uoIoL_-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;" parent="1" source="ct-nt5V5BDNBA0uoIoL_-2" target="uznBHEq51SKw7-3nmw6W-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="706.4285714285716" y="228" as="sourcePoint" />
+            <mxPoint x="935" y="304.79999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

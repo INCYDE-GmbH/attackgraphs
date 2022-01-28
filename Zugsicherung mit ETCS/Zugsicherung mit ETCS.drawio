@@ -1,0 +1,175 @@
+<mxfile host="Electron" modified="2021-11-23T16:33:51.702Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="GdqLhPDhC_NFi2Y6ByFV" compressed="false" version="15.7.3" type="device">
+  <diagram id="ATIOrnHLwweSFRtiGI0a" name="Seite-1">
+    <mxGraphModel dx="1422" dy="2529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S334DzjDF6qX_r4PbiIl-1" value="Angriffsziel&#xa;Zugsicherung mit ETCS (L2oS, L3)" style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
+          <mxGeometry x="610" y="-1630" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-22" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="S334DzjDF6qX_r4PbiIl-2" target="S334DzjDF6qX_r4PbiIl-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-2" value="Fälschung der Movement Authority" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="310" y="-1310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-3" target="S334DzjDF6qX_r4PbiIl-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-3" value="Einschleusen eines Nothaltes" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="80" y="-1310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-4" target="S334DzjDF6qX_r4PbiIl-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-4" target="S334DzjDF6qX_r4PbiIl-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-4" value="Manipulation der Zugintegritätssysteme" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="780" y="-1310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="S334DzjDF6qX_r4PbiIl-5" target="S334DzjDF6qX_r4PbiIl-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-5" target="S334DzjDF6qX_r4PbiIl-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-5" value="Manipulation der sicheren Lokalisierung" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="-1310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-6" value="FRMCS Jamming&#xa;GSM-R Jamming" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="550" y="-1310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-9" value="Fälschung Balisentelegramm" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="990" y="-1100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-10" target="S334DzjDF6qX_r4PbiIl-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-10" target="S334DzjDF6qX_r4PbiIl-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-10" target="S334DzjDF6qX_r4PbiIl-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-10" target="S334DzjDF6qX_r4PbiIl-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <labelValue id="S334DzjDF6qX_r4PbiIl-10">
+          <labelValue labelValue="" />
+          <mxCell style="shape=or;whiteSpace=wrap;html=1;rotation=-90;" parent="1" vertex="1">
+            <mxGeometry x="1130" y="-1200" width="30" height="40" as="geometry" />
+          </mxCell>
+        </labelValue>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-13" value="Manipulation Odometrie" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="-1100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-14" value="GNSS Spoofing" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1350" y="-1100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-17" value="FOS-Einheit kompromittieren&#xa;(siehe Vollautomatisiertes Fahren)" style="whiteSpace=wrap;fillColor=#fee599;" parent="1" vertex="1">
+          <mxGeometry x="770" y="-1100" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-19" value="Fälschung des Datenfunkes&#xa;(GSM-R oder FRMCS)" style="whiteSpace=wrap;fillColor=#fee599;" parent="1" vertex="1">
+          <mxGeometry x="80" y="-1090" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="S334DzjDF6qX_r4PbiIl-20" target="S334DzjDF6qX_r4PbiIl-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-20" target="S334DzjDF6qX_r4PbiIl-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <labelValue id="S334DzjDF6qX_r4PbiIl-20">
+          <labelValue labelValue="" />
+          <mxCell style="shape=or;whiteSpace=wrap;html=1;rotation=-90;" parent="1" vertex="1">
+            <mxGeometry x="370" y="-1210" width="30" height="40" as="geometry" />
+          </mxCell>
+        </labelValue>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-24" target="S334DzjDF6qX_r4PbiIl-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-24" target="S334DzjDF6qX_r4PbiIl-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-24" value="Fälschung der Authentizität eines Datentelegramms" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="310" y="-1090" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-26" value="Kenntnis des 3DES-Schlüssels erlangen" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="-940" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-28" value="Falschen 3DES-Schlüssel einschleusen" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="400" y="-940" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-31" value="Jamming der digitalen Zugschlussscheibe" style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;" parent="1" vertex="1">
+          <mxGeometry x="610" y="-1100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-33" value="Manipulation der Gleisfreimeldung&#xa;(ETCS L2oS)" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1530" y="-1100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-35" target="S334DzjDF6qX_r4PbiIl-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-35" target="S334DzjDF6qX_r4PbiIl-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-35" target="S334DzjDF6qX_r4PbiIl-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-35" value="Verletzung der körperlichen Unversehrtheit" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="600" y="-1520" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-39" target="S334DzjDF6qX_r4PbiIl-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-41" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-39" target="S334DzjDF6qX_r4PbiIl-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-39" target="S334DzjDF6qX_r4PbiIl-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-43" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-39" target="S334DzjDF6qX_r4PbiIl-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-39" target="S334DzjDF6qX_r4PbiIl-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-39" value="Einschränkung einer kritischen Dienstleistung" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1034" y="-1520" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-46" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-45" target="S334DzjDF6qX_r4PbiIl-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-47" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-45" target="S334DzjDF6qX_r4PbiIl-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-48" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-45" target="S334DzjDF6qX_r4PbiIl-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-49" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-45" target="S334DzjDF6qX_r4PbiIl-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-50" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S334DzjDF6qX_r4PbiIl-45" target="S334DzjDF6qX_r4PbiIl-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S334DzjDF6qX_r4PbiIl-45" value="Finanzieller Schaden Betreiber" style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="274" y="-1520" width="222" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="gPcQZ0GQat64RpiHA7UV-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPcQZ0GQat64RpiHA7UV-2" target="S334DzjDF6qX_r4PbiIl-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPcQZ0GQat64RpiHA7UV-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPcQZ0GQat64RpiHA7UV-2" target="S334DzjDF6qX_r4PbiIl-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPcQZ0GQat64RpiHA7UV-2" value="Anhalten von Zügen auf der freien Strecke" style="whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="56" y="-1420" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPcQZ0GQat64RpiHA7UV-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPcQZ0GQat64RpiHA7UV-4" target="gPcQZ0GQat64RpiHA7UV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPcQZ0GQat64RpiHA7UV-4" value="Reputationsschaden Betreiber" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-1520" width="222" height="48" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

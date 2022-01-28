@@ -1,0 +1,196 @@
+<mxfile host="Electron" modified="2021-12-09T10:58:43.920Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="l5liKQvReLq3gquyxeN5" compressed="false" version="15.7.3" type="device">
+  <diagram id="F4AxN8WZ1SMrrOvMYFiD" name="Page-1">
+    <mxGraphModel dx="252" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n57FyAwIbhO4dcMOLswb-1" value="Angriffsziel&#xa;Optimierung der Fahrgastwechselzeit" style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
+          <mxGeometry x="1610" y="100" width="224" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n57FyAwIbhO4dcMOLswb-2" value="Chaos schüren" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1795" y="190" width="180" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-2" value="Reisende vor überlastete Waggons lenken" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1810" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-3" value="Reputationsschaden Betreiber" style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1480" y="190" width="180" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-4" value="V2I-Kommunikation manipulieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1495" y="410" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-5" value="Sensoren manipulieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1810" y="400" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n57FyAwIbhO4dcMOLswb-2" target="Q83BL9estXzjmOVweNH6-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1949.995421686747" y="200" as="sourcePoint" />
+            <mxPoint x="2117.320722891566" y="312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-3" target="Q83BL9estXzjmOVweNH6-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1808.095238095238" y="218" as="sourcePoint" />
+            <mxPoint x="1742.3809523809523" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-2" target="Q83BL9estXzjmOVweNH6-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1771.904761904762" y="218" as="sourcePoint" />
+            <mxPoint x="1837.6190476190477" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-9" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-2" target="Q83BL9estXzjmOVweNH6-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1830" y="350" as="sourcePoint" />
+            <mxPoint x="1760" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9mDXOpxHVlWeJ7yQKiY-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Q83BL9estXzjmOVweNH6-10" target="f9mDXOpxHVlWeJ7yQKiY-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-10" value="Anzeigetafeln manipulieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2010" y="400" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-2" target="Q83BL9estXzjmOVweNH6-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1872.5" y="350" as="sourcePoint" />
+            <mxPoint x="1887.5" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-13" value="Replay-Angriff" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="540" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-14" value="Man in the Middle Angriff" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1560" y="540" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-4" target="Q83BL9estXzjmOVweNH6-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1820" y="351.42857142857156" as="sourcePoint" />
+            <mxPoint x="1585" y="418.57142857142867" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-4" target="Q83BL9estXzjmOVweNH6-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1830" y="361.42857142857156" as="sourcePoint" />
+            <mxPoint x="1595" y="428.57142857142867" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-24" value="Kameras manipulieren" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1730" y="540" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-25" value="Fahrgastzählung blockieren" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1890" y="540" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-5" target="Q83BL9estXzjmOVweNH6-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2020" y="462.31668437832104" as="sourcePoint" />
+            <mxPoint x="1700" y="557.5345377258236" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-5" target="Q83BL9estXzjmOVweNH6-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2030" y="472.31668437832104" as="sourcePoint" />
+            <mxPoint x="1710" y="567.5345377258236" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-28" value="Datenquelle austauschen" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="640" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9mDXOpxHVlWeJ7yQKiY-2" target="Q83BL9estXzjmOVweNH6-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2020" y="462.31668437832104" as="sourcePoint" />
+            <mxPoint x="1700" y="557.5345377258236" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-30" value="Auslastungsinformationen nicht anzeigen" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-31" value="V2I-Kommunikation manipulieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="410" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-31" target="Q83BL9estXzjmOVweNH6-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1341" y="171.42857142857156" as="sourcePoint" />
+            <mxPoint x="1106" y="238.57142857142867" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-31" target="Q83BL9estXzjmOVweNH6-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1351" y="181.42857142857156" as="sourcePoint" />
+            <mxPoint x="1116" y="248.57142857142867" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-34" value="Kabel zerstören" style="whiteSpace=wrap;fillColor=#d7e3bf;" parent="1" vertex="1">
+          <mxGeometry x="1210" y="540" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-35" value="Jamming" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1049" y="540" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-36" value="Anzeigetafeln manipulieren" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="410" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-36" target="Q83BL9estXzjmOVweNH6-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="905.0999999999999" y="212.47000000000003" as="sourcePoint" />
+            <mxPoint x="1040" y="290.00453772582364" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-3" target="Q83BL9estXzjmOVweNH6-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610.8823529411766" y="218" as="sourcePoint" />
+            <mxPoint x="1820" y="300.43478260869574" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-39" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-30" target="Q83BL9estXzjmOVweNH6-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620.8823529411766" y="228" as="sourcePoint" />
+            <mxPoint x="1830" y="310.43478260869574" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-30" target="Q83BL9estXzjmOVweNH6-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1630.8823529411766" y="238" as="sourcePoint" />
+            <mxPoint x="1840" y="320.43478260869574" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-41" value="Weniger Fahrzeuge werden bereitgestellt als nötig" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1495" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-41" target="Q83BL9estXzjmOVweNH6-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1820" y="358.125" as="sourcePoint" />
+            <mxPoint x="1650" y="421.875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-43" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-41" target="Q83BL9estXzjmOVweNH6-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1830" y="368.125" as="sourcePoint" />
+            <mxPoint x="1660" y="431.875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n57FyAwIbhO4dcMOLswb-2" target="Q83BL9estXzjmOVweNH6-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1651.320754716981" y="248" as="sourcePoint" />
+            <mxPoint x="1820" y="304.7619047619048" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q83BL9estXzjmOVweNH6-45" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q83BL9estXzjmOVweNH6-3" target="Q83BL9estXzjmOVweNH6-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1661.320754716981" y="258" as="sourcePoint" />
+            <mxPoint x="1830" y="314.7619047619048" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9mDXOpxHVlWeJ7yQKiY-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9mDXOpxHVlWeJ7yQKiY-2" target="f9mDXOpxHVlWeJ7yQKiY-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9mDXOpxHVlWeJ7yQKiY-2" value="Manipulation übertragener Daten" style="whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2061" y="540" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9mDXOpxHVlWeJ7yQKiY-5" value="Malware welche die Daten nach Empfang verändert" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2160" y="640" width="151" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
