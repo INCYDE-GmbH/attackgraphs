@@ -32,4 +32,4 @@ Markus Heinrich – markus.heinrich@incyde.com
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 [Report]: https://www.dzsf.bund.de/SharedDocs/Downloads/DZSF/Veroeffentlichungen/Forschungsberichte/2021/ForBe_20_2022_AP1.html
-[Plugin]: https://github.com/INCYDE-GmbH/attackgraphs
+[Plugin]: https://github.com/INCYDE-GmbH/drawio-plugin-attackgraphs
