@@ -1,352 +1,727 @@
-<mxfile compressed="false" host="Electron" modified="2022-01-24T10:32:20.524Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="VnVqiMd2j2oOprzPLQ5V" version="15.7.3" type="device">
+<mxfile compressed="false" host="Electron" modified="2023-06-15T15:27:21.587Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="fSABa28VuNKioUPtYMEu" version="19.0.2" type="device">
   <diagram name="Zeichenblatt-1" id="Zeichenblatt-1">
-    <mxGraphModel dx="1102" dy="2044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="2042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" value="Verbinder" style="" parent="0" />
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-17" value="Skalierbar Feldelemente umstellen&#xa;Ohne Sicherheitsreaktion" style="whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="454" y="-798" width="224" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-18" value="Manipulation Kommunikationsnetzwerk" style="whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="242" y="-639" width="162" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-19" value="Impersonation Rechenzentrum" style="whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="678" y="-639" width="126" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-20" value="Manipulation Feldelement&#xa;(Signal, Weiche)" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="486" y="-639" width="170" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-21" value="Kryptographisches Material kompromittieren" style="fillColor=#d7e3bf;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="642" y="-548" width="162" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-23" value="Replay-Angriff" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="267" y="-540" width="112" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-24" value="Infrastrukturüberwachung täuschen" style="whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="991" y="-790" width="170" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-25" value="Manipulation Feldelement&#xa;(Gleisfreimeldung, Zugintegrität, Bahnübergang)" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1220" y="-643" width="224" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-26" value="Kommunikation unterbrechen" style="whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1514" y="-788" width="190" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-27" value="Rechenzentrum zerstören" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1812" y="-788" width="224" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-28" value="FRMCS Jamming" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1474" y="-649" width="84" height="40" as="geometry" />
-        </mxCell>
-        <object label="Kabel zerstören" Ressourcen="1" Knowledge="1" Ort="2" id="vUpLBa6X5mZJnKH7JWD7-29">
-          <mxCell style="fillColor=#d7e3bf;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="1718" y="-649" width="124" height="40" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-35" value="Fehler in Sicherer Hardware ausnutzen" style="fillColor=#d7e3bf;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="816" y="-639" width="126" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-36" value="Kompromittierte Sichere Hardware einschleusen" style="fillColor=#d7e3bf;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="991" y="-638" width="126" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-37" value="Rechenzentrum auslasten" style="fillColor=#fee599;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="2066" y="-788" width="224" height="40" as="geometry" />
-        </mxCell>
-        <object label="Zugkollision herbeiführen" id="vUpLBa6X5mZJnKH7JWD7-39">
+        <object tooltip="" id="0">
+          <ag_global_attributes>
+            <ag_global_attribute name="Resources" value="" iconName="hammer" min="0" max="5" />
+            <ag_global_attribute name="Knowledge" value="" iconName="lightbulb" min="0" max="5" />
+            <ag_global_attribute name="Location" value="" iconName="map_pin_ellipse" min="0" max="1" />
+            <ag_global_attribute name="Impact" value="" iconName="flame" min="0" max="5" />
+          </ag_global_attributes>
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="815" y="-874" width="170" height="40" as="geometry" />
-          </mxCell>
+          <ag_aggregation_functions>
+            <ag_aggregation_function name="default" id="6b1d22791hih8" default="activity_w;link" fn="function (collection) { &#xa;    var result = null; &#xa;    if (collection.childAttributes.length == 1) { &#xa;        result = collection.childAttributes[0].attributes;&#xa;        result._marking = collection.childAttributes[0].id;&#xa;    } else { &#xa;        var candidates = []; &#xa;        var worstValue = 0; &#xa;        collection.childAttributes.forEach(function(child) { &#xa;            var value = parseInt(child.computedAttribute); &#xa;            if (value &gt; worstValue) { &#xa;                worstValue = value; &#xa;                candidates = []; &#xa;                candidates.push(child); &#xa;            } else if (value == worstValue) { &#xa;                candidates.push(child); &#xa;            } &#xa;        }); &#xa;        var tiebreaker = function(candidates, name, max) { &#xa;            var min_value = max; &#xa;            candidates.forEach(function(node) { &#xa;                min_value = Math.min(min_value, node.attributes[name]); &#xa;            }); &#xa;            result = []; &#xa;            candidates.forEach(function(node) { &#xa;                if (node.attributes[name] == min_value) { &#xa;                    result.push(node); &#xa;                } &#xa;            }); &#xa;            return result; &#xa;        }; &#xa;        if (candidates.length &gt; 1) { &#xa;            candidates = tiebreaker(candidates, &quot;Resources&quot;, collection.globalAttributes[&quot;Resources&quot;].max); &#xa;            if (candidates.length &gt; 1) { &#xa;                candidates = tiebreaker(candidates, &quot;Knowledge&quot;, collection.globalAttributes[&quot;Knowledge&quot;].max); &#xa;            } &#xa;        } &#xa;        result = candidates[0].attributes;&#xa;        result._marking = candidates[0].id;&#xa;    } &#xa;    return result; &#xa;}" />
+            <ag_aggregation_function name="AND" id="gf0d4f199018" default="and" fn="function (collection) { &#xa;    var result = {}; &#xa;    var ids = [];&#xa;    collection.childAttributes.forEach(function(child) { &#xa;    for (var attribute in child.attributes) { &#xa;            if (attribute in result) { &#xa;                result[attribute] += parseInt(child.attributes[attribute]); &#xa;            } else { &#xa;                result[attribute] = parseInt(child.attributes[attribute]); &#xa;            } &#xa;        }&#xa;        ids.push(child.id);&#xa;    }); &#xa;    for (var attribute in result) { &#xa;        if (attribute in collection.globalAttributes) { &#xa;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#xa;        } &#xa;    }&#xa;    result._marking = ids.join(&quot;;&quot;);&#xa;    return result; &#xa;}" />
+            <ag_aggregation_function name="Security Control" id="73f575i0ghij5" default="activity_g;activity_y" fn="function (collection) { &#xa;    var result = {}; &#xa;    for (var attribute in collection.localAttributes) { &#xa;        result[attribute] = parseInt(collection.localAttributes[attribute]); &#xa;    } &#xa;    collection.childAttributes.forEach(function(child) { &#xa;        for (var attribute in child.attributes) { &#xa;            if (attribute in collection.globalAttributes) { &#xa;                if (attribute in result) { &#xa;                    result[attribute] += parseInt(child.attributes[attribute]); &#xa;                } &#xa;            } &#xa;        } &#xa;    }); &#xa;    for (var attribute in result) { &#xa;        if (attribute in collection.globalAttributes) { &#xa;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#xa;        } &#xa;    } &#xa;    return result; &#xa;}" />
+            <ag_aggregation_function name="Risk" id="egf49jfgj408" default="consequence" fn="function (collection) {  &#xa;    var maxRisk = &quot;L&quot;; &#xa;    var matrix = [ &#xa;        [&quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;], &#xa;        [&quot;L&quot;, &quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;S&quot;, &quot;S&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#xa;    ];&#xa;    var updatedImpacts = [];&#xa;    var ids = [];&#xa; &#xa;    var compareRisk = function(risk1, risk2) { &#xa;        /*&#xa;        * Returns:&#xa;        *  - Null: if one of the parameters is not a character representing a risk&#xa;        *  - Negativ integer: if risk1 &lt; risk2&#xa;        *  - Zero: if risks are equal&#xa;        *  - Positive integer: if risk1 &gt; risk2&#xa;        */&#xa;        var values = [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;]; &#xa;        var index_risk1 = values.indexOf(risk1); &#xa;        var index_risk2 = values.indexOf(risk2); &#xa; &#xa;        if (index_risk1 == -1 || index_risk2 == -1) { &#xa;            return null; &#xa;        } &#xa;        return index_risk1 - index_risk2; &#xa; &#xa;    } &#xa;     &#xa;    collection.childAttributes.forEach(function(child) {  &#xa;        var impact = 1;  &#xa;        if (child.edgeWeight !== null) {  &#xa;            impact = parseInt(child.edgeWeight);  &#xa;        }&#xa;        var _impact = parseInt(child.attributes._impact) || 0;&#xa;        impact = Math.max(impact - _impact, 1);&#xa;        updatedImpacts.push(child.id + &#39;:&#39; + impact);&#xa;        var af = parseInt(child.computedAttribute) || parseInt(child.attributes._af);&#xa;        risk = matrix[af - 1][impact - 1];&#xa;        result = compareRisk(risk, maxRisk);&#xa;        if (result &gt; 0) { &#xa;            maxRisk = risk;&#xa;            ids = [child.id];&#xa;        } else if (result == 0){&#xa;            ids.push(child.id);&#xa;        }&#xa;    });  &#xa;  &#xa;    var result = {&#39;_risk&#39;: maxRisk, &quot;_marking&quot;: ids.join(&quot;;&quot;)};&#xa;    if (updatedImpacts.length &gt; 0) {&#xa;        result._weight = updatedImpacts.join(&#39;;&#39;);&#xa;    }&#xa;    return result;&#xa;}" />
+            <ag_aggregation_function name="Impact" id="3j7heb16d5f6" default="" fn="function(collection) {&#xa;    var impact = 0;&#xa;    var result = {}&#xa;    &#xa;    collection.childAttributes.forEach(function(child) {&#xa;        if (&quot;Impact&quot; in child.attributes) {&#xa;            impact += parseInt(child.attributes[&quot;Impact&quot;]);&#xa;        } else if (&quot;Resources&quot; in child.attributes &amp;&amp; &quot;Knowledge&quot; in child.attributes &amp;&amp; &quot;Location&quot; in child.attributes) {&#xa;            result._af = child.computedAttribute&#xa;            result._marking = child.id;&#xa;        }&#xa;    });&#xa;    result._impact = Math.min(impact, collection.globalAttributes[&quot;Impact&quot;].max);&#xa;    &#xa;    return result;&#xa;}" />
+          </ag_aggregation_functions>
+          <ag_computed_attributes_functions>
+            <ag_computed_attributes_function name="default" id="dbg60ff69g9a" default="activity_w;activity_g;activity_y" fn="function (collection) { &#xa;    var colorMatrix = {&#xa;        5: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        4: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        3: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        2: {&quot;fillColor&quot;: &quot;#d4ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        1: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;}&#xa;    }&#xa;    var matrix = [ &#xa;        [5, 5, 4, 3, 2], &#xa;        [5, 4, 4, 3, 2], &#xa;        [5, 4, 4, 3, 2], &#xa;        [4, 3, 3, 2, 1], &#xa;        [3, 2, 2, 1, 1], &#xa;    ];&#xa;    var result = {};&#xa;    &#xa;    if (&quot;Knowledge&quot; in collection.cellAttributes &amp;&amp; &quot;Resources&quot; in collection.cellAttributes) {&#xa;        var knowledgeIndex = parseInt(collection.cellAttributes[&quot;Knowledge&quot;]) - 1; &#xa;        var resourcesIndex = parseInt(collection.cellAttributes[&quot;Resources&quot;]) - 1;&#xa;        &#xa;        var value = Math.min(5, &#xa;            Math.max(collection.globalAttributes[&quot;Location&quot;].max, &#xa;                Math.max( matrix[knowledgeIndex][resourcesIndex] - parseInt(collection.cellAttributes[&quot;Location&quot;])) &#xa;            ));&#xa;        result = colorMatrix[value] || result;&#xa;        result[&quot;value&quot;] = value;&#xa;    }&#xa;    &#xa;    return result;&#xa;}" />
+            <ag_computed_attributes_function name="Risk" id="6c831697g9i0a" default="consequence" fn="function(collection){&#xa;    var riskMatrix = {&#xa;        &quot;V&quot;: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        &quot;S&quot;: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        &quot;M&quot;: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        &quot;L&quot;: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;    };&#xa;    var result = {};&#xa;    &#xa;    if (&quot;_risk&quot; in collection.cellAttributes) {&#xa;        var risk = collection.cellAttributes[&quot;_risk&quot;];&#xa;        result = riskMatrix[risk] || result;&#xa;        result[&quot;value&quot;] = risk;&#xa;    }&#xa;    &#xa;    return result; &#xa;}" />
+          </ag_computed_attributes_functions>
+          <mxCell />
         </object>
-        <object label="Verspätung provozieren" id="vUpLBa6X5mZJnKH7JWD7-40">
+        <object label="Verbinder" id="1">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="1718" y="-876.5" width="170" height="40" as="geometry" />
+          <mxCell style="" parent="0" />
+        </object>
+        <object label="Skalierbar Feldelemente umstellen&#xa;Ohne Sicherheitsreaktion" id="vUpLBa6X5mZJnKH7JWD7-17">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="vUpLBa6X5mZJnKH7JWD7-18" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="454" y="-640" width="224" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Manipulation Kommunikationsnetzwerk" Resources="" Knowledge="" Location="" id="vUpLBa6X5mZJnKH7JWD7-18">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="vUpLBa6X5mZJnKH7JWD7-23" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="240" y="-390" width="162" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Impersonation Rechenzentrum" Resources="" Knowledge="" Location="" id="vUpLBa6X5mZJnKH7JWD7-19">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="vUpLBa6X5mZJnKH7JWD7-21" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="454" y="-390" width="126" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ETMhu0fDtO1Yi5dX4Cxl-8">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.373;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-20" target="ETMhu0fDtO1Yi5dX4Cxl-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ETMhu0fDtO1Yi5dX4Cxl-11">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-20" target="ETMhu0fDtO1Yi5dX4Cxl-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Manipulation Feldelement&#xa;(Signal, Weiche)" Resources="3" Knowledge="3" Location="1" id="vUpLBa6X5mZJnKH7JWD7-20">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#fee599;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="594" y="-390" width="170" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ZVXYmEzYP_AJPGhxlmkq-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.447;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-21" target="5KIEMbQEbxPHfrAZ8GCO-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ETMhu0fDtO1Yi5dX4Cxl-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-21" target="ETMhu0fDtO1Yi5dX4Cxl-5" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Kryptographisches Material kompromittieren" Resources="4" Knowledge="4" Location="0" id="vUpLBa6X5mZJnKH7JWD7-21">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#d7e3bf;whiteSpace=wrap;shape=attackgraphs.node;spacingRight=20;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="436" y="-245" width="164" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ZVXYmEzYP_AJPGhxlmkq-11">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;endFill=0;startFill=1;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-23" target="ZVXYmEzYP_AJPGhxlmkq-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Replay-Angriff" Resources="3" Knowledge="3" Location="0" id="vUpLBa6X5mZJnKH7JWD7-23">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#fee599;whiteSpace=wrap;shape=attackgraphs.node;spacingRight=20;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="243.5" y="-245" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Infrastrukturüberwachung täuschen" Resources="" Knowledge="" Location="" id="vUpLBa6X5mZJnKH7JWD7-24">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="vUpLBa6X5mZJnKH7JWD7-35" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="991" y="-640" width="170" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ETMhu0fDtO1Yi5dX4Cxl-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.86;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-25" target="ETMhu0fDtO1Yi5dX4Cxl-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ETMhu0fDtO1Yi5dX4Cxl-10">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-25" target="ETMhu0fDtO1Yi5dX4Cxl-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Manipulation Feldelement&#xa;(Gleisfreimeldung, Zugintegrität, Bahnübergang)" Resources="3" Knowledge="3" Location="1" id="vUpLBa6X5mZJnKH7JWD7-25">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#fee599;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1140" y="-390" width="190" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Kommunikation unterbrechen" Resources="" Knowledge="" Location="" id="vUpLBa6X5mZJnKH7JWD7-26">
+          <ag_attributes label="NaN" Knowledge="4" Resources="5" Location="1" _marking="vUpLBa6X5mZJnKH7JWD7-29" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;shape=attackgraphs.node;spacingRight=20;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1514" y="-640" width="190" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="3uWhjJXj1hLAOWgm0IXq-8">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;endFill=0;startFill=1;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-27" target="3uWhjJXj1hLAOWgm0IXq-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Rechenzentrum zerstören" Resources="2" Knowledge="2" Location="1" id="vUpLBa6X5mZJnKH7JWD7-27">
+          <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#fee599;whiteSpace=wrap;shape=attackgraphs.node;spacingRight=20;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1860" y="-640" width="176" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="3uWhjJXj1hLAOWgm0IXq-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-28" target="3uWhjJXj1hLAOWgm0IXq-4" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1540" y="-140" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="FRMCS Jamming" Resources="2" Knowledge="2" Location="1" id="vUpLBa6X5mZJnKH7JWD7-28">
+          <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#fee599;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1474" y="-390" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="3uWhjJXj1hLAOWgm0IXq-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-29" target="3uWhjJXj1hLAOWgm0IXq-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="E_le5nDdO42Rsl0jmOGN-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-29" target="E_le5nDdO42Rsl0jmOGN-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Kabel zerstören" Knowledge="1" Resources="1" Location="1" id="vUpLBa6X5mZJnKH7JWD7-29">
+          <ag_attributes label="NaN" Knowledge="4" Resources="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#d7e3bf;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1654" y="-390" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ZVXYmEzYP_AJPGhxlmkq-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-35" target="5KIEMbQEbxPHfrAZ8GCO-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ETMhu0fDtO1Yi5dX4Cxl-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;jumpStyle=arc;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-35" target="ETMhu0fDtO1Yi5dX4Cxl-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Fehler in Sicherer Hardware ausnutzen" Resources="4" Knowledge="4" Location="0" id="vUpLBa6X5mZJnKH7JWD7-35">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#d7e3bf;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="780" y="-390" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ZVXYmEzYP_AJPGhxlmkq-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.713;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-36" target="5KIEMbQEbxPHfrAZ8GCO-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ETMhu0fDtO1Yi5dX4Cxl-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startFill=1;endFill=0;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;jumpStyle=arc;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-36" target="ETMhu0fDtO1Yi5dX4Cxl-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Kompromittierte Sichere Hardware einschleusen" Resources="3" Knowledge="3" Location="1" id="vUpLBa6X5mZJnKH7JWD7-36">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#d7e3bf;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="950" y="-390" width="170" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="3uWhjJXj1hLAOWgm0IXq-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;endFill=0;startFill=1;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-37" target="3uWhjJXj1hLAOWgm0IXq-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Rechenzentrum auslasten" Resources="2" Knowledge="3" Location="0" id="vUpLBa6X5mZJnKH7JWD7-37">
+          <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="0" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#fee599;whiteSpace=wrap;shape=attackgraphs.node;spacingRight=20;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="2066" y="-640" width="164" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Verspätung provozieren" Resources="" Knowledge="" Location="" id="vUpLBa6X5mZJnKH7JWD7-40">
+          <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="0" _marking="vUpLBa6X5mZJnKH7JWD7-37" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1718" y="-840" width="170" height="60" as="geometry" />
           </mxCell>
         </object>
         <object label="Verletzung der körperlichen Unversehrtheit" id="vUpLBa6X5mZJnKH7JWD7-41">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="815" y="-1000" width="190" height="40" as="geometry" />
+          <ag_attributes _risk="L" _marking="vUpLBa6X5mZJnKH7JWD7-39" _weight="vUpLBa6X5mZJnKH7JWD7-39:5" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
+            <mxGeometry x="805" y="-1000" width="190" height="40" as="geometry" />
           </mxCell>
         </object>
         <object label="Einschränkung einer kritischen Dienstleistung" id="vUpLBa6X5mZJnKH7JWD7-42">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="1630" y="-1000" width="190" height="40" as="geometry" />
+          <ag_attributes _risk="L" _marking="vUpLBa6X5mZJnKH7JWD7-39;vUpLBa6X5mZJnKH7JWD7-40" _weight="vUpLBa6X5mZJnKH7JWD7-39:4;vUpLBa6X5mZJnKH7JWD7-40:3" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
+            <mxGeometry x="1698" y="-1000" width="210" height="40" as="geometry" />
           </mxCell>
         </object>
-        <object label="Erpressung" id="vUpLBa6X5mZJnKH7JWD7-43">
+        <object id="ZVXYmEzYP_AJPGhxlmkq-4">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="fillColor=#d7e3bf;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="1243" y="-874" width="144" height="35" as="geometry" />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startArrow=diamondThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;endFill=0;startFill=1;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-43" target="ZVXYmEzYP_AJPGhxlmkq-3" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1374.050185873606" y="-680" as="sourcePoint" />
+            </mxGeometry>
           </mxCell>
         </object>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-44" value="STOP" style="verticalAlign=middle;align=center;fillColor=#ff0000;gradientColor=none;shape=stencil(jZLBDoIwDIafpldSugPhjPgeJAy3ODcypuLbu9kYEBPY7W/7dfnbDkQzqW6UQDgF767yqfugQJyASFslvQ5RgWhBNIPz8uLd3fYcj10ik7q5R3ph5r4Ki6pMXYQvzuAnOjNstF3BVBdU58L4Ay6tGfBiKtNGiTtG/kfcxb/FTDNb/GDQg31HsVxq0Mbwodf17WVjin+FaN8=);strokeColor=#000000;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="1748" y="-775" width="33" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-45" value="STOP" style="verticalAlign=middle;align=center;fillColor=#ff0000;gradientColor=none;shape=stencil(jZLBDoIwDIafpldSugPhjPgeJAy3ODcypuLbu9kYEBPY7W/7dfnbDkQzqW6UQDgF767yqfugQJyASFslvQ5RgWhBNIPz8uLd3fYcj10ik7q5R3ph5r4Ki6pMXYQvzuAnOjNstF3BVBdU58L4Ay6tGfBiKtNGiTtG/kfcxb/FTDNb/GDQg31HsVxq0Mbwodf17WVjin+FaN8=);strokeColor=#000000;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="1604" y="-642" width="33" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-46" value="STOP" style="verticalAlign=middle;align=center;fillColor=#ff0000;gradientColor=none;shape=stencil(jZLBDoIwDIafpldSugPhjPgeJAy3ODcypuLbu9kYEBPY7W/7dfnbDkQzqW6UQDgF767yqfugQJyASFslvQ5RgWhBNIPz8uLd3fYcj10ik7q5R3ph5r4Ki6pMXYQvzuAnOjNstF3BVBdU58L4Ay6tGfBiKtNGiTtG/kfcxb/FTDNb/GDQg31HsVxq0Mbwodf17WVjin+FaN8=);strokeColor=#000000;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="433" y="-622" width="33" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-47" value="STOP" style="verticalAlign=middle;align=center;fillColor=#ff0000;gradientColor=none;shape=stencil(jZLBDoIwDIafpldSugPhjPgeJAy3ODcypuLbu9kYEBPY7W/7dfnbDkQzqW6UQDgF767yqfugQJyASFslvQ5RgWhBNIPz8uLd3fYcj10ik7q5R3ph5r4Ki6pMXYQvzuAnOjNstF3BVBdU58L4Ay6tGfBiKtNGiTtG/kfcxb/FTDNb/GDQg31HsVxq0Mbwodf17WVjin+FaN8=);strokeColor=#000000;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="1147" y="-630.5" width="33" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-48" value="RE" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.42857142857142855;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.696969696969697;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-46" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-49" value="RIE" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.5882352941176471;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.182;entryY=0.021;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-24" target="vUpLBa6X5mZJnKH7JWD7-47" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-50" value="SRIE" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.5263157894736842;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.30303030303030304;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-26" target="vUpLBa6X5mZJnKH7JWD7-45" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="10" y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-51" value="RIE" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.35294117647058826;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.7272727272727273;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-44" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="10" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-52" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.33482142857142855;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.7283950617283951;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-18" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-53" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.7455357142857143;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.06349206349206349;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-35" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-54" value="STD" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.5178571428571429;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.4764705882352941;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-20" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-55" value="SI" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#FFFFFF;rounded=0;align=center;exitX=0.4603174603174603;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5308641975308642;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-19" target="vUpLBa6X5mZJnKH7JWD7-21" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-6" y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-56" value="T" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-38" target="vUpLBa6X5mZJnKH7JWD7-43" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="10" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-57" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0;exitY=0.65;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.34;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-17" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
-            <Array as="points">
-              <mxPoint x="1018.32" y="-796.56" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-58" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.0058823529411764;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-24" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-59" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-42" target="vUpLBa6X5mZJnKH7JWD7-39" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-            <Array as="points">
-              <mxPoint x="1470.74" y="-931.97" />
-              <mxPoint x="1318.28" y="-911.23" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1hsjjzjon8IFMJkLqkHS-3" value="Impact: 5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="vUpLBa6X5mZJnKH7JWD7-59" vertex="1" connectable="0">
-          <mxGeometry x="-0.3164" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-60" value="Impact: 3" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5368421052631579;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.4588235294117647;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-42" target="vUpLBa6X5mZJnKH7JWD7-40" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-61" value="Impact: 5" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-41" target="vUpLBa6X5mZJnKH7JWD7-39" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="10" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-62" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.9105263157894737;exitY=0.975;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.041176470588235294;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-38" target="vUpLBa6X5mZJnKH7JWD7-40" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-63" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.12105263157894737;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9235294117647059;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-38" target="vUpLBa6X5mZJnKH7JWD7-39" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-64" value="STD" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=1.0058823529411764;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.07589285714285714;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-37" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-65" value="ST" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.31176470588235294;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.7619047619047619;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-24" target="vUpLBa6X5mZJnKH7JWD7-35" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-66" value="ST" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.4823529411764706;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5317460317460317;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-24" target="vUpLBa6X5mZJnKH7JWD7-36" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-3" y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-67" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.8705357142857143;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.12;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-36" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points">
-              <mxPoint x="924.28" y="-651.3399999999999" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-68" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.6428571428571429;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.24603174603174602;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-19" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-69" value="D" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.6263157894736842;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.29838709677419356;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-26" target="vUpLBa6X5mZJnKH7JWD7-29" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-70" value="TD" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.4263157894736842;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.6547619047619048;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-26" target="vUpLBa6X5mZJnKH7JWD7-28" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-71" value="D" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.6882352941176471;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.35714285714285715;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-27" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-72" value="TD" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.2235294117647059;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.7473684210526316;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-26" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-73" value="STD" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.7470588235294118;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.27232142857142855;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-24" target="vUpLBa6X5mZJnKH7JWD7-25" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-74" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.7352941176470589;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.21176470588235294;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-39" target="vUpLBa6X5mZJnKH7JWD7-24" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1" y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-75" value="T" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;align=center;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-18" target="vUpLBa6X5mZJnKH7JWD7-23" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-10" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vUpLBa6X5mZJnKH7JWD7-76" style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=#ffffff;rounded=0;exitX=0.029411764705882353;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9419642857142857;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-39" target="vUpLBa6X5mZJnKH7JWD7-17" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QO6YM6yXwNM-NFO-U2gJ-1" value="Angriffsziel&#xa;Cloud-Stellwerk" style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
-          <mxGeometry x="1165" y="-1130" width="300" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1hsjjzjon8IFMJkLqkHS-4" value="RL: 7" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=13;fontColor=#FF0000;" parent="1" vertex="1">
-          <mxGeometry x="930" y="-890" width="50" height="20" as="geometry" />
-        </mxCell>
+        <object label="Erpressung" Resources="1" Knowledge="2" Location="0" id="vUpLBa6X5mZJnKH7JWD7-43">
+          <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="0" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="fillColor=#d7e3bf;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1302" y="-840" width="144" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-52">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-18" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint y="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-53">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-35" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-54">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-20" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint y="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-55">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-19" target="vUpLBa6X5mZJnKH7JWD7-21" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-6" y="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="3" id="vUpLBa6X5mZJnKH7JWD7-56">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-38" target="vUpLBa6X5mZJnKH7JWD7-43" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="10" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-57">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;entryX=1;entryY=0.34;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-17" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint y="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-58">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;entryX=1.0058823529411764;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-24" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="4" id="vUpLBa6X5mZJnKH7JWD7-59">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=none;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;endFill=0;strokeWidth=2;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-42" target="vUpLBa6X5mZJnKH7JWD7-39" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="3" id="vUpLBa6X5mZJnKH7JWD7-60">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-42" target="vUpLBa6X5mZJnKH7JWD7-40" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="5" id="vUpLBa6X5mZJnKH7JWD7-61">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-41" target="vUpLBa6X5mZJnKH7JWD7-39" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="10" as="offset" />
+              <Array as="points" />
+              <mxPoint x="920" y="-970" as="sourcePoint" />
+              <mxPoint x="900" y="-810" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="2" id="vUpLBa6X5mZJnKH7JWD7-62">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classic;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-38" target="vUpLBa6X5mZJnKH7JWD7-40" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="4" id="vUpLBa6X5mZJnKH7JWD7-63">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;entryX=0.9235294117647059;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-38" target="vUpLBa6X5mZJnKH7JWD7-39" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-64">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=openThin;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;entryX=0.07589285714285714;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-37" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+              <mxPoint x="1888" y="-679.6457860615883" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-65">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;exitX=0.31176470588235294;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.7619047619047619;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-24" target="vUpLBa6X5mZJnKH7JWD7-35" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-66">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;exitX=0.4823529411764706;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5317460317460317;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-24" target="vUpLBa6X5mZJnKH7JWD7-36" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-3" y="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-67">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;jumpStyle=arc;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-36" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-68">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-17" target="vUpLBa6X5mZJnKH7JWD7-19" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-69">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;exitX=0.6263157894736842;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.29838709677419356;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-26" target="vUpLBa6X5mZJnKH7JWD7-29" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-70">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;exitX=0.4263157894736842;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.6547619047619048;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-26" target="vUpLBa6X5mZJnKH7JWD7-28" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-71">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;entryX=0.35714285714285715;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-27" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+              <mxPoint x="1854.9517308629938" y="-670.5" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-72">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;entryX=0.7473684210526316;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-40" target="vUpLBa6X5mZJnKH7JWD7-26" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <Array as="points" />
+              <mxPoint x="1739.283276450512" y="-670.5" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-73">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;exitX=0.7470588235294118;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.27232142857142855;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-24" target="vUpLBa6X5mZJnKH7JWD7-25" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-74">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-39" target="vUpLBa6X5mZJnKH7JWD7-24" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1" y="-1" as="offset" />
+              <Array as="points" />
+              <mxPoint x="940" y="-680" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" id="vUpLBa6X5mZJnKH7JWD7-75">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;align=center;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-18" target="vUpLBa6X5mZJnKH7JWD7-23" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-10" as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="vUpLBa6X5mZJnKH7JWD7-76">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;startArrow=none;endArrow=classicThin;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;verticalAlign=middle;labelBackgroundColor=default;rounded=0;endFill=1;strokeWidth=2;startFill=0;strokeColor=#000000;" parent="1" source="vUpLBa6X5mZJnKH7JWD7-39" target="vUpLBa6X5mZJnKH7JWD7-17" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint y="-1" as="offset" />
+              <Array as="points" />
+              <mxPoint x="820" y="-680" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Angriffsziel&#xa;Cloud-Stellwerk" id="QO6YM6yXwNM-NFO-U2gJ-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
+            <mxGeometry x="1165" y="-1130" width="300" height="60" as="geometry" />
+          </mxCell>
+        </object>
         <object label="Finanzieller Schaden" id="vUpLBa6X5mZJnKH7JWD7-38">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <ag_attributes _risk="L" _marking="vUpLBa6X5mZJnKH7JWD7-43;vUpLBa6X5mZJnKH7JWD7-40;vUpLBa6X5mZJnKH7JWD7-39" _weight="vUpLBa6X5mZJnKH7JWD7-43:3;vUpLBa6X5mZJnKH7JWD7-40:2;vUpLBa6X5mZJnKH7JWD7-39:4" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
             <mxGeometry x="1110" y="-1000" width="190" height="40" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="vsxWry4C87c9WAQc7QS0-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vsxWry4C87c9WAQc7QS0-1" target="vUpLBa6X5mZJnKH7JWD7-39">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="vsxWry4C87c9WAQc7QS0-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vsxWry4C87c9WAQc7QS0-1" target="vUpLBa6X5mZJnKH7JWD7-43">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="vsxWry4C87c9WAQc7QS0-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vsxWry4C87c9WAQc7QS0-1" target="vUpLBa6X5mZJnKH7JWD7-40">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <object label="Reputationsschaden Betreiber" id="vsxWry4C87c9WAQc7QS0-1">
+        <object label="3" id="vsxWry4C87c9WAQc7QS0-2">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
-            <mxGeometry x="1350" y="-1000" width="190" height="40" as="geometry" />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=classic;startArrow=none;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;endFill=1;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vsxWry4C87c9WAQc7QS0-1" target="vUpLBa6X5mZJnKH7JWD7-39" edge="1">
+            <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--1" value="Bewertung" parent="0" />
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--11" value="&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ressourcen: 3&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Knowledge: 3&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ort: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#FF0000;html=1;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1470" y="-609" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--12" value="&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ressourcen: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Knowledge: 1&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ort: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#FF0000;html=1;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1720" y="-609" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--13" value="&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ressourcen: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Knowledge: 1&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ort: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#FF0000;html=1;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1810" y="-750" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--14" value="&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;R: 1&lt;span&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span&gt;       &lt;/span&gt;K: 2&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;O: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#FF0000;html=1;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1540" y="-746" width="140" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--15" value="&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;&amp;nbsp;R: 1&lt;span&gt; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span&gt;       &lt;/span&gt;K: 1 &amp;nbsp;&amp;nbsp;&amp;nbsp; O: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#FF0000;html=1;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1730" y="-828" width="140" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--16" value="RL: 9" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=13;fontColor=#FF0000;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1800" y="-900" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--17" value="RL: 9" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=13;fontColor=#FF0000;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1900" y="-810" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--18" value="RL: 9" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=13;fontColor=#FF0000;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1540" y="-810" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--19" value="RL: 7" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=13;fontColor=#FF0000;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1480" y="-670" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--20" value="RL: 9" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=13;fontColor=#FF0000;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="1760" y="-670" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VkIn_jL6pkR2RFrk1ZU--21" value="&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ressourcen: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Knowledge: 1&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px&quot; align=&quot;left&quot;&gt;Ort: 1&lt;br style=&quot;font-size: 13px&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#FF0000;html=1;" parent="VkIn_jL6pkR2RFrk1ZU--1" vertex="1">
-          <mxGeometry x="2068" y="-750" width="110" height="50" as="geometry" />
-        </mxCell>
+        <object label="2" id="vsxWry4C87c9WAQc7QS0-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=classicThin;startArrow=none;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;endFill=1;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vsxWry4C87c9WAQc7QS0-1" target="vUpLBa6X5mZJnKH7JWD7-43" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="vsxWry4C87c9WAQc7QS0-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=classicThin;startArrow=none;startSize=9;endSize=9;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;endFill=1;startFill=0;fontSize=15;strokeColor=#000000;" parent="1" source="vsxWry4C87c9WAQc7QS0-1" target="vUpLBa6X5mZJnKH7JWD7-40" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Reputationsschaden Betreiber" id="vsxWry4C87c9WAQc7QS0-1">
+          <ag_attributes _risk="L" _marking="vUpLBa6X5mZJnKH7JWD7-39;vUpLBa6X5mZJnKH7JWD7-43;vUpLBa6X5mZJnKH7JWD7-40" _weight="vUpLBa6X5mZJnKH7JWD7-39:3;vUpLBa6X5mZJnKH7JWD7-43:2;vUpLBa6X5mZJnKH7JWD7-40:2" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
+            <mxGeometry x="1380" y="-1000" width="210" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Zugkollision herbeiführen" Resources="" Knowledge="" Location="" id="vUpLBa6X5mZJnKH7JWD7-39">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="vUpLBa6X5mZJnKH7JWD7-24" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="815" y="-840" width="170" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Zugriffsschutz&#xa;Zugangsschutz" Resources="1" Knowledge="1" Location="0" id="5KIEMbQEbxPHfrAZ8GCO-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="640" y="-30" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Redundanz" Resources="3" Knowledge="2" Location="0" id="3uWhjJXj1hLAOWgm0IXq-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1850" y="-40" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Resilienz" Resources="3" Knowledge="2" Location="0" id="3uWhjJXj1hLAOWgm0IXq-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC" parent="1" vertex="1">
+            <mxGeometry x="1467" y="120" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Redundanz&#xa;Skalierbarkeit&#xa;Zugangsbeschränkung&#xa;Zugriffsschutz" Resources="3" Knowledge="1" Location="0" id="3uWhjJXj1hLAOWgm0IXq-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;align=left;spacingLeft=2;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="2038" y="-40" width="220" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Schutz vor Schadcode&#xa;Schwachstellenscans&#xa;Penetrationstests&#xa;Systemhärtung&#xa;Backups" Resources="4" Knowledge="2" Location="0" id="ZVXYmEzYP_AJPGhxlmkq-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1300" y="-40" width="150" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Replay-Schutz" Resources="2" Knowledge="2" Location="0" id="ZVXYmEzYP_AJPGhxlmkq-9">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="243.5" y="-30" width="146.5" height="50" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="cdKFcXAmgzkw1FBSCr1U-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#000000;" parent="1" edge="1">
+            <mxGeometry width="50" height="50" relative="1" as="geometry">
+              <mxPoint x="180" y="70" as="sourcePoint" />
+              <mxPoint x="2260" y="70" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Zugangsschutz" Resources="1" Knowledge="1" Location="0" id="E_le5nDdO42Rsl0jmOGN-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1654" y="-40" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Security-Monitoring" Resources="1" Knowledge="1" Location="0" id="ETMhu0fDtO1Yi5dX4Cxl-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="870" y="120" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Sicherer Speicher" Resources="2" Knowledge="2" Location="1" id="ETMhu0fDtO1Yi5dX4Cxl-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="457" y="-30" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Zugangsschutz" Resources="1" Knowledge="1" Location="0" id="ETMhu0fDtO1Yi5dX4Cxl-9">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1040" y="-30" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Resilienz" Resources="3" Knowledge="2" Location="0" id="WtK6NQJGHgGDNpcNGOOI-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1467" y="120" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
       </root>
     </mxGraphModel>
   </diagram>

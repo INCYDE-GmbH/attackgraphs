@@ -1,180 +1,627 @@
-<mxfile host="Electron" modified="2022-01-24T10:42:11.362Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.7.3 Chrome/91.0.4472.164 Electron/13.6.1 Safari/537.36" etag="gCK0wNQevBYj6kaMPJSV" compressed="false" version="15.7.3" type="device">
-  <diagram id="jLZkieyW3AFqTRxJEDt1" name="Seite-1">
-    <mxGraphModel dx="-358" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="Electron" modified="2023-05-23T13:57:59.806Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="cmtP9KnZwE8Gu-2c4bKL" compressed="false" version="19.0.2" type="device">
+  <diagram id="zNMCXYOBYckHPa1j1fsk" name="Seite-1">
+    <mxGraphModel dx="1673" dy="1149" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-3" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-3" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <object label="Verletzung der körperlichen Unversehrtheit" id="efBT3XxfbWkx_M3Lsu19-3">
+        <object tooltip="" id="0">
+          <ag_global_attributes>
+            <ag_global_attribute name="Resources" value="" iconName="hammer" min="0" max="5" />
+            <ag_global_attribute name="Knowledge" value="" iconName="lightbulb" min="0" max="5" />
+            <ag_global_attribute name="Location" value="" iconName="map_pin_ellipse" min="0" max="1" />
+            <ag_global_attribute name="Impact" value="" iconName="flame" min="0" max="5" />
+          </ag_global_attributes>
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="1770" y="140" width="170" height="48" as="geometry" />
+          <ag_aggregation_functions>
+            <ag_aggregation_function name="default" id="6b1d22791hih8" default="activity_w;link" fn="function (collection) { &#xa;    var result = null; &#xa;    if (collection.childAttributes.length == 1) { &#xa;        result = collection.childAttributes[0].attributes;&#xa;        result._marking = collection.childAttributes[0].id;&#xa;    } else { &#xa;        var candidates = []; &#xa;        var worstValue = 0; &#xa;        collection.childAttributes.forEach(function(child) { &#xa;            var value = parseInt(child.computedAttribute); &#xa;            if (value &gt; worstValue) { &#xa;                worstValue = value; &#xa;                candidates = []; &#xa;                candidates.push(child); &#xa;            } else if (value == worstValue) { &#xa;                candidates.push(child); &#xa;            } &#xa;        }); &#xa;        var tiebreaker = function(candidates, name, max) { &#xa;            var min_value = max; &#xa;            candidates.forEach(function(node) { &#xa;                min_value = Math.min(min_value, node.attributes[name]); &#xa;            }); &#xa;            result = []; &#xa;            candidates.forEach(function(node) { &#xa;                if (node.attributes[name] == min_value) { &#xa;                    result.push(node); &#xa;                } &#xa;            }); &#xa;            return result; &#xa;        }; &#xa;        if (candidates.length &gt; 1) { &#xa;            candidates = tiebreaker(candidates, &quot;Resources&quot;, collection.globalAttributes[&quot;Resources&quot;].max); &#xa;            if (candidates.length &gt; 1) { &#xa;                candidates = tiebreaker(candidates, &quot;Knowledge&quot;, collection.globalAttributes[&quot;Knowledge&quot;].max); &#xa;            } &#xa;        } &#xa;        result = candidates[0].attributes;&#xa;        result._marking = candidates[0].id;&#xa;    } &#xa;    return result; &#xa;}" />
+            <ag_aggregation_function name="AND" id="gf0d4f199018" default="and" fn="function (collection) { &#xa;    var result = {}; &#xa;    var ids = [];&#xa;    collection.childAttributes.forEach(function(child) { &#xa;    for (var attribute in child.attributes) { &#xa;            if (attribute in result) { &#xa;                result[attribute] += parseInt(child.attributes[attribute]); &#xa;            } else { &#xa;                result[attribute] = parseInt(child.attributes[attribute]); &#xa;            } &#xa;        }&#xa;        ids.push(child.id);&#xa;    }); &#xa;    for (var attribute in result) { &#xa;        if (attribute in collection.globalAttributes) { &#xa;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#xa;        } &#xa;    }&#xa;    result._marking = ids.join(&quot;;&quot;);&#xa;    return result; &#xa;}" />
+            <ag_aggregation_function name="Security Control" id="73f575i0ghij5" default="activity_g;activity_y" fn="function (collection) { &#xa;    var result = {}; &#xa;    for (var attribute in collection.localAttributes) { &#xa;        result[attribute] = parseInt(collection.localAttributes[attribute]); &#xa;    } &#xa;    collection.childAttributes.forEach(function(child) { &#xa;        for (var attribute in child.attributes) { &#xa;            if (attribute in collection.globalAttributes) { &#xa;                if (attribute in result) { &#xa;                    result[attribute] += parseInt(child.attributes[attribute]); &#xa;                } &#xa;            } &#xa;        } &#xa;    }); &#xa;    for (var attribute in result) { &#xa;        if (attribute in collection.globalAttributes) { &#xa;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#xa;        } &#xa;    } &#xa;    return result; &#xa;}" />
+            <ag_aggregation_function name="Risk" id="egf49jfgj408" default="consequence" fn="function (collection) {  &#xa;    var maxRisk = &quot;L&quot;; &#xa;    var matrix = [ &#xa;        [&quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;], &#xa;        [&quot;L&quot;, &quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;S&quot;, &quot;S&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#xa;    ];&#xa;    var updatedImpacts = [];&#xa;    var ids = [];&#xa; &#xa;    var compareRisk = function(risk1, risk2) { &#xa;        /*&#xa;        * Returns:&#xa;        *  - Null: if one of the parameters is not a character representing a risk&#xa;        *  - Negativ integer: if risk1 &lt; risk2&#xa;        *  - Zero: if risks are equal&#xa;        *  - Positive integer: if risk1 &gt; risk2&#xa;        */&#xa;        var values = [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;]; &#xa;        var index_risk1 = values.indexOf(risk1); &#xa;        var index_risk2 = values.indexOf(risk2); &#xa; &#xa;        if (index_risk1 == -1 || index_risk2 == -1) { &#xa;            return null; &#xa;        } &#xa;        return index_risk1 - index_risk2; &#xa; &#xa;    } &#xa;     &#xa;    collection.childAttributes.forEach(function(child) {  &#xa;        var impact = 1;  &#xa;        if (child.edgeWeight !== null) {  &#xa;            impact = parseInt(child.edgeWeight);  &#xa;        }&#xa;        var _impact = parseInt(child.attributes._impact) || 0;&#xa;        impact = Math.max(impact - _impact, 1);&#xa;        updatedImpacts.push(child.id + &#39;:&#39; + impact);&#xa;        var af = parseInt(child.computedAttribute) || parseInt(child.attributes._af);&#xa;        risk = matrix[af - 1][impact - 1];&#xa;        result = compareRisk(risk, maxRisk);&#xa;        if (result &gt; 0) { &#xa;            maxRisk = risk;&#xa;            ids = [child.id];&#xa;        } else if (result == 0){&#xa;            ids.push(child.id);&#xa;        }&#xa;    });  &#xa;  &#xa;    var result = {&#39;_risk&#39;: maxRisk, &quot;_marking&quot;: ids.join(&quot;;&quot;)};&#xa;    if (updatedImpacts.length &gt; 0) {&#xa;        result._weight = updatedImpacts.join(&#39;;&#39;);&#xa;    }&#xa;    return result;&#xa;}" />
+            <ag_aggregation_function name="Impact" id="397423adceb0f" default="" fn="function(collection) {&#xa;    var impact = 0;&#xa;    var result = {}&#xa;    &#xa;    collection.childAttributes.forEach(function(child) {&#xa;        if (&quot;Impact&quot; in child.attributes) {&#xa;            impact += parseInt(child.attributes[&quot;Impact&quot;]);&#xa;        } else if (&quot;Resources&quot; in child.attributes &amp;&amp; &quot;Knowledge&quot; in child.attributes &amp;&amp; &quot;Location&quot; in child.attributes) {&#xa;            result._af = child.computedAttribute&#xa;            result._marking = child.id;&#xa;        }&#xa;    });&#xa;    result._impact = Math.min(impact, collection.globalAttributes[&quot;Impact&quot;].max);&#xa;    &#xa;    return result;&#xa;}" />
+          </ag_aggregation_functions>
+          <ag_computed_attributes_functions>
+            <ag_computed_attributes_function name="default" id="dbg60ff69g9a" default="activity_w;activity_g;activity_y" fn="function (collection) { &#xa;    var colorMatrix = {&#xa;        5: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        4: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        3: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        2: {&quot;fillColor&quot;: &quot;#d4ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        1: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;}&#xa;    }&#xa;    var matrix = [ &#xa;        [5, 5, 4, 3, 2], &#xa;        [5, 4, 4, 3, 2], &#xa;        [5, 4, 4, 3, 2], &#xa;        [4, 3, 3, 2, 1], &#xa;        [3, 2, 2, 1, 1], &#xa;    ];&#xa;    var result = {};&#xa;    &#xa;    if (&quot;Knowledge&quot; in collection.cellAttributes &amp;&amp; &quot;Resources&quot; in collection.cellAttributes) {&#xa;        var knowledgeIndex = parseInt(collection.cellAttributes[&quot;Knowledge&quot;]) - 1; &#xa;        var resourcesIndex = parseInt(collection.cellAttributes[&quot;Resources&quot;]) - 1;&#xa;        &#xa;        var value = Math.min(5, &#xa;            Math.max(collection.globalAttributes[&quot;Location&quot;].max, &#xa;                Math.max( matrix[knowledgeIndex][resourcesIndex] - parseInt(collection.cellAttributes[&quot;Location&quot;])) &#xa;            ));&#xa;        result = colorMatrix[value] || result;&#xa;        result[&quot;value&quot;] = value;&#xa;    }&#xa;    &#xa;    return result;&#xa;}" />
+            <ag_computed_attributes_function name="Risk" id="6c831697g9i0a" default="" fn="function(collection){&#xa;    var riskMatrix = {&#xa;        &quot;V&quot;: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        &quot;S&quot;: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        &quot;M&quot;: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        &quot;L&quot;: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;    };&#xa;    var result = {};&#xa;    &#xa;    if (&quot;_risk&quot; in collection.cellAttributes) {&#xa;        var risk = collection.cellAttributes[&quot;_risk&quot;];&#xa;        result = riskMatrix[risk] || result;&#xa;        result[&quot;value&quot;] = risk;&#xa;    }&#xa;    &#xa;    return result; &#xa;}" />
+          </ag_computed_attributes_functions>
+          <mxCell />
+        </object>
+        <object tooltip="" id="1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell parent="0" />
+        </object>
+        <object label="Angriffsziel&#xa;Automatisierte Planung und Planprüfung" id="-ZSPk6_3D4UuBSjLZNT9-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
+            <mxGeometry x="730" y="20" width="300" height="60" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-4" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2160" y="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-4" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2470" y="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <object label="Reputationsschaden Betreiber" id="efBT3XxfbWkx_M3Lsu19-4">
+        <object label="4" id="-ZSPk6_3D4UuBSjLZNT9-7">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="2210" y="140" width="190" height="48" as="geometry" />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=13;fontStyle=1;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-5" target="-ZSPk6_3D4UuBSjLZNT9-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-5" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-5" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2470" y="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <object label="Einschränkung einer kritischen Dienstleistung" id="efBT3XxfbWkx_M3Lsu19-5">
+        <object label="4" id="4FoC0Xb7QVFsULFS3Stp-19">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="2440" y="140" width="190" height="48" as="geometry" />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-5" target="4FoC0Xb7QVFsULFS3Stp-8" edge="1">
+            <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-6" target="efBT3XxfbWkx_M3Lsu19-8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2160" y="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-6" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2470" y="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <object label="Verletzung von Gesetzen und Verordnungen" id="efBT3XxfbWkx_M3Lsu19-6">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="2680" y="140" width="190" height="48" as="geometry" />
+        <object label="Verletzung der körperlichen Unversehrheit" id="-ZSPk6_3D4UuBSjLZNT9-5">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_attributes _risk="L" _marking="-ZSPk6_3D4UuBSjLZNT9-6;4FoC0Xb7QVFsULFS3Stp-8" _weight="-ZSPk6_3D4UuBSjLZNT9-6:4;4FoC0Xb7QVFsULFS3Stp-8:4" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <mxCell style="shape=attackgraphs.node;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="90" y="120" width="210" height="45" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-13" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="efBT3XxfbWkx_M3Lsu19-7" target="8U_8wvUCqnKFDiD6axn3-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-7" target="8U_8wvUCqnKFDiD6axn3-15" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="efBT3XxfbWkx_M3Lsu19-7" value="Prüfungsmodell manipulieren" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="2550" y="390" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-11" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-8" target="8U_8wvUCqnKFDiD6axn3-10" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8U_8wvUCqnKFDiD6axn3-10" target="8U_8wvUCqnKFDiD6axn3-18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <object label="Digitalen Zwilling manipulieren" id="efBT3XxfbWkx_M3Lsu19-8">
+        <object id="-ZSPk6_3D4UuBSjLZNT9-2">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="2008" y="380" width="120" height="60" as="geometry" />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-9" target="-ZSPk6_3D4UuBSjLZNT9-9" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="850" y="390" as="sourcePoint" />
+              <mxPoint x="1125" y="660" as="targetPoint" />
+            </mxGeometry>
           </mxCell>
         </object>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-9" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="efBT3XxfbWkx_M3Lsu19-7" target="efBT3XxfbWkx_M3Lsu19-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-10" value="De-Synchronisation des Modells von der Realität" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1976" y="525" width="184" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-17" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-12" target="-USMrEy12YP6Dv1XTXEw-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-19" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-12" target="-USMrEy12YP6Dv1XTXEw-18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-12" value="Regeln verfälschen" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="2370" y="525" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-15" target="-USMrEy12YP6Dv1XTXEw-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-15" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-15" target="-USMrEy12YP6Dv1XTXEw-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-15" value="Ergebnis fälschen" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="2741" y="525" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="8U_8wvUCqnKFDiD6axn3-18" value="Datenaustausch manipulieren" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
-          <mxGeometry x="2080" y="690" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-USMrEy12YP6Dv1XTXEw-1" target="-USMrEy12YP6Dv1XTXEw-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-USMrEy12YP6Dv1XTXEw-1" target="-USMrEy12YP6Dv1XTXEw-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-1" value="Datenerfassung manipulieren" style="rounded=0;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1900" y="690" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8U_8wvUCqnKFDiD6axn3-10" target="-USMrEy12YP6Dv1XTXEw-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2094" y="595" as="sourcePoint" />
-            <mxPoint x="2150" y="700" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-3" value="Digitalisierung der Bestandspläne manipulieren" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
-          <mxGeometry x="1760" y="810" width="180" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-4" value="Digitalisierung der Umwelt manipulieren&#xa;(Lidar-/Laser-Scanner, Bilderkennung)" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
-          <mxGeometry x="1990" y="810" width="230" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-7" value="Ausgabe manipulierter Bauplan" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
-          <mxGeometry x="2650" y="690" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-14" value="Ausgabe gefälschtes Zertifikat" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
-          <mxGeometry x="2830" y="690" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-16" value="Formales Modell manipulieren" style="whiteSpace=wrap;fillColor=#D7E3BF;" parent="1" vertex="1">
-          <mxGeometry x="2280" y="690" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="-USMrEy12YP6Dv1XTXEw-18" value="ML-Modell manipulieren" style="whiteSpace=wrap;fillColor=#FEE599;" parent="1" vertex="1">
-          <mxGeometry x="2450" y="690" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nDSWvJv89EqFTmo-1Rvo-1" value="Angriffsziel&#xa;Automatisierte Planung und Planprüfung" style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
-          <mxGeometry x="2200" y="30" width="300" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="g43z33kbfmnq2KOF_cTI-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-1" target="efBT3XxfbWkx_M3Lsu19-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="g43z33kbfmnq2KOF_cTI-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-1" target="efBT3XxfbWkx_M3Lsu19-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <object label="Verletzung von Eigentum" id="g43z33kbfmnq2KOF_cTI-1">
+        <object id="-ZSPk6_3D4UuBSjLZNT9-3">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
-            <mxGeometry x="2910" y="140" width="170" height="48" as="geometry" />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-6" target="-ZSPk6_3D4UuBSjLZNT9-10" edge="1">
+            <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="g43z33kbfmnq2KOF_cTI-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-5" target="efBT3XxfbWkx_M3Lsu19-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="g43z33kbfmnq2KOF_cTI-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g43z33kbfmnq2KOF_cTI-5" target="efBT3XxfbWkx_M3Lsu19-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <object label="Finanzieller Schaden Betreiber" id="g43z33kbfmnq2KOF_cTI-5">
+        <object label="Digitalen Zwilling manipulieren" id="-ZSPk6_3D4UuBSjLZNT9-6">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="-ZSPk6_3D4UuBSjLZNT9-10" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;whiteSpace=wrap;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="415" y="350" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-18">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
-            <mxGeometry x="1976" y="140" width="190" height="48" as="geometry" />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-9" target="pGx4nGiqQ51gGt1jWvF4-17" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-19">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-9" target="VVgaZvm0cS7WgkDVir1b-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-20">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-9" target="pGx4nGiqQ51gGt1jWvF4-16" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ML-Modell manipulieren" Resources="4" Knowledge="4" Location="0" id="-ZSPk6_3D4UuBSjLZNT9-9">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#D7E3BF;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1050" y="650" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="-ZSPk6_3D4UuBSjLZNT9-17">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-10" target="4FoC0Xb7QVFsULFS3Stp-5" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="450" y="690" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="4FoC0Xb7QVFsULFS3Stp-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-10" target="4FoC0Xb7QVFsULFS3Stp-6" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="600" y="660" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="De-Synchronisation des Modells von der Realität" id="-ZSPk6_3D4UuBSjLZNT9-10">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="4FoC0Xb7QVFsULFS3Stp-5" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="415" y="480" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-11" target="VVgaZvm0cS7WgkDVir1b-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-11">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-11" target="VVgaZvm0cS7WgkDVir1b-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Digitalisierung der Bestandspläne manipulieren" Resources="2" Knowledge="3" Location="1" id="-ZSPk6_3D4UuBSjLZNT9-11">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#D7E3BF;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="460" y="807.5" width="150" height="82.5" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-13" target="pGx4nGiqQ51gGt1jWvF4-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-13" target="pGx4nGiqQ51gGt1jWvF4-2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-10">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-13" target="VVgaZvm0cS7WgkDVir1b-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Digitalisierung der Umwelt manipulieren (Lidar-/Laser-Scanner, Bilderkennung)" Resources="3" Knowledge="3" Location="1" id="-ZSPk6_3D4UuBSjLZNT9-13">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#D7E3BF;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="240" y="807.5" width="175" height="82.5" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="-ZSPk6_3D4UuBSjLZNT9-18">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-5" target="-ZSPk6_3D4UuBSjLZNT9-11" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="418.63636363636374" y="800" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="-ZSPk6_3D4UuBSjLZNT9-19">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-5" target="-ZSPk6_3D4UuBSjLZNT9-13" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="453" y="800" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="4" id="-ZSPk6_3D4UuBSjLZNT9-27">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;fontStyle=1;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-26" target="-ZSPk6_3D4UuBSjLZNT9-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" id="4FoC0Xb7QVFsULFS3Stp-20">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="-ZSPk6_3D4UuBSjLZNT9-26" target="4FoC0Xb7QVFsULFS3Stp-8" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Finanzieller Schaden Betreiber" id="-ZSPk6_3D4UuBSjLZNT9-26">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_attributes _risk="L" _marking="-ZSPk6_3D4UuBSjLZNT9-6;4FoC0Xb7QVFsULFS3Stp-8" _weight="-ZSPk6_3D4UuBSjLZNT9-6:4;4FoC0Xb7QVFsULFS3Stp-8:4" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <mxCell style="shape=attackgraphs.node;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="352" y="120" width="210" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="g8WqiLtUgzYV8B5UEu1g-1">
+          <ag_global_attributes>
+            <ag_global_attribute name="Resources" value="" iconName="hammer" min="0" max="5" />
+            <ag_global_attribute name="Knowledge" value="" iconName="lightbulb" min="0" max="5" />
+            <ag_global_attribute name="Location" value="" iconName="map_pin_ellipse" min="0" max="1" />
+          </ag_global_attributes>
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.iconLegend;" parent="1" vertex="1">
+            <mxGeometry x="30" y="350" width="150" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="4FoC0Xb7QVFsULFS3Stp-21">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-1" target="-ZSPk6_3D4UuBSjLZNT9-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="4FoC0Xb7QVFsULFS3Stp-22">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-1" target="4FoC0Xb7QVFsULFS3Stp-8" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Reputationsschaden Betreiber" id="4FoC0Xb7QVFsULFS3Stp-1">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_attributes _risk="L" _marking="-ZSPk6_3D4UuBSjLZNT9-6;4FoC0Xb7QVFsULFS3Stp-8" _weight="-ZSPk6_3D4UuBSjLZNT9-6:3;4FoC0Xb7QVFsULFS3Stp-8:3" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <mxCell style="shape=attackgraphs.node;rounded=1" parent="1" vertex="1">
+            <mxGeometry x="614" y="120" width="210" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="4FoC0Xb7QVFsULFS3Stp-23">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-2" target="pGx4nGiqQ51gGt1jWvF4-28" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="4FoC0Xb7QVFsULFS3Stp-24">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-2" target="pGx4nGiqQ51gGt1jWvF4-31" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="880" y="200" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Einschränkung einer kritischen Dienstleistung" id="4FoC0Xb7QVFsULFS3Stp-2">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_attributes _risk="L" _marking="pGx4nGiqQ51gGt1jWvF4-28;pGx4nGiqQ51gGt1jWvF4-31" _weight="pGx4nGiqQ51gGt1jWvF4-28:1;pGx4nGiqQ51gGt1jWvF4-31:1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <mxCell style="shape=attackgraphs.node;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="876" y="120" width="210" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="1" id="4FoC0Xb7QVFsULFS3Stp-25">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-3" target="4FoC0Xb7QVFsULFS3Stp-8" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="1" id="4FoC0Xb7QVFsULFS3Stp-26">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-3" target="-ZSPk6_3D4UuBSjLZNT9-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Verletzung von Gesetzen und Verordnungen" id="4FoC0Xb7QVFsULFS3Stp-3">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_attributes _risk="L" _marking="4FoC0Xb7QVFsULFS3Stp-8;-ZSPk6_3D4UuBSjLZNT9-6" _weight="4FoC0Xb7QVFsULFS3Stp-8:1;-ZSPk6_3D4UuBSjLZNT9-6:1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <mxCell style="shape=attackgraphs.node;rounded=1;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="1138" y="120" width="210" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="4FoC0Xb7QVFsULFS3Stp-27">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-4" target="4FoC0Xb7QVFsULFS3Stp-8" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="4FoC0Xb7QVFsULFS3Stp-28">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-4" target="-ZSPk6_3D4UuBSjLZNT9-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Verletzung von Eigentum" id="4FoC0Xb7QVFsULFS3Stp-4">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_attributes _risk="L" _marking="4FoC0Xb7QVFsULFS3Stp-8;-ZSPk6_3D4UuBSjLZNT9-6" _weight="4FoC0Xb7QVFsULFS3Stp-8:3;-ZSPk6_3D4UuBSjLZNT9-6:3" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <mxCell style="shape=attackgraphs.node;rounded=1" parent="1" vertex="1">
+            <mxGeometry x="1400" y="120" width="210" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Datenerfassung Manipulieren" id="4FoC0Xb7QVFsULFS3Stp-5">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="-ZSPk6_3D4UuBSjLZNT9-11" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="340" y="650" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-9">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-6" target="VVgaZvm0cS7WgkDVir1b-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-14">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-6" target="pGx4nGiqQ51gGt1jWvF4-13" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Datenaustausch manipulieren" Resources="1" Knowledge="3" Location="0" id="4FoC0Xb7QVFsULFS3Stp-6">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#D7E3BF;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="530" y="650" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="4FoC0Xb7QVFsULFS3Stp-15">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-8" target="4FoC0Xb7QVFsULFS3Stp-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="4FoC0Xb7QVFsULFS3Stp-16">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-8" target="4FoC0Xb7QVFsULFS3Stp-10" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Prüfungsmodell manipulieren" id="4FoC0Xb7QVFsULFS3Stp-8">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="4FoC0Xb7QVFsULFS3Stp-9" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;whiteSpace=wrap;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1096" y="350" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="4FoC0Xb7QVFsULFS3Stp-14">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-9" target="4FoC0Xb7QVFsULFS3Stp-11" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Regeln verfälschen" id="4FoC0Xb7QVFsULFS3Stp-9">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="-ZSPk6_3D4UuBSjLZNT9-9" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="890" y="480" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="4FoC0Xb7QVFsULFS3Stp-17">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-10" target="4FoC0Xb7QVFsULFS3Stp-12" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="4FoC0Xb7QVFsULFS3Stp-18">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-10" target="4FoC0Xb7QVFsULFS3Stp-13" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Ergebnis fälschen" id="4FoC0Xb7QVFsULFS3Stp-10">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="4FoC0Xb7QVFsULFS3Stp-12" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1320" y="480" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-21">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-11" target="pGx4nGiqQ51gGt1jWvF4-17" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-22">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-11" target="VVgaZvm0cS7WgkDVir1b-2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Formales Modell manipulieren" Resources="3" Knowledge="4" Location="0" id="4FoC0Xb7QVFsULFS3Stp-11">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#D7E3BF;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="777" y="650" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-23">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-12" target="VVgaZvm0cS7WgkDVir1b-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-25">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-12" target="pGx4nGiqQ51gGt1jWvF4-13" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Ausgabe manipulierter Bauplan" Resources="3" Knowledge="4" Location="0" id="4FoC0Xb7QVFsULFS3Stp-12">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#D7E3BF;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1230" y="650" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-24">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-13" target="VVgaZvm0cS7WgkDVir1b-3" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="670" y="972" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-26">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="4FoC0Xb7QVFsULFS3Stp-13" target="pGx4nGiqQ51gGt1jWvF4-13" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Ausgabe gefälschtes Zertifikat" Resources="3" Knowledge="4" Location="0" id="4FoC0Xb7QVFsULFS3Stp-13">
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#D7E3BF;whiteSpace=wrap;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1420" y="650" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="pGx4nGiqQ51gGt1jWvF4-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#000000;" parent="1" edge="1">
+            <mxGeometry width="50" height="50" relative="1" as="geometry">
+              <mxPoint x="9.999999999999773" y="1070" as="sourcePoint" />
+              <mxPoint x="1650" y="1070" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Integritätsschutz der Umwelterfassung" Resources="1" Knowledge="1" Location="0" id="pGx4nGiqQ51gGt1jWvF4-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="330" y="1080" width="220" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Zugangsbeschränkung" Resources="1" Knowledge="1" Location="0" id="pGx4nGiqQ51gGt1jWvF4-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="140" y="1000" width="140" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Digitale Signatur" Resources="2" Knowledge="2" Location="1" id="pGx4nGiqQ51gGt1jWvF4-13">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1460" y="1000" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Robustheit" Resources="2" Knowledge="2" Location="0" id="pGx4nGiqQ51gGt1jWvF4-16">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1070" y="1080" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Mitarbeiterschulung" Resources="1" Knowledge="1" Location="0" id="pGx4nGiqQ51gGt1jWvF4-17">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="950" y="1000" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Business Continuity Management" Impact="2" id="pGx4nGiqQ51gGt1jWvF4-27">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;fontSize=12;align=left;verticalAlign=top;spacingLeft=2;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="760" y="355" width="120" height="65" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-29">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;" parent="1" source="pGx4nGiqQ51gGt1jWvF4-28" target="4FoC0Xb7QVFsULFS3Stp-8" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-30">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="pGx4nGiqQ51gGt1jWvF4-28" target="pGx4nGiqQ51gGt1jWvF4-27" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="pGx4nGiqQ51gGt1jWvF4-28">
+          <ag_attributes _af="1" _marking="4FoC0Xb7QVFsULFS3Stp-8" _impact="2" />
+          <ag_computed_attributes />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="397423adceb0f" />
+          <mxCell style="shape=attackgraphs.node;allowArrows=0;" parent="1" vertex="1">
+            <mxGeometry x="1120" y="290" width="21" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-33">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;" parent="1" source="pGx4nGiqQ51gGt1jWvF4-31" target="-ZSPk6_3D4UuBSjLZNT9-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="pGx4nGiqQ51gGt1jWvF4-34">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;exitX=0.75;exitY=1;exitDx=0;exitDy=0;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="pGx4nGiqQ51gGt1jWvF4-31" target="pGx4nGiqQ51gGt1jWvF4-27" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="pGx4nGiqQ51gGt1jWvF4-31">
+          <ag_attributes _af="1" _marking="-ZSPk6_3D4UuBSjLZNT9-6" _impact="2" />
+          <ag_computed_attributes />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="397423adceb0f" />
+          <mxCell style="shape=attackgraphs.node;allowArrows=0;" parent="1" vertex="1">
+            <mxGeometry x="630" y="280" width="21" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Plausibilitätsprüfung" Resources="2" Knowledge="2" Location="0" id="VVgaZvm0cS7WgkDVir1b-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="610" y="1000" width="120" height="45" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Plausibilitätsprüfung&#xa;Validierung von Plänen" Resources="2" Knowledge="2" Location="0" id="VVgaZvm0cS7WgkDVir1b-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="737" y="1000" width="190" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Zugriffsschutz" Resources="1" Knowledge="1" Location="0" id="VVgaZvm0cS7WgkDVir1b-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1210" y="1000" width="120" height="45" as="geometry" />
           </mxCell>
         </object>
       </root>
