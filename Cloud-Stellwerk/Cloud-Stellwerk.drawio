@@ -1,6 +1,6 @@
-<mxfile compressed="false" host="Electron" modified="2023-05-23T13:59:32.881Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="9-PQGCZsZDPFLmvQwOgy" version="19.0.2" type="device">
+<mxfile compressed="false" host="Electron" modified="2023-06-15T15:27:21.587Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="fSABa28VuNKioUPtYMEu" version="19.0.2" type="device">
   <diagram name="Zeichenblatt-1" id="Zeichenblatt-1">
-    <mxGraphModel dx="2188" dy="2672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="2042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -623,7 +623,7 @@
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
           <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
-            <mxGeometry x="1390" y="-1000" width="190" height="40" as="geometry" />
+            <mxGeometry x="1380" y="-1000" width="210" height="40" as="geometry" />
           </mxCell>
         </object>
         <object label="Zugkollision herbeiführen" Resources="" Knowledge="" Location="" id="vUpLBa6X5mZJnKH7JWD7-39">

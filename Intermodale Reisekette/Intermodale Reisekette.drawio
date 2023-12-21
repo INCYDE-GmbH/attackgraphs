@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-25T15:20:50.464Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="ce4Kj92O0Ey_Lk2BJ5x2" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2023-12-21T09:20:42.920Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="SyHSOaVOwBW07WkrrgPF" compressed="false" version="19.0.2" type="device">
   <diagram id="5mQjVeAMLh9t2EBukIg2" name="Page-1">
-    <mxGraphModel dx="2272" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4010" dy="2171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -968,7 +968,7 @@
           </mxCell>
         </object>
         <object label="Erlangung Zugriff Rechenzentrum vor Ort" Resources="3" Knowledge="3" Location="1" id="PANx_2H3_iy-v-Putqux-34">
-          <ag_attributes />
+          <ag_attributes label="NaN" Resources="3" Knowledge="3" Location="1" />
           <ag_computed_attributes fillColor="#ffdd00" fontColor="#000000" value="3" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
@@ -1350,33 +1350,6 @@
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
           <mxCell style="shape=xor;whiteSpace=wrap;html=1;rotation=-90;" parent="1" vertex="1">
             <mxGeometry x="1454" y="930" width="25" height="37.5" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="Schwierig zu bewerten als Angriff, vor allem mit Werten für Resourcen und Wissen.&lt;br&gt;Mögliche Interpretation: Werte für Operationen die zur unbewussten Manipulation führen." id="kVZn4hKlKfzOOjyC7Y9h-16">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=#FF0000;fillColor=none;html=1;fontColor=#FF0000;" parent="1" vertex="1">
-            <mxGeometry x="945" y="1650" width="490" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object id="kVZn4hKlKfzOOjyC7Y9h-17">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;exitX=0.16;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#000000;" parent="1" source="kVZn4hKlKfzOOjyC7Y9h-16" target="PANx_2H3_iy-v-Putqux-15" edge="1">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="-154" y="1062.5" as="targetPoint" />
-              <mxPoint x="-154" y="1125" as="sourcePoint" />
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object id="kVZn4hKlKfzOOjyC7Y9h-18">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;exitX=0.085;exitY=-0.036;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="kVZn4hKlKfzOOjyC7Y9h-16" target="PANx_2H3_iy-v-Putqux-14" edge="1">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="966.8245219347582" y="1250" as="targetPoint" />
-              <mxPoint x="976.5999999999999" y="1326.6799999999998" as="sourcePoint" />
-            </mxGeometry>
           </mxCell>
         </object>
         <object label="" id="eCq6edl6h6hgmWOPJE0u-2">
