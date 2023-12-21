@@ -5,6 +5,13 @@ The use cases are describe in the report available here: [Report] (German only).
 The methodology to derive the attack graphs published in this repository will be publicly available after completion of the research project in December 2023.
 Also, this repository will experience updates while the project proceeds.
 
+## Update
+
+The attack graphs have been updated to reflect the state at the end of the project.
+Attribute values were assigned to the attack steps to evaluate the risk and countermeasures were added to identify how the risk can be reduced to an acceptable level.
+
+The (German) report will be referenced here once it has been published.
+
 ## Viewing and Editing
 
 To view or edit the files, Draw.io is required which is freely available:
