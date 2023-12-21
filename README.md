@@ -20,7 +20,25 @@ To view or edit the files, Draw.io is required which is freely available:
 - Browser Version: https://app.diagrams.net
 - Github-hosted Version with [Plugin] enabled: https://incyde-gmbh.github.io/drawio-plugin-attackgraphs/app
 
+## Further Reading
+
+### German
+
+- Prognose Securitybedarf und Bewertung möglicher Sicherheitskonzepte; Teil 1: Technologieprognose: http://dx.doi.org/10.48755/dzsf.220008.06
+- Softwaregestützte Bedrohungsanalyse durch Angriffsgraphen: https://www.0x25.net/publications/files/28_34_Heinrich.pdf
+- Technologie- und Securityprognose System Bahn – Bedrohungen rechtzeitig erkennen: https://www.0x25.net/publications/files/096_103_Heinrich.pdf
+- Software-gestützte Bedrohungsanalyse durch Angriffsgraphen: https://doi.org/10.26083/tuprints-00022101
+
+### English
+
+- Risk Assessment Graphs: Utilizing Attack Graphs for Risk Assessment: http://dx.doi.org/10.48550/arXiv.2307.14114
+- Securing the Future Railway System: Technology Forecast, Security Measures, and Research Demands: http://dx.doi.org/10.3390/vehicles5040069
+- Software-supported threat analysis using attack graphs: https://www.0x25.net/publications/files/28_34_Heinrich.pdf
+- Technology and security forecast for the railway system – the timely identification of threats: https://www.0x25.net/publications/files/096_103_Heinrich.pdf
+
 ## Authors
+
+The following people have conducted the research project and worked on the creation of the attack graphs.
 
 - Max Schubert, INCYDE
 - Markus Heinrich, INCYDE
@@ -38,5 +56,5 @@ Markus Heinrich – markus.heinrich@incyde.com
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-[Report]: https://www.dzsf.bund.de/SharedDocs/Downloads/DZSF/Veroeffentlichungen/Forschungsberichte/2021/ForBe_20_2022_AP1.html
+[Report]: http://dx.doi.org/10.48755/dzsf.220008.06
 [Plugin]: https://github.com/INCYDE-GmbH/drawio-plugin-attackgraphs
