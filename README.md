@@ -24,17 +24,17 @@ To view or edit the files, Draw.io is required which is freely available:
 
 ### German
 
-- Prognose Securitybedarf und Bewertung möglicher Sicherheitskonzepte; Teil 1: Technologieprognose: http://dx.doi.org/10.48755/dzsf.220008.06
-- Softwaregestützte Bedrohungsanalyse durch Angriffsgraphen: https://www.0x25.net/publications/files/28_34_Heinrich.pdf
-- Technologie- und Securityprognose System Bahn – Bedrohungen rechtzeitig erkennen: https://www.0x25.net/publications/files/096_103_Heinrich.pdf
-- Software-gestützte Bedrohungsanalyse durch Angriffsgraphen: https://doi.org/10.26083/tuprints-00022101
+- Prognose Securitybedarf und Bewertung möglicher Sicherheitskonzepte; Teil 1: Technologieprognose: [[1]]
+- Softwaregestützte Bedrohungsanalyse durch Angriffsgraphen: [[2]]
+- Technologie- und Securityprognose System Bahn – Bedrohungen rechtzeitig erkennen: [[3]]
+- Software-gestützte Bedrohungsanalyse durch Angriffsgraphen: [[4]]
 
 ### English
 
-- Risk Assessment Graphs: Utilizing Attack Graphs for Risk Assessment: http://dx.doi.org/10.48550/arXiv.2307.14114
-- Securing the Future Railway System: Technology Forecast, Security Measures, and Research Demands: http://dx.doi.org/10.3390/vehicles5040069
-- Software-supported threat analysis using attack graphs: https://www.0x25.net/publications/files/28_34_Heinrich.pdf
-- Technology and security forecast for the railway system – the timely identification of threats: https://www.0x25.net/publications/files/096_103_Heinrich.pdf
+- Risk Assessment Graphs: Utilizing Attack Graphs for Risk Assessment: [[5]]
+- Securing the Future Railway System: Technology Forecast, Security Measures, and Research Demands: [[6]]
+- Software-supported threat analysis using attack graphs: [[2]]
+- Technology and security forecast for the railway system – the timely identification of threats: [[3]]
 
 ## Authors
 
@@ -58,3 +58,10 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 [Report]: http://dx.doi.org/10.48755/dzsf.220008.06
 [Plugin]: https://github.com/INCYDE-GmbH/drawio-plugin-attackgraphs
+
+[1]: http://dx.doi.org/10.48755/dzsf.220008.06
+[2]: https://www.0x25.net/publications/files/28_34_Heinrich.pdf
+[3]: https://www.0x25.net/publications/files/096_103_Heinrich.pdf
+[4]: https://doi.org/10.26083/tuprints-00022101
+[5]: http://dx.doi.org/10.48550/arXiv.2307.14114
+[6]: http://dx.doi.org/10.3390/vehicles5040069
