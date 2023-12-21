@@ -24,6 +24,8 @@ To view or edit the files, Draw.io is required which is freely available:
 
 ### German
 
+| Title | Link |
+| :--- | :---: |
 | Prognose Securitybedarf und Bewertung möglicher Sicherheitskonzepte; Teil 1: Technologieprognose | [1] |
 | Softwaregestützte Bedrohungsanalyse durch Angriffsgraphen                                        | [2] |
 | Technologie- und Securityprognose System Bahn – Bedrohungen rechtzeitig erkennen                 | [3] |
@@ -31,6 +33,8 @@ To view or edit the files, Draw.io is required which is freely available:
 
 ### English
 
+| Title | Link |
+| :--- | :---: |
 | Risk Assessment Graphs: Utilizing Attack Graphs for Risk Assessment                              | [5] |
 | Securing the Future Railway System: Technology Forecast, Security Measures, and Research Demands | [6] |
 | Software-supported threat analysis using attack graphs                                           | [2] |
