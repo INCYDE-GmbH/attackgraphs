@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-23T13:55:28.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="lJiO7cLdE6lCNA4t7Cud" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2024-01-05T14:27:45.719Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="52rYJSjz9c64GBzQdxBK" compressed="false" version="22.1.16" type="device">
   <diagram id="UJWsQ4LCsPfUxE9BL8zf" name="Seite-1">
-    <mxGraphModel dx="2591" dy="2631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2603" dy="2490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -90,7 +90,7 @@
             <mxGeometry x="2060" y="-1380" width="270" height="75" as="geometry" />
           </mxCell>
         </object>
-        <object label="Manipulation der Fahrsteuerung " id="i0_VuYSUXwv3GOk7AtMA-8">
+        <object label="Manipulation der Fahrsteuerung" id="i0_VuYSUXwv3GOk7AtMA-8">
           <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" _marking="i0_VuYSUXwv3GOk7AtMA-14" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
@@ -669,7 +669,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Diebstahl von Güterwagen " id="i0_VuYSUXwv3GOk7AtMA-55">
+        <object label="Diebstahl von Güterwagen" id="i0_VuYSUXwv3GOk7AtMA-55">
           <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" _marking="5x-6YdXmlLBo3wP-KoqJ-9" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
@@ -1102,7 +1102,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Manipulation von Nahfeld-Sensoren am Fahrzeug (u.a. für Geschwindigkeits-und Abstandsmessung)" id="i0_VuYSUXwv3GOk7AtMA-9">
+        <object label="Manipulation von Nahfeld-Sensoren am Fahrzeug (u.a. für Geschwindigkeits- und Abstandsmessung)" id="i0_VuYSUXwv3GOk7AtMA-9">
           <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" _marking="i0_VuYSUXwv3GOk7AtMA-11" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
@@ -1147,7 +1147,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Falsche Zusammenstellung " id="rOGGRvmPK-cyz2jh2-eG-8">
+        <object label="Falsche Zusammenstellung" id="rOGGRvmPK-cyz2jh2-eG-8">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="rOGGRvmPK-cyz2jh2-eG-15" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />

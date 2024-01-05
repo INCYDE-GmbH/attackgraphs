@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-12-21T09:20:42.920Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="SyHSOaVOwBW07WkrrgPF" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2024-01-05T14:23:34.629Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="pwcrdpVcnmPMtwJIVJjD" compressed="false" version="22.1.16" type="device">
   <diagram id="5mQjVeAMLh9t2EBukIg2" name="Page-1">
-    <mxGraphModel dx="4010" dy="2171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -342,7 +342,7 @@
             <mxGeometry x="1327.5" y="360" width="180" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="Automated Personal Assistent manipulieren" Resources="" Knowledge="" Location="" id="uPvtzUqCq0j5UhJlTc7c-41">
+        <object label="Automated Personal Assistant manipulieren" Resources="" Knowledge="" Location="" id="uPvtzUqCq0j5UhJlTc7c-41">
           <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" _marking="uPvtzUqCq0j5UhJlTc7c-57" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -434,7 +434,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="GNSS spoofing" Resources="3" Knowledge="3" Location="1" id="uPvtzUqCq0j5UhJlTc7c-48">
+        <object label="GNSS Spoofing" Resources="3" Knowledge="3" Location="1" id="uPvtzUqCq0j5UhJlTc7c-48">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -1645,10 +1645,10 @@
             <mxGeometry x="2550" y="760" width="144" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;span&gt;&amp;nbsp;MFA durch&amp;nbsp;&lt;/span&gt;extra Freigabe der Buchung&lt;/span&gt;" id="Lk03vesRnJ9wN9lAQ0JK-2">
+        <object label="MFA durch extra Freigabe der Buchung" id="Lk03vesRnJ9wN9lAQ0JK-2">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.33;" parent="1" vertex="1">
+          <mxCell style="shape=callout;whiteSpace=wrap;perimeter=calloutPerimeter;position2=0.33;" parent="1" vertex="1">
             <mxGeometry x="42" y="1670" width="120" height="80" as="geometry" />
           </mxCell>
         </object>

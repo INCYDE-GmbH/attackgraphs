@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-23T15:29:35.457Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="IkSin6kTimAhgPc_nmvv" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2024-01-05T13:36:21.982Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="G9ez7vI1iGvxJ1NMipSP" compressed="false" version="22.1.16" type="device">
   <diagram id="jtEWjEJLr_3nwjV8xUw6" name="Seite-1">
-    <mxGraphModel dx="1896" dy="1303" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -517,10 +517,10 @@
             <mxGeometry x="510" y="160" width="230" height="51.5" as="geometry" />
           </mxCell>
         </object>
-        <object label="Werte von Intermodale Reisekette &lt;br&gt;(Gepäckziel manipulieren)" id="hlJk635r3doJFyI0tFxE-1">
+        <object label="Werte von Intermodale Reisekette &#xa;(Gepäckziel manipulieren)" id="hlJk635r3doJFyI0tFxE-1">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxCell style="text;align=center;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
             <mxGeometry x="790" y="760" width="200" height="30" as="geometry" />
           </mxCell>
         </object>

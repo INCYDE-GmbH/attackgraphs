@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-23T15:32:14.023Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="74A7ur7uSIgMPJiJ5xwy" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2024-01-05T13:35:57.647Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="6JZgES_qgEsq8eDfcDXo" compressed="false" version="22.1.16" type="device">
   <diagram id="_IrKB-7pmVLJ8V-EMXvs" name="Seite-1">
-    <mxGraphModel dx="4724" dy="2443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2603" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -911,11 +911,11 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;div&gt;Kombination aus&lt;/div&gt;&lt;div&gt;Security Controls für&lt;/div&gt;&lt;div&gt;zwei Blattknoten&lt;br&gt;&lt;/div&gt;" id="MrJTc4iwlkmeg3qvCo2h-3">
+        <object label="Kombination aus&#xa;Security Controls für&#xa;zwei Blattknoten&#xa;" id="MrJTc4iwlkmeg3qvCo2h-3">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-            <mxGeometry x="625" y="1328" width="130" height="30" as="geometry" />
+          <mxCell style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+            <mxGeometry x="625" y="1328" width="130" height="52" as="geometry" />
           </mxCell>
         </object>
         <object id="MrJTc4iwlkmeg3qvCo2h-6">
@@ -946,11 +946,11 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;div&gt;Hier nur&lt;/div&gt;&lt;div&gt;Security Control für&lt;/div&gt;&lt;div&gt;einen Blattknoten&lt;br&gt;&lt;/div&gt;" id="NY-WaI75QKOfGS1F8uei-3">
+        <object label="Hier nur&#xa;Security Control für&#xa;einen Blattknoten&#xa;" id="NY-WaI75QKOfGS1F8uei-3">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-            <mxGeometry x="905" y="1328" width="130" height="30" as="geometry" />
+          <mxCell style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+            <mxGeometry x="905" y="1328" width="130" height="42" as="geometry" />
           </mxCell>
         </object>
         <object label="" id="NY-WaI75QKOfGS1F8uei-4">

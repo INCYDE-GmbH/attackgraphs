@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-23T14:23:05.699Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="dv_xSdP92LsI8DptU2pj" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2024-01-05T14:11:18.315Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ci8ZOVq4v7QvC-XodK4T" compressed="false" version="22.1.16" type="device">
   <diagram id="zNMCXYOBYckHPa1j1fsk" name="Seite-1">
-    <mxGraphModel dx="595" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="607" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -1110,7 +1110,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Erlangung Zugriff Datenspeicher remote" Resources="3" Knowledge="4" Location="0" id="DKATGrDiBj-2phuO24pb-107">
+        <object label="Erlangung Zugriff Datenspeicher&#xa;remote" Resources="3" Knowledge="4" Location="0" id="DKATGrDiBj-2phuO24pb-107">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -1397,10 +1397,10 @@
             <mxGeometry x="1654" y="778" width="40" height="53.33" as="geometry" />
           </mxCell>
         </object>
-        <object label="&lt;div&gt;Annahme: Arbeitszeit wird in Resourcen abgebildet&lt;/div&gt;" id="DKATGrDiBj-2phuO24pb-141">
+        <object label="Annahme: Arbeitszeit wird in Resourcen abgebildet" id="DKATGrDiBj-2phuO24pb-141">
           <ag_attributes />
           <ag_computed_attributes />
-          <mxCell style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxCell style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
             <mxGeometry x="1480" y="1030" width="290" height="20" as="geometry" />
           </mxCell>
         </object>
