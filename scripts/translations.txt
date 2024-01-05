@@ -14,7 +14,7 @@ Als Chatbot ausgeben
 Anderen LWL anstecken
 Angriff Funkfernsteuerung = Attack Remote Control
 Angriff auf das\nMeldeportal (Online-Portal) selbst
-Angriff des nächstgelegenen Provider Knotens
+Angriff des nächstgelegenen Provider Knotens = Attack the nearest provider node
 Angriffsziel\nAutomatisierte Ablaufsteuerung
 Angriffsziel\nAutomatisierte Planung und Planprüfung
 Angriffsziel\nCloud-Stellwerk
@@ -22,7 +22,7 @@ Angriffsziel\nDezentrales Stellwerk/Stellwerkloses Fahren
 Angriffsziel\nEmotions- und Absichtserkennung
 Angriffsziel\nFerngesteuerte Fahrzeuge ohne Intelligenz
 Angriffsziel\nGüterwegemanagement
-Angriffsziel\nIntelligente Instandhaltung
+Angriffsziel\nIntelligente Instandhaltung = Attack Target\nPredictive Maintenance
 Angriffsziel\nIntermodale Güterabfertigung
 Angriffsziel\nIntermodale Reisekette
 Angriffsziel\nKontaklose Fahrscheinkontrolle
@@ -37,8 +37,8 @@ Angriffsziel\nVollautomatisiertes Fahren
 Angriffsziel\nVorort-Informationen
 Angriffsziel\nZugsicherung mit ETCS (L2oS, L3)
 Anhalten von Zügen auf der freien Strecke
-Annahme: Arbeitszeit wird in Resourcen abgebildet
-Annahme: Rein zustandsbasierte Instandhaltung und Instandsetzung. Das heißt, eine 100% datenbasierte Instandhaltung ohne feste Zyklen. Hintergrund: Reduktion Aufwand. Risiko: keine unabhänige Kontrolle der Istwerte.
+Annahme: Arbeitszeit wird in Resourcen abgebildet = Assumption: working hours are expressed as ressources
+Annahme: Rein zustandsbasierte Instandhaltung und Instandsetzung. Das heißt, eine 100% datenbasierte Instandhaltung ohne feste Zyklen. Hintergrund: Reduktion Aufwand. Risiko: keine unabhänige Kontrolle der Istwerte. = Assumption: Purely condition-based maintenance and repair. This means 100% data-based maintenance without fixed cycles. Background: Reduction in effort. Risk: no independent control of actual values.
 Anzeigetafeln manipulieren
 App manipulieren
 Aufdecken privater Daten
@@ -53,7 +53,7 @@ Automated Personal Assistant kompromittieren = Compromise Automated Personal Ass
 Automated Personal Assistant manipulieren = Manipulate Automated Personal Assistant
 Backups = Backups
 Befahren der Infrastruktur ohne Fahrwegsicherung
-Bekanntwerden von Messdaten oder Prognose
+Bekanntwerden von Messdaten oder Prognose = Becoming aware of measurement data or forecasts
 Benutzer unbefugt orten
 Beschränkte Berechtigungen
 Bewegungen des Roboterassistenten belauschen
@@ -76,46 +76,46 @@ Daten unlesbar machen
 Datenaustausch manipulieren
 Datenbestand (Customer-Experience-Werte) manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle)
 Datenerfassung Manipulieren
-Datenkommunikation physisch stören
+Datenkommunikation physisch stören = Physical disruption of transmission
 Datenquelle austauschen
 Datensparsamkeit
 Datenspeicher modifizieren
 Datensätze korrelieren
-Datenüberflutung im RZ (remote)
+Datenüberflutung im RZ (remote) = Data overload at data center (remote)
 Datenübermittlung\nan Servicezentrale stören
 Datenübertragung der Auswertung manipulieren
 De-Synchronisation des Modells von der Realität
-Denial of Service Rechenzentrum
+Denial of Service Rechenzentrum = Denial of Service Data Center
 Detektions-Signaturen ändern
 Diebstahl von Güterwagen
 Digitale Karte manipulieren
-Digitale Signatur
+Digitale Signatur = Digital Signature
 Digitalen Zwilling manipulieren
 Digitalisierung der Bestandspläne manipulieren
 Digitalisierung der Umwelt manipulieren (Lidar-/Laser-Scanner, Bilderkennung)
 Dokumentenklassifizierung
 Drahtlose Nahfeld-Kommunikation manipulieren
 Einfügen und Ausnutzen von Backdoors
-Eingabe falscher, ungenauer Algorithmen
+Eingabe falscher, ungenauer Algorithmen = input wrong, inaccurate algorithms
 Einschleusen eines Nothaltes
 Einschleusen/Löschen von plausiblen Nachrichten
-Einschränkung einer kritischen Dienstleistung
-Einspeisen verfälschter Daten
-Einspeisen zusätzlicher, verfälschter "Erfahrungswerte"
+Einschränkung einer kritischen Dienstleistung = Disruption of a Critical Service
+Einspeisen verfälschter Daten = Feed in manipulated data
+Einspeisen zusätzlicher, verfälschter "Erfahrungswerte" = Feed in additional manipulated "experience"
 Einspielen am Sensor\n(Messwerte Lidar, Temperatur etc.)
 Einspielen falscher Sensordaten
 Empfehlungen manipulieren
-Energieversorgung stören
+Energieversorgung stören = Disrupt power supply
 Entfernten Zugang auf Bordnetzwerk erlangen
 Ergebnis fälschen
-Erlangung Datenzugriff Sensor remote
-Erlangung Datenzugriff Sensor vor Ort
-Erlangung Zugriff Datenspeicher\nremote
-Erlangung Zugriff Datenspeicher\nvor Ort
-Erlangung Zugriff Rechenzentrum remote
-Erlangung Zugriff Rechenzentrum vor Ort
-Erlangung Zugriff Rechenzentrum\nremote
-Erlangung Zugriff Rechenzentrum\nvor Ort
+Erlangung Datenzugriff Sensor remote = Gain Data Access Sensor remote
+Erlangung Datenzugriff Sensor vor Ort = Gain Data Access Sensor local
+Erlangung Zugriff Datenspeicher\nremote = Gain Access Data Storage\nremote
+Erlangung Zugriff Datenspeicher\nvor Ort = Gain Access Data Storage\nlocal
+Erlangung Zugriff Rechenzentrum remote = Gain Access Data Center remote
+Erlangung Zugriff Rechenzentrum vor Ort = Gain Access Data Center local
+Erlangung Zugriff Rechenzentrum\nremote = Gain Access Data Center\nremote
+Erlangung Zugriff Rechenzentrum\nvor Ort = Gain Access Data Center\nlocal
 Erpressung
 Erschaffung von Geisterzügen
 Erschleichen der Zugangsdaten eines Lieferanten
@@ -152,16 +152,16 @@ Fehlerhafte Ortung\ndes Nutzers
 Fehlinformationen in Distributed Ledger einschleusen
 Feldelement kompromittieren
 Fernsteuerung übernehmen
-Finanzieller Schaden
-Finanzieller Schaden Betreiber
-Finanzieller Schaden Einzelperson
-Finanzieller Schaden Spediteur
-Finanzieller Schaden\nBetreiber
-Finanzieller Schaden\nEinzelperson
-Finanzieller Schaden\nSpediteur
-Firewall
+Finanzieller Schaden = Financial Damage
+Finanzieller Schaden Betreiber = Financial Damage Operator
+Finanzieller Schaden Einzelperson  = Financial Damage Individual
+Finanzieller Schaden Spediteur = Financial Damage Freight Forwarder
+Finanzieller Schaden\nBetreiber = Financial Damage\nOperator
+Finanzieller Schaden\nEinzelperson = Financial Damage\nIndividual
+Finanzieller Schaden\nSpediteur = Financial Damage\nFreight Forwarder
+Firewall = Firewall
 Formales Modell manipulieren
-Funk
+Funk = wireless communication
 Fälschung Balisentelegramm
 Fälschung der Authentizität eines Datentelegramms
 Fälschung der Movement Authority
@@ -184,8 +184,8 @@ Individuellen Nutzer bloßstellen (shaming) / Veröffentlichen von individuellem
 Individuelles Bewegungsprofil erstellen
 Individuum identifizieren
 Infrastrukturüberwachung täuschen
-Integritätsschutz der Umwelterfassung
-Jamming
+Integritätsschutz der Umwelterfassung = Integrity Protection of Environment Monitoring
+Jamming = Jamming
 Jamming der digitalen Zugschlussscheibe
 Jamming der drahtlosen Kommunikation
 Jamming des Kommunikationsnetzwerkes
@@ -237,42 +237,42 @@ Manipulation Maschinelles Lernen
 Manipulation Ortungs-/ Registrierungsinformationen
 Manipulation ausgewählter Datensätze mit Bedarfsinformationen der Fracht (Ort, Lieferzeit, ...)
 Manipulation der Ablaufbremse
-Manipulation der Auswertealgorithmen (KI)
+Manipulation der Auswertealgorithmen (KI) = Manipulation of Algorithms (AI)
 Manipulation der DAK
-Manipulation der Daten am Sensor (Fahrzeug)
-Manipulation der Daten am Sensor (Infrastruktur)
-Manipulation der Daten beim Verkehrsträger
-Manipulation der Daten im Rechenzentrum
+Manipulation der Daten am Sensor (Fahrzeug) = Data Manipulation at Sensor (Vehicle)
+Manipulation der Daten am Sensor (Infrastruktur) = Data Manipulation at Sensor (Infrastructure)
+Manipulation der Daten beim Verkehrsträger = Data Manipulation at Transport Association
+Manipulation der Daten im Rechenzentrum = Data Manipulation in Data Center
 Manipulation der Daten\nvom mobilen Endgerät
-Manipulation der Datenübertragung
+Manipulation der Datenübertragung = Manipulation of Data Transmission
 Manipulation der FRMCS-Datenübertragung vom Sensor
-Manipulation der Fahrsteuerung
-Manipulation der Fahrsteuerung und Fahrwegsicherung
-Manipulation der Fahrsteuerung\n(siehe Anwendungsfall ATO)
+Manipulation der Fahrsteuerung = Manipulation of ATO
+Manipulation der Fahrsteuerung und Fahrwegsicherung = Manipulation of ATO and ATP
+Manipulation der Fahrsteuerung\n(siehe Anwendungsfall ATO) = Manipulation of ATO\n(cf. use case ATO)
 Manipulation der Fahrzeug-BZ-Kommunikation\n(Safety-Rückfallebene vorhanden)
-Manipulation der Gleisfreimeldung
-Manipulation der Gleisfreimeldung\n(ETCS L2oS)
-Manipulation der Grenzwerte
-Manipulation der Informationen zum Abnutzungsvorrat
+Manipulation der Gleisfreimeldung = Manipulation of Train Detection System
+Manipulation der Gleisfreimeldung\n(ETCS L2oS) = Manipulation of Train Detection System\n(ETCS L2oS)
+Manipulation der Grenzwerte = Manipulation of Thresholds
+Manipulation der Informationen zum Abnutzungsvorrat = Manipulation of Wear Reserve
 Manipulation der Informationen zur Gleisbelegung
 Manipulation der Informationen über die Fracht\n(Lieferzeit, -ort, -anforderugen, ...)
 Manipulation der Kameras\n(siehe Reise- und Lebensmanagement)
 Manipulation der Kommunikation
-Manipulation der Label der "korrekten" Daten
+Manipulation der Label der "korrekten" Daten = Manipulation of labels of the "correct" data
 Manipulation der Lokalisierung
 Manipulation der Messdaten zum Ist-Zustand der Lieferung
-Manipulation der Quellinformationen für den Sensor
-Manipulation der Sensoren
+Manipulation der Quellinformationen für den Sensor = Manipulation of Information Source for the Sensor
+Manipulation der Sensoren = Manipulation of Sensors
 Manipulation der Sensorik (Lichtschranken)
-Manipulation der Testfälle
+Manipulation der Testfälle = Manipulation of Test Cases
 Manipulation der Testfälle (siehe Intermodale Reisekette)
 Manipulation der Wagenliste durch schreibenden Zugriff
 Manipulation der Zugintegritätsprüfung
 Manipulation der Zugintegritätssysteme
 Manipulation der automatisierten Abdrücklock
 Manipulation der sicheren Lokalisierung
-Manipulation der Übertragung
-Manipulation der Übertragung von Sensor zu Rechenzentrum
+Manipulation der Übertragung = Manipulation of transmission
+Manipulation der Übertragung von Sensor zu Rechenzentrum = Manipulation of transmission from sensor to data center
 Manipulation der\nV2I-Kommunikation
 Manipulation der\nV2V-Kommunikation
 Manipulation des Algorithmus
@@ -316,14 +316,14 @@ Missbrauch von Rechten oder Admin-Zugriff
 Mit Öffentliche Daten / Medien / Sozialen Netzwerken / Daten Dritter abgleichen bzw. korrelieren
 MitM auf V2I-Kommunikation
 MitM auf V2V-Kommunikation
-Mitarbeiterschulung
+Mitarbeiterschulung = Awareness Training
 Mobiles Endgerät abhören
 Moderates Risiko zur Strafvereitlung aus beschränkter Verfügbarkeit des Datenbestands könnte akzeptiert werden.
 Montieren eines kompromittierten Sensors
 Multi-Faktor-Authentifizierung
 Need-to-Know-Prinzip
-Netzsegmentierung
-Netzvermaschung
+Netzsegmentierung = Network Segmentation
+Netzvermaschung = Mesh Network
 Nutzer nachstellen
 Nutzung des Roboterassistenten einer Person zuordnen
 Objektschutz
@@ -334,65 +334,65 @@ Persönliche Endgeräte manipulieren
 Persönliches Endgerät abhören
 Persönliches Endgerät\nabhören
 Physische Eigenschaften des LWL prüfen
-Physische Manipulation
-Physischer Schutz
-Plausibilitätsprüfung
+Physische Manipulation = Physical Manipulation
+Physischer Schutz = Physical Protection
+Plausibilitätsprüfung = Plausibility Check
 Preis manipulieren
-Privacy Enhancing Technologies
+Privacy Enhancing Technologies = Privacy Enhancing Technologies
 Prüfungsmodell manipulieren
 Ransomware einschleusen
 Reaktionsfähigkeit auf Sicherheitslücken
 Rechenzentrum auslasten
 Rechenzentrum zerstören
-Redundanz
+Redundanz = Redundancy
 Regeln verfälschen
 Reiseempfehlung manipulieren
 Reiseempfehlungen manipulieren
 Reisende vor überlastete Waggons lenken
 Reisenden fehlleiten\n(nicht ans Ziel bringen)
-Remote Attestation
-Replay-Angriff
-Replay-Schutz
-Reputationsschaden Betreiber
-Reputationsschaden Einzelperson
-Reputationsschaden Hersteller
-Reputationsschaden\nBetreiber
-Reputationsschaden\nEinzelperson
+Remote Attestation = Remote Attestation
+Replay-Angriff = Replay Attack
+Replay-Schutz = Replay Protection
+Reputationsschaden Betreiber = Reputational Damage Operator
+Reputationsschaden Einzelperson = Reputational Damage Individual
+Reputationsschaden Hersteller = Reputational Damage Manufacturer
+Reputationsschaden\nBetreiber = Reputational Damage\nOperator
+Reputationsschaden\nEinzelperson = Reputational Damage\nIndividual
 Reservierte Weiche vorzeitig freigeben
 Reservierten Streckenabschnitt vorzeitig freigeben
-Resilienz
+Resilienz = Resilience
 Ressourcen abschalten/zerstören/beschränken
 Roboterassisten physisch sabotieren / zerstören
 Roboterassistent kompromittieren
 Roboterassistenten manipulieren
 Roboterassistenten physisch sabotieren / zerstören
-Robustheit
+Robustheit = Robustness
 Satellitenfunk Jamming
-Schutz vor Schadcode
-Schwachstellenscans
+Schutz vor Schadcode = Malware Protection
+Schwachstellenscans = Vulnerabilityscans
 Schwächen in 3DES ausnutzen
 Schädigung der Güter
-Secure Boot
-Security-Logging
-Security-Monitoring
+Secure Boot = Secure Boot
+Security-Logging = Security Logging
+Security-Monitoring = Security Monitoring
 Sensor emulieren
 Sensoren manipulieren
 Sensorik (Kamera, Bluetooth etc.) des Roboterassistenten auswerten
-Sicherer Datenspeicher
-Sicherer Speicher
+Sicherer Datenspeicher = Secure Data Storage
+Sicherer Speicher = Secure Storage
 Siehe Anwendungsfall Ferngesteuerte Fahrzeuge
 Skalierbar Feldelemente umstellen\nOhne Sicherheitsreaktion
-Skalierbarkeit
+Skalierbarkeit = Scalability
 Smart Contracts manipulieren
 Social Engineering durchführen
 Software-Tests
-Source Code Audit
+Source Code Audit = Source Code Audit
 Spezielle Addressen für Smart Contracts ausschließen
 Spoofing der digitalen Zugschlussscheibe
 Spoofing der\nV2I-Kommunikation
 Spoofing der\nV2V-Kommunikation
 Spoofing des Datenfunkes\n(GSM-R oder FRMCS)
-Spoofing\n(Fake-Sensor)
+Spoofing\n(Fake-Sensor) = Spoofing\n(Fake Sensor)
 Spoofing\nFRMCS/Satellitenfunk
 Sprachbefehl einspielen
 Standort-Informationen\nmanipulieren
@@ -400,7 +400,7 @@ Steuerungsdaten am Roboterassistenten manipulieren
 Steuerungssoftware manipulieren
 Strafvereitelung
 Strategisches und logisches Wissen zur "unauffälligen" Manipulation
-Störung Kommunikation Sensoren
+Störung Kommunikation Sensoren = Disrupt communication sensors
 Störung der Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege
 Störung der Disposition
 Störung der Disposition\n
@@ -426,13 +426,13 @@ Täuschung der Fahrwegsicherung
 Täuschung der Störungserkennung\n(Falsche physische Hindernisse aufstellen)
 Umständliche Wege der Reisenden provozieren
 Unautorisierte Reisen buchen
-Unbewusste Manipulation
-Unbewusste Manipulation (siehe Intermodale Reisekette)
+Unbewusste Manipulation = unconscious manipulation
+Unbewusste Manipulation (siehe Intermodale Reisekette) = unconscious manipulation (cf intermodal travel chain)
 Unbrauchbarmachung der Bedarfsanmeldungen der Betreiber
-Unterdrückung von Warnmeldungen
+Unterdrückung von Warnmeldungen = Suppression of warning messages
 Unterdrückung/Umleitung der Bezahlung des Trassenentgeltes
 V2I-Kommunikation manipulieren
-Validierung und Tests (inkl. regelmäßige Wiederholung)
+Validierung und Tests (inkl. regelmäßige Wiederholung) = Validation and Tests (including regular repetition)
 Validierung von Plänen
 Verbinder
 Verbindung zu Betriebszentrale stören
@@ -451,18 +451,18 @@ Verhinderung der Hindernismeldung\nFälschung der Freimeldung
 Verhinderung des Zugriffs auf den Distributed Ledger zur Fahrwegsicherung durch Verhinderung der Kommunikation
 Verifikation von Smart Contracts
 Verkehrsdaten manipulieren
-Verletzung der Privatsphäre
-Verletzung der körperlichen Unversehrtheit
-Verletzung von Eigentum
-Verletzung von Gesetzen und Verordnungen
-Verletzung von\nGesetzen und Verordnungen
-Verschlüsselung
+Verletzung der Privatsphäre = Violation of Privacy
+Verletzung der körperlichen Unversehrtheit = Violation of Physical Integrity
+Verletzung von Eigentum = Violation of Property
+Verletzung von Gesetzen und Verordnungen = Violation of Laws and Regulations
+Verletzung von\nGesetzen und Verordnungen = Violation of\nLaws and Regulations
+Verschlüsselung = Encryption
 Verspätung provozieren
 Verspätungen provozieren
-Verwendung unbrauchbarer Daten
+Verwendung unbrauchbarer Daten = Use of unusable data
 Verzögerung durch Distributed Ledger Consensus
 Vibrationen eintragen
-Vier-Augen-Prinzip
+Vier-Augen-Prinzip = Four-eyes Principle
 Voice Activation auslösen
 Vorhersage des maschinellen Lernens manipulieren
 Vortäuschen einer betrieblichen Störung\n(bspw. Türstörung)
@@ -475,14 +475,14 @@ Weniger Fahrzeuge werden bereitgestellt als benötigt
 Werte von Dezentralem Stellwerk
 Werte von Intermodale Reisekette \n(Gepäckziel manipulieren)
 Wissen über Datensatz, Ziel und Art der notwendigen Manipulation (Verständnis Algorithmus)
-Zerstörung
+Zerstörung = Destruction
 Zerstörung der Güterwagen
 Zerstörung der Infrastruktur
 Zerstörung/Beschädigung des Rechenzentrums
 Zielgerichtete \nManipulation Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege
 Zug durch Verhindern der Positionsmeldung verschwinden lassen
-Zugangsbeschränkung
-Zugangsschutz
+Zugangsbeschränkung = Access Restriction
+Zugangsschutz = Physical Access Control
 Zugkollision herbeiführen
 Zugposition fälschen
 Zugposition manipulieren
@@ -493,8 +493,8 @@ Zugriff auf Datenbestand (Videomaterial)
 Zugriff auf Live-Feed
 Zugriff auf Live-Feed der Kameras
 Zugriff\nBordnetzwerk
-Zugriffsschutz
-drahtgebundene Kommunikation
+Zugriffsschutz = Access Control
+drahtgebundene Kommunikation = wired communication
 siehe Anwendungsfall Virtuelles Kuppeln
 siehe Anwendungsfall Virtuelles Kuppeln/Ferngesteuerte Fahrzeuge
 siehe Reise- und Lebensmanagement
