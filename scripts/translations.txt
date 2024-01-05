@@ -1,0 +1,502 @@
+
+(Absichtliche) Fehlkonfiguration der Ressourcenzuteilung
+(D)DoS
+(Vor Fahrtantritt)\nLokalen Zugang auf Bordnetzwerk erlangen\n(freier Netzwerkport)
+1
+2
+3
+4
+5
+5G Jamming = 5G Jamming
+5G/FRMCS Jamming = 5G/FRMCS Jamming
+Aktualisierbarkeit der Algorithmen
+Als Chatbot ausgeben
+Anderen LWL anstecken
+Angriff Funkfernsteuerung = Attack Remote Control
+Angriff auf das\nMeldeportal (Online-Portal) selbst
+Angriff des nächstgelegenen Provider Knotens
+Angriffsziel\nAutomatisierte Ablaufsteuerung
+Angriffsziel\nAutomatisierte Planung und Planprüfung
+Angriffsziel\nCloud-Stellwerk
+Angriffsziel\nDezentrales Stellwerk/Stellwerkloses Fahren
+Angriffsziel\nEmotions- und Absichtserkennung
+Angriffsziel\nFerngesteuerte Fahrzeuge ohne Intelligenz
+Angriffsziel\nGüterwegemanagement
+Angriffsziel\nIntelligente Instandhaltung
+Angriffsziel\nIntermodale Güterabfertigung
+Angriffsziel\nIntermodale Reisekette
+Angriffsziel\nKontaklose Fahrscheinkontrolle
+Angriffsziel\nOptimierte Reise- und \nPreisgestaltung
+Angriffsziel\nOptimierung der Fahrgastwechselzeit
+Angriffsziel\nPersonenidentifizierung
+Angriffsziel\nReise- und Lebensmanagement
+Angriffsziel\nReisendenlenkung durch den Bahnhof
+Angriffsziel\nSteuernder Durchgriff der Disposition
+Angriffsziel\nVirtuelles Kuppeln
+Angriffsziel\nVollautomatisiertes Fahren
+Angriffsziel\nVorort-Informationen
+Angriffsziel\nZugsicherung mit ETCS (L2oS, L3)
+Anhalten von Zügen auf der freien Strecke
+Annahme: Arbeitszeit wird in Resourcen abgebildet
+Annahme: Rein zustandsbasierte Instandhaltung und Instandsetzung. Das heißt, eine 100% datenbasierte Instandhaltung ohne feste Zyklen. Hintergrund: Reduktion Aufwand. Risiko: keine unabhänige Kontrolle der Istwerte.
+Anzeigetafeln manipulieren
+App manipulieren
+Aufdecken privater Daten
+Aufdeckung privater Daten\n(Standort, Biometrische Daten)
+Aufdeckung privater Daten\n(Vorlieben, Gewohnheiten)
+Ausgabe gefälschtes Zertifikat
+Ausgabe manipulierter Bauplan
+Auslastungserkennung manipulieren
+Auslastungsinformationen nicht anzeigen
+Ausnutzen mangelhafter Trennung
+Automated Personal Assistant kompromittieren = Compromise Automated Personal Assistant
+Automated Personal Assistant manipulieren = Manipulate Automated Personal Assistant
+Backups = Backups
+Befahren der Infrastruktur ohne Fahrwegsicherung
+Bekanntwerden von Messdaten oder Prognose
+Benutzer unbefugt orten
+Beschränkte Berechtigungen
+Bewegungen des Roboterassistenten belauschen
+Bilder von stationären Kameras auswerten
+Bildsignal fälschen
+Biometrische Authentifikation (Stimmanalyse: Tonhöhe, Sprachgeschwindigkeit, Muster)
+Blockade der Güterabfertigung (Ausfahrt)
+Blockade der Satellitenfunk-Strecke
+Blockade der Sensoren = Block Sensors
+Blockade der Sensoren für FRMCS
+Blockade der\nSensoren = Block Sensors
+Bordkommunikation unterdrücken
+Business Continuity Management = Business Continuity Management
+Chaos schüren
+Chatbot manipulieren
+Code Signing = Code Signing
+Daten ausleiten
+Daten löschen = Delete Data
+Daten unlesbar machen
+Datenaustausch manipulieren
+Datenbestand (Customer-Experience-Werte) manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle)
+Datenerfassung Manipulieren
+Datenkommunikation physisch stören
+Datenquelle austauschen
+Datensparsamkeit
+Datenspeicher modifizieren
+Datensätze korrelieren
+Datenüberflutung im RZ (remote)
+Datenübermittlung\nan Servicezentrale stören
+Datenübertragung der Auswertung manipulieren
+De-Synchronisation des Modells von der Realität
+Denial of Service Rechenzentrum
+Detektions-Signaturen ändern
+Diebstahl von Güterwagen
+Digitale Karte manipulieren
+Digitale Signatur
+Digitalen Zwilling manipulieren
+Digitalisierung der Bestandspläne manipulieren
+Digitalisierung der Umwelt manipulieren (Lidar-/Laser-Scanner, Bilderkennung)
+Dokumentenklassifizierung
+Drahtlose Nahfeld-Kommunikation manipulieren
+Einfügen und Ausnutzen von Backdoors
+Eingabe falscher, ungenauer Algorithmen
+Einschleusen eines Nothaltes
+Einschleusen/Löschen von plausiblen Nachrichten
+Einschränkung einer kritischen Dienstleistung
+Einspeisen verfälschter Daten
+Einspeisen zusätzlicher, verfälschter "Erfahrungswerte"
+Einspielen am Sensor\n(Messwerte Lidar, Temperatur etc.)
+Einspielen falscher Sensordaten
+Empfehlungen manipulieren
+Energieversorgung stören
+Entfernten Zugang auf Bordnetzwerk erlangen
+Ergebnis fälschen
+Erlangung Datenzugriff Sensor remote
+Erlangung Datenzugriff Sensor vor Ort
+Erlangung Zugriff Datenspeicher\nremote
+Erlangung Zugriff Datenspeicher\nvor Ort
+Erlangung Zugriff Rechenzentrum remote
+Erlangung Zugriff Rechenzentrum vor Ort
+Erlangung Zugriff Rechenzentrum\nremote
+Erlangung Zugriff Rechenzentrum\nvor Ort
+Erpressung
+Erschaffung von Geisterzügen
+Erschleichen der Zugangsdaten eines Lieferanten
+FOS-Einheit kompromittieren
+FOS-Einheit kompromittieren\n(siehe Dezentrales Stellwerk)
+FRMCS Jamming
+FRMCS Jamming\nGSM-R Jamming
+FRMCS Kommunikation manipulieren
+Fahrempfehlungen manipulieren
+Fahrgastzählung blockieren
+Fahrgastzählung\nblockieren
+Fahrscheindaten manipulieren
+Fahrscheinkontrolle manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle)
+Fahrsteuerung kompromittieren
+Fahrwege manipulieren
+Fahrwegeigenschaften verändern oder Gefahrpunkte löschen
+Falsche Eingabe von Kapazitätsverfügbarkeiten Betreiber-intern (zu hoch/zu niedrig)
+Falsche Empfehlung an das Reise- und Lebensmanagement weitergeben
+Falsche Empfehlung auf Automated Personal Assistant
+Falsche Führung durch Roboterassistenten
+Falsche Meldung über Lage von Fahrwegelementen oder Belegung von Gleisabschnitten
+Falsche Sensordaten einschleusen (Geschwindigkeit, Bremskraft, ...)
+Falsche Steuerbefehle einschleusen (Fahrmotor, Bremssteuerung, ...)
+Falsche Vorgabe durch kompromittiertes Leitsystem kommunizieren
+Falsche Wagen kuppeln
+Falsche Weichenlage erzwingen
+Falsche Zusammenstellung
+Falschen 3DES-Schlüssel einschleusen
+Falsches Update einspielen
+Falschinformationen zur Ladung führen zur Schädigung \n(z.B. Abstoßen verboten, max. Geschwindigkeit, ...)
+Falschmeldung anzeigen
+Fehler in Sicherer Hardware ausnutzen
+Fehlerhafte Ortung\ndes Nutzers
+Fehlinformationen in Distributed Ledger einschleusen
+Feldelement kompromittieren
+Fernsteuerung übernehmen
+Finanzieller Schaden
+Finanzieller Schaden Betreiber
+Finanzieller Schaden Einzelperson
+Finanzieller Schaden Spediteur
+Finanzieller Schaden\nBetreiber
+Finanzieller Schaden\nEinzelperson
+Finanzieller Schaden\nSpediteur
+Firewall
+Formales Modell manipulieren
+Funk
+Fälschung Balisentelegramm
+Fälschung der Authentizität eines Datentelegramms
+Fälschung der Movement Authority
+Fälschung ortsfester Referenzpunkte
+Fälschung/Manipulation der Fahrwegempfehlungen (Journey Profiles) oder des Fahrplans
+GNSS Jamming
+GNSS Spoofing
+GNSS\nJamming
+GNSS\nSpoofing
+Gefälschtes V2I-Paket einschleusen
+Gefälschtes V2V-Paket einschleusen
+Gehärtetes Endgerät
+Gepäckziel manipulieren
+Geschwindigkeitsprofil manipulieren
+Hardware zerstören
+Hier nur\nSecurity Control für\neinen Blattknoten\n
+Impersonation Rechenzentrum
+Individuellem Nutzer nachstellen
+Individuellen Nutzer bloßstellen (shaming) / Veröffentlichen von individuellem Verhalten
+Individuelles Bewegungsprofil erstellen
+Individuum identifizieren
+Infrastrukturüberwachung täuschen
+Integritätsschutz der Umwelterfassung
+Jamming
+Jamming der digitalen Zugschlussscheibe
+Jamming der drahtlosen Kommunikation
+Jamming des Kommunikationsnetzwerkes
+Jamming\nFRMCS/Satellitenfunk
+KI manipulieren
+KI manipulieren\n(siehe Reise- und Lebensmanagement)
+KI-Modell durch manipuliertes austauschen
+KI-Modell täuschen durch Adversarial Attacks
+Kabel zerstören
+Kameras kompromittieren
+Kameras manipulieren
+Kameras manipulieren\n(siehe Reise- und Lebensmanagement)
+Kenntnis des 3DES-Schlüssels erlangen
+Kollision verursachen
+Kombination aus\nSecurity Controls für\nzwei Blattknoten\n
+Kommunikation abhören
+Kommunikation manipulieren
+Kommunikation mit Disposition unterbinden
+Kommunikation mit Stellwerk unterbinden
+Kommunikation stören
+Kommunikation unterbrechen
+Kommunikationsnetz belauschen
+Kommunikationsnetz kompromittieren
+Kommunikationswege abhören
+Kommunikationswege\nabhören
+Kompromittierte Sichere Hardware einschleusen
+Kompromittierung Fahrzeugbus
+Kryptographisches Material kompromittieren
+Kupplungsvorgang verhindern
+Logistikdaten manipulieren
+Lokalisierung der Frachteinheiten behindern
+Lokalisierung manipulieren
+MFA durch extra Freigabe der Buchung
+ML-Modell manipulieren
+Malware einschleusen
+Malware welche die Daten nach Empfang verändert
+Malware/Bugs in Smart Contracts
+Man-in-the-Middle Angriff
+Manipulation Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege
+Manipulation Datenbestand Rechenzentrum
+Manipulation Feldelement
+Manipulation Feldelement\n(Gleisfreimeldung, Zugintegrität, Bahnübergang)
+Manipulation Feldelement\n(Signal, Weiche)
+Manipulation KI-Modell
+Manipulation KI-Modell\n(siehe Reise- und Lebensmanagement)
+Manipulation Kommunikationsnetzwerk
+Manipulation Lokalisierungsinformationen
+Manipulation Maschinelles Lernen
+Manipulation Ortungs-/ Registrierungsinformationen
+Manipulation ausgewählter Datensätze mit Bedarfsinformationen der Fracht (Ort, Lieferzeit, ...)
+Manipulation der Ablaufbremse
+Manipulation der Auswertealgorithmen (KI)
+Manipulation der DAK
+Manipulation der Daten am Sensor (Fahrzeug)
+Manipulation der Daten am Sensor (Infrastruktur)
+Manipulation der Daten beim Verkehrsträger
+Manipulation der Daten im Rechenzentrum
+Manipulation der Daten\nvom mobilen Endgerät
+Manipulation der Datenübertragung
+Manipulation der FRMCS-Datenübertragung vom Sensor
+Manipulation der Fahrsteuerung
+Manipulation der Fahrsteuerung und Fahrwegsicherung
+Manipulation der Fahrsteuerung\n(siehe Anwendungsfall ATO)
+Manipulation der Fahrzeug-BZ-Kommunikation\n(Safety-Rückfallebene vorhanden)
+Manipulation der Gleisfreimeldung
+Manipulation der Gleisfreimeldung\n(ETCS L2oS)
+Manipulation der Grenzwerte
+Manipulation der Informationen zum Abnutzungsvorrat
+Manipulation der Informationen zur Gleisbelegung
+Manipulation der Informationen über die Fracht\n(Lieferzeit, -ort, -anforderugen, ...)
+Manipulation der Kameras\n(siehe Reise- und Lebensmanagement)
+Manipulation der Kommunikation
+Manipulation der Label der "korrekten" Daten
+Manipulation der Lokalisierung
+Manipulation der Messdaten zum Ist-Zustand der Lieferung
+Manipulation der Quellinformationen für den Sensor
+Manipulation der Sensoren
+Manipulation der Sensorik (Lichtschranken)
+Manipulation der Testfälle
+Manipulation der Testfälle (siehe Intermodale Reisekette)
+Manipulation der Wagenliste durch schreibenden Zugriff
+Manipulation der Zugintegritätsprüfung
+Manipulation der Zugintegritätssysteme
+Manipulation der automatisierten Abdrücklock
+Manipulation der sicheren Lokalisierung
+Manipulation der Übertragung
+Manipulation der Übertragung von Sensor zu Rechenzentrum
+Manipulation der\nV2I-Kommunikation
+Manipulation der\nV2V-Kommunikation
+Manipulation des Algorithmus
+Manipulation des Datenbestandes
+Manipulation des Datenbestandes (Digitaler Zwilling)
+Manipulation des Datenbestandes (siehe Intermodale Reisekette)
+Manipulation des Datenbestandes\n(Digitaler Zwilling)
+Manipulation des Datenbestandes\n(siehe Intermodale Reisekette)
+Manipulation des Datenspeichers
+Manipulation des Kupplungsvorgangs
+Manipulation des Satellitenfunk an der Funktstelle
+Manipulation des digitalen Kartenmaterials
+Manipulation von Daten auf der Satellitenfunk-Strecke
+Manipulation von FRMCS
+Manipulation von Lastsensoren
+Manipulation von Nahfeld-Sensoren am Fahrzeug (u.a. für Geschwindigkeits- und Abstandsmessung)
+Manipulation von Nahfeld-Sensoren am Fahrzeug\n(u.a. für Geschwindigkeits- und Abstandsmessung)
+Manipulation von Sendern\nbei Servicezentrale
+Manipulation von Sendern\nfür Fahrgast-Informationen
+Manipulation von Sensordaten
+Manipulation von Sensoren
+Manipulation von Sensoren\nam Fahrzeug
+Manipulation von\nBluetooth
+Manipulation von\nKupplungs- und Platooningvorgängen
+Manipulation von\nLoRa-Sendern
+Manipulation von\nMobilfunk-Sendern
+Manipulation von\nVorort-Sender
+Manipulation von\nZigBee
+Manipulation übertragener Daten
+Manipulation/MitM des Übertragungssystems
+Manipulation\nOdometrie
+Manipulation\nder FRMCS-Datenübertragung an der Mobilstation
+Manipulation\nder FRMCS-Datenübertragung auf der Luftschnittstelle
+Manipulation\nvon FRMCS
+Manipulation\nvon Sensordaten
+Marktmanipulation zum Schaden/Vorteil einer Gruppe
+Marktmanipulation zum\nSchaden/Vorteil einer Gruppe
+Marktmanipulation\nzum Schaden/Vorteil einer Gruppe
+Maßnahmenbündel reduziert Risiko der Personenidentifizierung auf "low"
+Missbrauch von Rechten oder Admin-Zugriff
+Mit Öffentliche Daten / Medien / Sozialen Netzwerken / Daten Dritter abgleichen bzw. korrelieren
+MitM auf V2I-Kommunikation
+MitM auf V2V-Kommunikation
+Mitarbeiterschulung
+Mobiles Endgerät abhören
+Moderates Risiko zur Strafvereitlung aus beschränkter Verfügbarkeit des Datenbestands könnte akzeptiert werden.
+Montieren eines kompromittierten Sensors
+Multi-Faktor-Authentifizierung
+Need-to-Know-Prinzip
+Netzsegmentierung
+Netzvermaschung
+Nutzer nachstellen
+Nutzung des Roboterassistenten einer Person zuordnen
+Objektschutz
+Penetrationstests
+Personal an falsche / unnötige Orte schicken
+Personenidentifizierung ausnutzen\n(siehe Personenidentifizierung)
+Persönliche Endgeräte manipulieren
+Persönliches Endgerät abhören
+Persönliches Endgerät\nabhören
+Physische Eigenschaften des LWL prüfen
+Physische Manipulation
+Physischer Schutz
+Plausibilitätsprüfung
+Preis manipulieren
+Privacy Enhancing Technologies
+Prüfungsmodell manipulieren
+Ransomware einschleusen
+Reaktionsfähigkeit auf Sicherheitslücken
+Rechenzentrum auslasten
+Rechenzentrum zerstören
+Redundanz
+Regeln verfälschen
+Reiseempfehlung manipulieren
+Reiseempfehlungen manipulieren
+Reisende vor überlastete Waggons lenken
+Reisenden fehlleiten\n(nicht ans Ziel bringen)
+Remote Attestation
+Replay-Angriff
+Replay-Schutz
+Reputationsschaden Betreiber
+Reputationsschaden Einzelperson
+Reputationsschaden Hersteller
+Reputationsschaden\nBetreiber
+Reputationsschaden\nEinzelperson
+Reservierte Weiche vorzeitig freigeben
+Reservierten Streckenabschnitt vorzeitig freigeben
+Resilienz
+Ressourcen abschalten/zerstören/beschränken
+Roboterassisten physisch sabotieren / zerstören
+Roboterassistent kompromittieren
+Roboterassistenten manipulieren
+Roboterassistenten physisch sabotieren / zerstören
+Robustheit
+Satellitenfunk Jamming
+Schutz vor Schadcode
+Schwachstellenscans
+Schwächen in 3DES ausnutzen
+Schädigung der Güter
+Secure Boot
+Security-Logging
+Security-Monitoring
+Sensor emulieren
+Sensoren manipulieren
+Sensorik (Kamera, Bluetooth etc.) des Roboterassistenten auswerten
+Sicherer Datenspeicher
+Sicherer Speicher
+Siehe Anwendungsfall Ferngesteuerte Fahrzeuge
+Skalierbar Feldelemente umstellen\nOhne Sicherheitsreaktion
+Skalierbarkeit
+Smart Contracts manipulieren
+Social Engineering durchführen
+Software-Tests
+Source Code Audit
+Spezielle Addressen für Smart Contracts ausschließen
+Spoofing der digitalen Zugschlussscheibe
+Spoofing der\nV2I-Kommunikation
+Spoofing der\nV2V-Kommunikation
+Spoofing des Datenfunkes\n(GSM-R oder FRMCS)
+Spoofing\n(Fake-Sensor)
+Spoofing\nFRMCS/Satellitenfunk
+Sprachbefehl einspielen
+Standort-Informationen\nmanipulieren
+Steuerungsdaten am Roboterassistenten manipulieren
+Steuerungssoftware manipulieren
+Strafvereitelung
+Strategisches und logisches Wissen zur "unauffälligen" Manipulation
+Störung Kommunikation Sensoren
+Störung der Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege
+Störung der Disposition
+Störung der Disposition\n
+Störung der Fahrzeug-BZ-Kommunikation
+Störung der Frachtübergabe zwischen Verkehrsträgern
+Störung der Kommunikation
+Störung der Kommunikation mit Betriebszentrale
+Störung der Kommunikation zwischen Verkehrsträgern
+Störung der Satellitenfunk-Kommunikation
+Störung der V2V- und V2I-Kommunikation
+Störung der Verbindung\nzum mobilen Endgerät
+Störung der Übergänge zwischen Verkehrsträgern
+Störung der Übergänge zwischen Verkehrsträgern\n(siehe Intermodale Güterabfertigung)
+Störung der\nNetzwerkverbindungen
+Störung der\nV2I-Kommunikation
+Störung der\nV2V-Kommunikation
+Super User / Privilegierten Account übernehmen
+Systemhärtung
+Ticket manipulieren
+Trainingsdaten beeinflussen (Bias)
+Täuschung der Fahrwegbeobachtung\nVerhinderung der Hinderniserkennung
+Täuschung der Fahrwegsicherung
+Täuschung der Störungserkennung\n(Falsche physische Hindernisse aufstellen)
+Umständliche Wege der Reisenden provozieren
+Unautorisierte Reisen buchen
+Unbewusste Manipulation
+Unbewusste Manipulation (siehe Intermodale Reisekette)
+Unbrauchbarmachung der Bedarfsanmeldungen der Betreiber
+Unterdrückung von Warnmeldungen
+Unterdrückung/Umleitung der Bezahlung des Trassenentgeltes
+V2I-Kommunikation manipulieren
+Validierung und Tests (inkl. regelmäßige Wiederholung)
+Validierung von Plänen
+Verbinder
+Verbindung zu Betriebszentrale stören
+Verbindung zu Fahrzeugen stören
+Verbrauch der Cloud-Ressourcen durch benachbarte Anwendungen
+Verfügbarkeit der Reisendenlenkung beschränken
+Verfügbarkeit des Algorithmus beschränken
+Verfügbarkeit des Cloud Computings beschränken
+Verfügbarkeit des Datenbestandes beschränken
+Verfügbarkeit des Datenbestands einschränken\n(siehe Kontaktlose Fahrscheinkontrolle)
+Verfügbarkeit des Dienstes beschränken
+Verfügbarkeit des Netzwerkes beschränken
+Verfügbarkeit des Übertragungsnetzwerkes beschränken
+Verhinderung der Erfüllung des Smart Contracts
+Verhinderung der Hindernismeldung\nFälschung der Freimeldung
+Verhinderung des Zugriffs auf den Distributed Ledger zur Fahrwegsicherung durch Verhinderung der Kommunikation
+Verifikation von Smart Contracts
+Verkehrsdaten manipulieren
+Verletzung der Privatsphäre
+Verletzung der körperlichen Unversehrtheit
+Verletzung von Eigentum
+Verletzung von Gesetzen und Verordnungen
+Verletzung von\nGesetzen und Verordnungen
+Verschlüsselung
+Verspätung provozieren
+Verspätungen provozieren
+Verwendung unbrauchbarer Daten
+Verzögerung durch Distributed Ledger Consensus
+Vibrationen eintragen
+Vier-Augen-Prinzip
+Voice Activation auslösen
+Vorhersage des maschinellen Lernens manipulieren
+Vortäuschen einer betrieblichen Störung\n(bspw. Türstörung)
+Vortäuschen eines Sensors\n(Lidar, Radar, Kamera etc.)
+Vortäuschen oder Herbeiführen eines Hindernis
+Vortäuschung der Betriebsbereitschaft\n(Lebenszeichen, Fail-Safe)
+Was ist mit dem Anbringen von kompormitierten Sensoren? Siehe Ferngesteuerte Fahrzeuge
+Weiche zur Unzeit umstellen
+Weniger Fahrzeuge werden bereitgestellt als benötigt
+Werte von Dezentralem Stellwerk
+Werte von Intermodale Reisekette \n(Gepäckziel manipulieren)
+Wissen über Datensatz, Ziel und Art der notwendigen Manipulation (Verständnis Algorithmus)
+Zerstörung
+Zerstörung der Güterwagen
+Zerstörung der Infrastruktur
+Zerstörung/Beschädigung des Rechenzentrums
+Zielgerichtete \nManipulation Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege
+Zug durch Verhindern der Positionsmeldung verschwinden lassen
+Zugangsbeschränkung
+Zugangsschutz
+Zugkollision herbeiführen
+Zugposition fälschen
+Zugposition manipulieren
+Zugriff "Meldeportal"\nfür Bedarfsmeldung
+Zugriff Bordnetzwerk
+Zugriff Daten Rechenzentrum
+Zugriff auf Datenbestand (Videomaterial)
+Zugriff auf Live-Feed
+Zugriff auf Live-Feed der Kameras
+Zugriff\nBordnetzwerk
+Zugriffsschutz
+drahtgebundene Kommunikation
+siehe Anwendungsfall Virtuelles Kuppeln
+siehe Anwendungsfall Virtuelles Kuppeln/Ferngesteuerte Fahrzeuge
+siehe Reise- und Lebensmanagement
+Öffnung der Kupplung zur Unzeit per Fernsteuerung
+Überwachung zur Nachverfolgung
