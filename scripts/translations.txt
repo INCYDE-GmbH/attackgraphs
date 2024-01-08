@@ -41,60 +41,60 @@ Annahme: Arbeitszeit wird in Resourcen abgebildet = Assumption: working hours ar
 Annahme: Rein zustandsbasierte Instandhaltung und Instandsetzung. Das heißt, eine 100% datenbasierte Instandhaltung ohne feste Zyklen. Hintergrund: Reduktion Aufwand. Risiko: keine unabhänige Kontrolle der Istwerte. = Assumption: Purely condition-based maintenance and repair. This means 100% data-based maintenance without fixed cycles. Background: Reduction in effort. Risk: no independent control of actual values.
 Anzeigetafeln manipulieren
 App manipulieren = Manipulate App
-Aufdecken privater Daten
-Aufdeckung privater Daten\n(Standort, Biometrische Daten)
-Aufdeckung privater Daten\n(Vorlieben, Gewohnheiten)
-Ausgabe gefälschtes Zertifikat
-Ausgabe manipulierter Bauplan
-Auslastungserkennung manipulieren
-Auslastungsinformationen nicht anzeigen
-Ausnutzen mangelhafter Trennung
+Aufdecken privater Daten = Disclosing Private Data
+Aufdeckung privater Daten\n(Standort, Biometrische Daten) = Disclosure of Private Data\n(Location, Biometric Data)
+Aufdeckung privater Daten\n(Vorlieben, Gewohnheiten) = Disclosure of Private Data\n(Preferences, Habits)
+Ausgabe gefälschtes Zertifikat = Issueing Forged Certificate
+Ausgabe manipulierter Bauplan = Issueing Manipulated Blueprint
+Auslastungserkennung manipulieren = Manipulate Occupancy Detection
+Auslastungsinformationen nicht anzeigen = Don't show Occupancy Information
+Ausnutzen mangelhafter Trennung = Exploit Defective Separation
 Automated Personal Assistant kompromittieren = Compromise Automated Personal Assistant
 Automated Personal Assistant manipulieren = Manipulate Automated Personal Assistant
 Backups = Backups
-Befahren der Infrastruktur ohne Fahrwegsicherung
+Befahren der Infrastruktur ohne Fahrwegsicherung = Use Infrastructure without Route Protection
 Bekanntwerden von Messdaten oder Prognose = Becoming aware of measurement data or forecasts
-Benutzer unbefugt orten
-Beschränkte Berechtigungen
-Bewegungen des Roboterassistenten belauschen
-Bilder von stationären Kameras auswerten
-Bildsignal fälschen
-Biometrische Authentifikation (Stimmanalyse: Tonhöhe, Sprachgeschwindigkeit, Muster)
-Blockade der Güterabfertigung (Ausfahrt)
-Blockade der Satellitenfunk-Strecke
+Benutzer unbefugt orten = Unauthorized Tracking of User
+Beschränkte Berechtigungen = Restrictid Permissions
+Bewegungen des Roboterassistenten belauschen = Eavesdropping Movements of Roboter Assistants
+Bilder von stationären Kameras auswerten = Evaluate Images of Stationary Cameras
+Bildsignal fälschen = Forge Image Signal
+Biometrische Authentifikation (Stimmanalyse: Tonhöhe, Sprachgeschwindigkeit, Muster) = Biometric Authentification (Voice Analysis: Pitch, Speaking Rate, Speech Pattern)
+Blockade der Güterabfertigung (Ausfahrt) = Block Dispatching of Goods
+Blockade der Satellitenfunk-Strecke = Block Satellite Broadcasting Route
 Blockade der Sensoren = Block Sensors
-Blockade der Sensoren für FRMCS
+Blockade der Sensoren für FRMCS = Block FRMCS Sensors
 Blockade der\nSensoren = Block Sensors
-Bordkommunikation unterdrücken
+Bordkommunikation unterdrücken = Supress Board Communication
 Business Continuity Management = Business Continuity Management
-Chaos schüren
-Chatbot manipulieren
+Chaos schüren = Incite Chaos
+Chatbot manipulieren = Manipulate Chatbot
 Code Signing = Code Signing
 Daten ausleiten
 Daten löschen = Delete Data
-Daten unlesbar machen
-Datenaustausch manipulieren
-Datenbestand (Customer-Experience-Werte) manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle)
-Datenerfassung Manipulieren
+Daten unlesbar machen = Corrupt Data
+Datenaustausch manipulieren = Manipulate Data Exchange
+Datenbestand (Customer-Experience-Werte) manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle) = Manipulate Data Stock (Customer-Experience-Data)\n(see Contactless Ticket Control)
+Datenerfassung Manipulieren = Manipulate Data Collection
 Datenkommunikation physisch stören = Physical disruption of transmission
 Datenquelle austauschen
-Datensparsamkeit
-Datenspeicher modifizieren
-Datensätze korrelieren
+Datensparsamkeit = Data Minimization
+Datenspeicher modifizieren = Modify Data Storage
+Datensätze korrelieren = Correlate Data Sets
 Datenüberflutung im RZ (remote) = Data overload at data center (remote)
-Datenübermittlung\nan Servicezentrale stören
-Datenübertragung der Auswertung manipulieren
-De-Synchronisation des Modells von der Realität
+Datenübermittlung\nan Servicezentrale stören = Disturb Data Transmission\n to Service Center
+Datenübertragung der Auswertung manipulieren = Manipulate Data Transmission of the Evaluation
+De-Synchronisation des Modells von der Realität = Desynchronization of Model and Reality
 Denial of Service Rechenzentrum = Denial of Service Data Center
-Detektions-Signaturen ändern
-Diebstahl von Güterwagen
-Digitale Karte manipulieren
+Detektions-Signaturen ändern = Change Detection Signatures
+Diebstahl von Güterwagen = Theft of Freight Wagons
+Digitale Karte manipulieren = Manipulate Digital Map
 Digitale Signatur = Digital Signature
-Digitalen Zwilling manipulieren
-Digitalisierung der Bestandspläne manipulieren
-Digitalisierung der Umwelt manipulieren (Lidar-/Laser-Scanner, Bilderkennung)
-Dokumentenklassifizierung
-Drahtlose Nahfeld-Kommunikation manipulieren
+Digitalen Zwilling manipulieren = Manipulate Digital Twin
+Digitalisierung der Bestandspläne manipulieren = Manipulate Digitalization of Existing Plans
+Digitalisierung der Umwelt manipulieren (Lidar-/Laser-Scanner, Bilderkennung) = Manipulate Digitalization of Environment (Lidar-/Laser-Scanner, Image Recognition)
+Dokumentenklassifizierung = Document Classification
+Drahtlose Nahfeld-Kommunikation manipulieren = Manipulate Wireless Near Field Communication
 Einfügen und Ausnutzen von Backdoors
 Eingabe falscher, ungenauer Algorithmen = input wrong, inaccurate algorithms
 Einschleusen eines Nothaltes
