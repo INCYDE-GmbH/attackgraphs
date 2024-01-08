@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-23T14:57:28.340Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="ypDN4_vLdnRQYLVdx0wo" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2024-01-08T16:07:16.312Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="aS4aKRL3M4hBcyYNMXu0" compressed="false" version="22.1.16" type="device">
   <diagram id="74B6DF1LeCddEMVfkx5V" name="Page-1">
-    <mxGraphModel dx="-877" dy="1149" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="-1116" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -80,7 +80,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Marktmanipulation zum&#xa;Schaden/Vorteil einer Gruppe" id="2Vn8Idm6m4d48psDPkdB-3">
+        <object label="Marktmanipulation&#xa;zum Schaden/Vorteil einer Gruppe" id="2Vn8Idm6m4d48psDPkdB-3">
           <ag_attributes _risk="L" _marking="2Vn8Idm6m4d48psDPkdB-7;2Vn8Idm6m4d48psDPkdB-8" _weight="2Vn8Idm6m4d48psDPkdB-7:2;2Vn8Idm6m4d48psDPkdB-8:3" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
@@ -324,7 +324,7 @@
             <mxGeometry x="3083" y="640" width="150" height="75" as="geometry" />
           </mxCell>
         </object>
-        <object label="Reiseempfehlung manipulieren" Resources="" Knowledge="" Location="" id="2Vn8Idm6m4d48psDPkdB-7">
+        <object label="Reiseempfehlungen manipulieren" Resources="" Knowledge="" Location="" id="2Vn8Idm6m4d48psDPkdB-7">
           <labelValue labelValue="" />
           <ag_attributes label="NaN" Resources="4" Knowledge="5" Location="0" _marking="2Vn8Idm6m4d48psDPkdB-75" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />

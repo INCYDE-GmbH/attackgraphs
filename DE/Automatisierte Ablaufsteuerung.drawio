@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-01-05T14:27:45.719Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="52rYJSjz9c64GBzQdxBK" compressed="false" version="22.1.16" type="device">
+<mxfile host="Electron" modified="2024-01-08T16:03:49.008Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="LIOaPsng9oDfNrt27f_D" compressed="false" version="22.1.16" type="device">
   <diagram id="UJWsQ4LCsPfUxE9BL8zf" name="Seite-1">
     <mxGraphModel dx="2603" dy="2490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -1064,13 +1064,6 @@
           <ag_computed_attributes />
           <mxCell style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
             <mxGeometry x="-186.5" y="140" width="236.5" height="60" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="Was ist mit dem Anbringen von kompormitierten Sensoren? Siehe Ferngesteuerte Fahrzeuge" id="xyVF9SAY_BV8FO5NlA6w-28">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-            <mxGeometry x="270" y="-430" width="120" height="80" as="geometry" />
           </mxCell>
         </object>
         <object label="Zugangsbeschränkung&#xa;Objektschutz&#xa;Physischer Schutz&#xa;Redundanz" Resources="2" Knowledge="1" Location="0" id="6gxA2HeomPknZWwxGKaB-1">

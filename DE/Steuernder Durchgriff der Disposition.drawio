@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-23T15:30:49.058Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="5tXodY_y3w9Qwt1-a5Zd" compressed="false" version="19.0.2" type="device">
+<mxfile host="Electron" modified="2024-01-08T16:07:42.825Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="uETu0E02yNI7Lk4njeg_" compressed="false" version="22.1.16" type="device">
   <diagram id="9zJ72fLUXO1Tqudbw8W7" name="Page-1">
-    <mxGraphModel dx="3160" dy="2171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <object tooltip="" id="0">
           <ag_global_attributes>
@@ -101,7 +101,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Verspätungen provozieren" id="Uiwz3RxvrwPI8K2oxm7w-10">
+        <object label="Verspätung provozieren" id="Uiwz3RxvrwPI8K2oxm7w-10">
           <ag_attributes label="Spoofing der digitalen Zugschlussscheibe" Resources="4" Knowledge="4" Location="1" _marking="Uiwz3RxvrwPI8K2oxm7w-46" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -269,13 +269,13 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Marktmanipulation zum Schaden/Vorteil einer Gruppe" id="Uiwz3RxvrwPI8K2oxm7w-19">
+        <object label="Marktmanipulation&#xa;zum Schaden/Vorteil einer Gruppe" id="Uiwz3RxvrwPI8K2oxm7w-19">
           <ag_attributes _risk="L" _marking="Uiwz3RxvrwPI8K2oxm7w-18" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
           <mxCell style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
-            <mxGeometry x="1660" y="190" width="180" height="48" as="geometry" />
+            <mxGeometry x="1660" y="190" width="200" height="48" as="geometry" />
           </mxCell>
         </object>
         <object id="1qkWPqTPLnTGLn8MYxJF-53">
