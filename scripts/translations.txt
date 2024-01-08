@@ -29,7 +29,7 @@ Angriffsziel\nKontaklose Fahrscheinkontrolle = Attack Target\nContactless Ticket
 Angriffsziel\nOptimierte Reise- und \nPreisgestaltung = Attack Target\nOptimised Travel and Price Arrangement
 Angriffsziel\nOptimierung der Fahrgastwechselzeit = Attack Target\nOptimization of Passenger Changeover Time
 Angriffsziel\nPersonenidentifizierung  = Attack Target\nIdentification of Persons
-Angriffsziel\nReise- und Lebensmanagement = Attack Target\nTravel and Live Management
+Angriffsziel\nReise- und Lebensmanagement = Attack Target\nTravel and Life Management
 Angriffsziel\nReisendenlenkung durch den Bahnhof = Attack Target\nPassenger Guidance through the Train Station
 Angriffsziel\nSteuernder Durchgriff der Disposition = Attack Target\nSteering Action for Scheduling
 Angriffsziel\nVirtuelles Kuppeln = Attack Target\nVirtual Coupling
@@ -65,7 +65,7 @@ Blockade der Satellitenfunk-Strecke = Block Satellite Broadcasting Route
 Blockade der Sensoren = Block Sensors
 Blockade der Sensoren für FRMCS = Block FRMCS Sensors
 Blockade der\nSensoren = Block Sensors
-Bordkommunikation unterdrücken = Supress Board Communication
+Bordkommunikation unterdrücken = Suppress Board Communication
 Business Continuity Management = Business Continuity Management
 Chaos schüren = Incite Chaos
 Chatbot manipulieren = Manipulate Chatbot
@@ -82,7 +82,7 @@ Datensparsamkeit = Data Minimization
 Datenspeicher modifizieren = Modify Data Storage
 Datensätze korrelieren = Correlate Data Sets
 Datenüberflutung im RZ (remote) = Data overload at data center (remote)
-Datenübermittlung\nan Servicezentrale stören = Disturb Data Transmission\n to Service Center
+Datenübermittlung\nan Servicezentrale stören = Disturb Data Transmission\nto Service Center
 Datenübertragung der Auswertung manipulieren = Manipulate Data Transmission of the Evaluation
 De-Synchronisation des Modells von der Realität = Desynchronization of Model and Reality
 Denial of Service Rechenzentrum = Denial of Service Data Center
@@ -95,19 +95,19 @@ Digitalisierung der Bestandspläne manipulieren = Manipulate Digitalization of E
 Digitalisierung der Umwelt manipulieren (Lidar-/Laser-Scanner, Bilderkennung) = Manipulate Digitalization of Environment (Lidar-/Laser-Scanner, Image Recognition)
 Dokumentenklassifizierung = Document Classification
 Drahtlose Nahfeld-Kommunikation manipulieren = Manipulate Wireless Near Field Communication
-Einfügen und Ausnutzen von Backdoors
+Einfügen und Ausnutzen von Backdoors = Insert and Exploit Backdoors
 Eingabe falscher, ungenauer Algorithmen = input wrong, inaccurate algorithms
-Einschleusen eines Nothaltes
-Einschleusen/Löschen von plausiblen Nachrichten
+Einschleusen eines Nothaltes = Insert Emergency Stop
+Einschleusen/Löschen von plausiblen Nachrichten = Insert/Delete plausible Messages
 Einschränkung einer kritischen Dienstleistung = Disruption of a Critical Service
 Einspeisen verfälschter Daten = Feed in manipulated data
 Einspeisen zusätzlicher, verfälschter "Erfahrungswerte" = Feed in additional manipulated "experience"
-Einspielen am Sensor\n(Messwerte Lidar, Temperatur etc.)
-Einspielen falscher Sensordaten
-Empfehlungen manipulieren
+Einspielen am Sensor\n(Messwerte Lidar, Temperatur etc.) = Insert at Sensor\n(Measurements Lidar, Temperature, etc.)
+Einspielen falscher Sensordaten = Insert incorrect sensor data
+Empfehlungen manipulieren = Manipulate Recommendations
 Energieversorgung stören = Disrupt power supply
-Entfernten Zugang auf Bordnetzwerk erlangen
-Ergebnis fälschen
+Entfernten Zugang auf Bordnetzwerk erlangen = Acquire Remote Access to Board Network
+Ergebnis fälschen =  Falsify Result
 Erlangung Datenzugriff Sensor remote = Gain Data Access Sensor remote
 Erlangung Datenzugriff Sensor vor Ort = Gain Data Access Sensor local
 Erlangung Zugriff Datenspeicher\nremote = Gain Access Data Storage\nremote
@@ -116,42 +116,42 @@ Erlangung Zugriff Rechenzentrum remote = Gain Access Data Center remote
 Erlangung Zugriff Rechenzentrum vor Ort = Gain Access Data Center local
 Erlangung Zugriff Rechenzentrum\nremote = Gain Access Data Center\nremote
 Erlangung Zugriff Rechenzentrum\nvor Ort = Gain Access Data Center\nlocal
-Erpressung
-Erschaffung von Geisterzügen
-Erschleichen der Zugangsdaten eines Lieferanten
-FOS-Einheit kompromittieren
-FOS-Einheit kompromittieren\n(siehe Dezentrales Stellwerk)
-FRMCS Jamming
-FRMCS Jamming\nGSM-R Jamming
-FRMCS Kommunikation manipulieren
-Fahrempfehlungen manipulieren
-Fahrgastzählung blockieren
-Fahrgastzählung\nblockieren
-Fahrscheindaten manipulieren
-Fahrscheinkontrolle manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle)
-Fahrsteuerung kompromittieren
-Fahrwege manipulieren
-Fahrwegeigenschaften verändern oder Gefahrpunkte löschen
-Falsche Eingabe von Kapazitätsverfügbarkeiten Betreiber-intern (zu hoch/zu niedrig)
-Falsche Empfehlung an das Reise- und Lebensmanagement weitergeben
-Falsche Empfehlung auf Automated Personal Assistant
-Falsche Führung durch Roboterassistenten
-Falsche Meldung über Lage von Fahrwegelementen oder Belegung von Gleisabschnitten
-Falsche Sensordaten einschleusen (Geschwindigkeit, Bremskraft, ...)
-Falsche Steuerbefehle einschleusen (Fahrmotor, Bremssteuerung, ...)
-Falsche Vorgabe durch kompromittiertes Leitsystem kommunizieren
-Falsche Wagen kuppeln
-Falsche Weichenlage erzwingen
-Falsche Zusammenstellung
-Falschen 3DES-Schlüssel einschleusen
-Falsches Update einspielen
-Falschinformationen zur Ladung führen zur Schädigung \n(z.B. Abstoßen verboten, max. Geschwindigkeit, ...)
-Falschmeldung anzeigen
-Fehler in Sicherer Hardware ausnutzen
-Fehlerhafte Ortung\ndes Nutzers
-Fehlinformationen in Distributed Ledger einschleusen
-Feldelement kompromittieren
-Fernsteuerung übernehmen
+Erpressung = Extortion
+Erschaffung von Geisterzügen = Creation of Ghost Trains
+Erschleichen der Zugangsdaten eines Lieferanten = Obtain Access Data of a Supplier
+FOS-Einheit kompromittieren = Compromise FOS-unit
+FOS-Einheit kompromittieren\n(siehe Dezentrales Stellwerk) = Compromise FOS-unit\n(see Decentralized Interlocking)
+FRMCS Jamming = FRMCS Jamming
+FRMCS Jamming\nGSM-R Jamming = FRMCS Jamming\nGSM-R Jamming
+FRMCS Kommunikation manipulieren = Manipulate FRMCS Communication
+Fahrempfehlungen manipulieren = Manipulate Driving Recommendation
+Fahrgastzählung blockieren = Block Passenger Counting
+Fahrgastzählung\nblockieren = Block\nPassenger Counting
+Fahrscheindaten manipulieren = Manipulate Ticket Data
+Fahrscheinkontrolle manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle) = Maniputlate Ticket Control\n(see Contactless Ticket Control)
+Fahrsteuerung kompromittieren = Compromise Drive Control
+Fahrwege manipulieren = Manipulate Travel Route
+Fahrwegeigenschaften verändern oder Gefahrpunkte löschen = Change Route Characteristics or Delete Danger Spots
+Falsche Eingabe von Kapazitätsverfügbarkeiten Betreiber-intern (zu hoch/zu niedrig) = Wrong input of Capacity Utilization Operator-internal
+Falsche Empfehlung an das Reise- und Lebensmanagement weitergeben = Forward Wrong Recommendation to the Travel and Life Management
+Falsche Empfehlung auf Automated Personal Assistant = Wrong Recommendation on Automated Personal Assistant
+Falsche Führung durch Roboterassistenten = Wrong Guidance by Roboter Assistant
+Falsche Meldung über Lage von Fahrwegelementen oder Belegung von Gleisabschnitten = Wrong Notification about Position of Track Elements or Occupancy of Track Sections
+Falsche Sensordaten einschleusen (Geschwindigkeit, Bremskraft, ...) = Insert false Sensor Data (Speed, Brake Force, ...)
+Falsche Steuerbefehle einschleusen (Fahrmotor, Bremssteuerung, ...) = Insert false Control Command
+Falsche Vorgabe durch kompromittiertes Leitsystem kommunizieren = Communicate false Guideline through Compromised Control System
+Falsche Wagen kuppeln = Coupling wrong Wagons
+Falsche Weichenlage erzwingen = Enforce wrong Point Position
+Falsche Zusammenstellung = Wrong Composition
+Falschen 3DES-Schlüssel einschleusen = Insert wrong 3DES-Key
+Falsches Update einspielen = Insert wrong Update
+Falschinformationen zur Ladung führen zur Schädigung \n(z.B. Abstoßen verboten, max. Geschwindigkeit, ...) = Wrong Information about Cargo lead to Damage\n(e.g. Repelling prohibited, max. Speed, ...)
+Falschmeldung anzeigen = Show False Report
+Fehler in Sicherer Hardware ausnutzen = Exploit Error in Secure Hardware
+Fehlerhafte Ortung\ndes Nutzers = Incorrect Localization\nof Users
+Fehlinformationen in Distributed Ledger einschleusen = Insert wrong Information in Distributed Ledger
+Feldelement kompromittieren = Compromise Field Element
+Fernsteuerung übernehmen = Take over Remote Control
 Finanzieller Schaden = Financial Damage
 Finanzieller Schaden Betreiber = Financial Damage Operator
 Finanzieller Schaden Einzelperson  = Financial Damage Individual
@@ -160,23 +160,23 @@ Finanzieller Schaden\nBetreiber = Financial Damage\nOperator
 Finanzieller Schaden\nEinzelperson = Financial Damage\nIndividual
 Finanzieller Schaden\nSpediteur = Financial Damage\nFreight Forwarder
 Firewall = Firewall
-Formales Modell manipulieren
+Formales Modell manipulieren = Manipulate Formal Model
 Funk = wireless communication
-Fälschung Balisentelegramm
-Fälschung der Authentizität eines Datentelegramms
-Fälschung der Movement Authority
-Fälschung ortsfester Referenzpunkte
-Fälschung/Manipulation der Fahrwegempfehlungen (Journey Profiles) oder des Fahrplans
-GNSS Jamming
-GNSS Spoofing
-GNSS\nJamming
-GNSS\nSpoofing
-Gefälschtes V2I-Paket einschleusen
-Gefälschtes V2V-Paket einschleusen
-Gehärtetes Endgerät
-Gepäckziel manipulieren
-Geschwindigkeitsprofil manipulieren
-Hardware zerstören
+Fälschung Balisentelegramm = Forge Balise Telegram
+Fälschung der Authentizität eines Datentelegramms = Forge Authenticity of Data Telegram
+Fälschung der Movement Authority = Forge Movement Authority
+Fälschung ortsfester Referenzpunkte = Forge Stationary Reference Points
+Fälschung/Manipulation der Fahrwegempfehlungen (Journey Profiles) oder des Fahrplans = Forge/Manipulate Route Recommendations (Journey Profiles) or Train Schedule
+GNSS Jamming = GNSS Jamming
+GNSS Spoofing = GNSS Spoofing
+GNSS\nJamming = GNSS\nJamming
+GNSS\nSpoofing = GNSS\nSpoofing
+Gefälschtes V2I-Paket einschleusen = Insert forged V2I-Packet
+Gefälschtes V2V-Paket einschleusen = Insert forged V2V-Packet
+Gehärtetes Endgerät = Hardened Terminal
+Gepäckziel manipulieren = Manipulate Luggage Destination
+Geschwindigkeitsprofil manipulieren = Manipulate Speed Profile
+Hardware zerstören = Destroy Hardware
 Hier nur\nSecurity Control für\neinen Blattknoten\n
 Impersonation Rechenzentrum
 Individuellem Nutzer nachstellen
