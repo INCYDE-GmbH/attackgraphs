@@ -1,6 +1,6 @@
 
 (Absichtliche) Fehlkonfiguration der Ressourcenzuteilung
-(D)DoS
+(D)DoS = (D)DoS
 (Vor Fahrtantritt)\nLokalen Zugang auf Bordnetzwerk erlangen\n(freier Netzwerkport)
 1
 2
@@ -9,33 +9,33 @@
 5
 5G Jamming = 5G Jamming
 5G/FRMCS Jamming = 5G/FRMCS Jamming
-Aktualisierbarkeit der Algorithmen
-Als Chatbot ausgeben
-Anderen LWL anstecken
+Aktualisierbarkeit der Algorithmen = Updateability of Algorithms
+Als Chatbot ausgeben = Masquerade as Chatbot
+Anderen LWL anstecken = Connect another Optical Fiber
 Angriff Funkfernsteuerung = Attack Remote Control
 Angriff auf das\nMeldeportal (Online-Portal) selbst
 Angriff des nächstgelegenen Provider Knotens = Attack the nearest provider node
-Angriffsziel\nAutomatisierte Ablaufsteuerung
-Angriffsziel\nAutomatisierte Planung und Planprüfung
-Angriffsziel\nCloud-Stellwerk
-Angriffsziel\nDezentrales Stellwerk/Stellwerkloses Fahren
-Angriffsziel\nEmotions- und Absichtserkennung
-Angriffsziel\nFerngesteuerte Fahrzeuge ohne Intelligenz
-Angriffsziel\nGüterwegemanagement
+Angriffsziel\nAutomatisierte Ablaufsteuerung = Attack Target\nAutomated Hump Control
+Angriffsziel\nAutomatisierte Planung und Planprüfung = Attack Target\nAutomated Planning and Plan Review
+Angriffsziel\nCloud-Stellwerk = Attack Target\nCloud Interlocking
+Angriffsziel\nDezentrales Stellwerk/Stellwerkloses Fahren = Attack Target\nDecentralized Interlocking
+Angriffsziel\nEmotions- und Absichtserkennung = Attack Target\nEmotion and Intent Recognition
+Angriffsziel\nFerngesteuerte Fahrzeuge ohne Intelligenz = Attack Target\nRemote Controlled Rolling Stock
+Angriffsziel\nGüterwegemanagement = Attack Target\nFreight Route Management
 Angriffsziel\nIntelligente Instandhaltung = Attack Target\nPredictive Maintenance
-Angriffsziel\nIntermodale Güterabfertigung
-Angriffsziel\nIntermodale Reisekette
-Angriffsziel\nKontaklose Fahrscheinkontrolle
-Angriffsziel\nOptimierte Reise- und \nPreisgestaltung
-Angriffsziel\nOptimierung der Fahrgastwechselzeit
-Angriffsziel\nPersonenidentifizierung
-Angriffsziel\nReise- und Lebensmanagement
-Angriffsziel\nReisendenlenkung durch den Bahnhof
-Angriffsziel\nSteuernder Durchgriff der Disposition
-Angriffsziel\nVirtuelles Kuppeln
-Angriffsziel\nVollautomatisiertes Fahren
-Angriffsziel\nVorort-Informationen
-Angriffsziel\nZugsicherung mit ETCS (L2oS, L3)
+Angriffsziel\nIntermodale Güterabfertigung = Attack Target\nIntermodal Freight Handling
+Angriffsziel\nIntermodale Reisekette = Attack Target\nIntermodal Travel Chain
+Angriffsziel\nKontaklose Fahrscheinkontrolle = Attack Target\nContactless Ticket Control
+Angriffsziel\nOptimierte Reise- und \nPreisgestaltung = Attack Target\nOptimised Travel and Price Arrangement
+Angriffsziel\nOptimierung der Fahrgastwechselzeit = Attack Target\nOptimization of Passenger Changeover Time
+Angriffsziel\nPersonenidentifizierung  = Attack Target\nIdentification of Persons
+Angriffsziel\nReise- und Lebensmanagement = Attack Target\nTravel and Live Management
+Angriffsziel\nReisendenlenkung durch den Bahnhof = Attack Target\nPassenger Guidance through the Train Station
+Angriffsziel\nSteuernder Durchgriff der Disposition = Attack Target\nSteering Action for Scheduling
+Angriffsziel\nVirtuelles Kuppeln = Attack Target\nVirtual Coupling
+Angriffsziel\nVollautomatisiertes Fahren = Attack Target\nAutomated Driving
+Angriffsziel\nVorort-Informationen = Attack Target\nOn-Site Information
+Angriffsziel\nZugsicherung mit ETCS (L2oS, L3) = Attack Target\nETCS Train Protection
 Anhalten von Zügen auf der freien Strecke
 Annahme: Arbeitszeit wird in Resourcen abgebildet = Assumption: working hours are expressed as ressources
 Annahme: Rein zustandsbasierte Instandhaltung und Instandsetzung. Das heißt, eine 100% datenbasierte Instandhaltung ohne feste Zyklen. Hintergrund: Reduktion Aufwand. Risiko: keine unabhänige Kontrolle der Istwerte. = Assumption: Purely condition-based maintenance and repair. This means 100% data-based maintenance without fixed cycles. Background: Reduction in effort. Risk: no independent control of actual values.
