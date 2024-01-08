@@ -177,58 +177,56 @@ Gehärtetes Endgerät
 Gepäckziel manipulieren
 Geschwindigkeitsprofil manipulieren
 Hardware zerstören
-Hier nur\nSecurity Control für\neinen Blattknoten\n
-Impersonation Rechenzentrum
-Individuellem Nutzer nachstellen
-Individuellen Nutzer bloßstellen (shaming) / Veröffentlichen von individuellem Verhalten
-Individuelles Bewegungsprofil erstellen
-Individuum identifizieren
-Infrastrukturüberwachung täuschen
+Impersonation Rechenzentrum = Impersonation data center
+Individuellem Nutzer nachstellen = Stalk individual user
+Individuellen Nutzer bloßstellen (shaming) / Veröffentlichen von individuellem Verhalten = Shaming individual users / publishing individual behavior
+Individuelles Bewegungsprofil erstellen = Create an individual movement profile
+Individuum identifizieren = Identify individual
+Infrastrukturüberwachung täuschen = Deceive infrastructure monitoring
 Integritätsschutz der Umwelterfassung = Integrity Protection of Environment Monitoring
 Jamming = Jamming
-Jamming der digitalen Zugschlussscheibe
-Jamming der drahtlosen Kommunikation
-Jamming des Kommunikationsnetzwerkes
-Jamming\nFRMCS/Satellitenfunk
-KI manipulieren
-KI manipulieren\n(siehe Reise- und Lebensmanagement)
-KI-Modell durch manipuliertes austauschen
-KI-Modell täuschen durch Adversarial Attacks
-Kabel zerstören
-Kameras kompromittieren
-Kameras manipulieren
-Kameras manipulieren\n(siehe Reise- und Lebensmanagement)
-Kenntnis des 3DES-Schlüssels erlangen
-Kollision verursachen
-Kombination aus\nSecurity Controls für\nzwei Blattknoten\n
-Kommunikation abhören
-Kommunikation manipulieren
-Kommunikation mit Disposition unterbinden
-Kommunikation mit Stellwerk unterbinden
-Kommunikation stören
-Kommunikation unterbrechen
-Kommunikationsnetz belauschen
-Kommunikationsnetz kompromittieren
-Kommunikationswege abhören
-Kommunikationswege\nabhören
-Kompromittierte Sichere Hardware einschleusen
-Kompromittierung Fahrzeugbus
-Kryptographisches Material kompromittieren
-Kupplungsvorgang verhindern
-Logistikdaten manipulieren
-Lokalisierung der Frachteinheiten behindern
-Lokalisierung manipulieren
-MFA durch extra Freigabe der Buchung
-ML-Modell manipulieren
-Malware einschleusen
-Malware welche die Daten nach Empfang verändert
-Malware/Bugs in Smart Contracts
-Man-in-the-Middle Angriff
+Jamming der digitalen Zugschlussscheibe = Jamming the digital train rear disc
+Jamming der drahtlosen Kommunikation = Jamming wireless communications
+Jamming des Kommunikationsnetzwerkes = Jamming the communication network
+Jamming\nFRMCS/Satellitenfunk = Jamming\nFRMCS/satellite radio
+KI manipulieren = Manipulate AI
+KI manipulieren\n(siehe Reise- und Lebensmanagement) = Manipulating AI\n(see Travel and Life Management)
+KI-Modell durch manipuliertes austauschen = Replace AI model with manipulated one
+KI-Modell täuschen durch Adversarial Attacks = Deceive AI model with adversarial attacks
+Kabel zerstören = Destroy cable
+Kameras kompromittieren = Compromise cameras
+Kameras manipulieren = Manipulate cameras
+Kameras manipulieren\n(siehe Reise- und Lebensmanagement) = Manipulate cameras\n(cf. Travel and Life Management)
+Kenntnis des 3DES-Schlüssels erlangen = Gain knowledge of the 3DES key
+Kollision verursachen = Cause collision
+Kommunikation abhören = Eavesdrop on communications
+Kommunikation manipulieren = Manipulate communication
+Kommunikation mit Disposition unterbinden = Prevent communication with disposition
+Kommunikation mit Stellwerk unterbinden = Prevent communication with signal box
+Kommunikation stören = Disrupt communication
+Kommunikation unterbrechen = Interrupt communication
+Kommunikationsnetz belauschen = Eavesdrop on communications network
+Kommunikationsnetz kompromittieren = Compromise communications network
+Kommunikationswege abhören = Eavesdropping on communication channels
+Kommunikationswege\nabhören = Eavesdropping on communication channels
+Kompromittierte Sichere Hardware einschleusen = Inject compromised safe hardware
+Kompromittierung Fahrzeugbus = Compromise vehicle communication bus
+Kryptographisches Material kompromittieren = Compromise cryptographic material
+Kupplungsvorgang verhindern = Prevent coupling process
+Logistikdaten manipulieren = Manipulate logistics data
+Lokalisierung der Frachteinheiten behindern = Impede localization of cargo units
+Lokalisierung manipulieren = Manipulate localization
+MFA durch extra Freigabe der Buchung = MFA through extra approval of the booking
+ML-Modell manipulieren = Manipulate ML model
+Malware einschleusen = Inject malware
+Malware welche die Daten nach Empfang verändert = Malware that changes the data after it has been received
+Malware/Bugs in Smart Contracts = Malware/bugs in smart contracts
+Man-in-the-Middle Angriff = Man-in-the-middle attack
 Manipulation Algorithmik zur Berechnung/Planung Kapazitäten und Laufwege = Manipulation algorithms for calculating/planning capacities and routes
 Manipulation Datenbestand Rechenzentrum = Manipulation of data in the data center
 Manipulation Feldelement = Manipulation field element
 Manipulation Feldelement\n(Gleisfreimeldung, Zugintegrität, Bahnübergang) = Manipulation of field elements (track clearance notification, train integrity, level crossing)
-Manipulation Feldelement\n(Signal, Weiche) = Manipulation field element\n(signal, point)
+Manipulation Feldelement\n(Signal, Weiche) = Manipulation field element\n(signal, switch)
 Manipulation KI-Modell = Manipulation AI model
 Manipulation KI-Modell\n(siehe Reise- und Lebensmanagement) = Manipulation AI model (cf. Travel and Life management)
 Manipulation Kommunikationsnetzwerk = Manipulation communication network
