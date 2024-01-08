@@ -177,6 +177,7 @@ Gehärtetes Endgerät
 Gepäckziel manipulieren
 Geschwindigkeitsprofil manipulieren
 Hardware zerstören
+Hier nur\nSecurity Control für\neinen Blattknoten\n
 Impersonation Rechenzentrum = Impersonation data center
 Individuellem Nutzer nachstellen = Stalk individual user
 Individuellen Nutzer bloßstellen (shaming) / Veröffentlichen von individuellem Verhalten = Shaming individual users / publishing individual behavior
