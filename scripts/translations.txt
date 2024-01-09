@@ -1,19 +1,13 @@
-
-(Absichtliche) Fehlkonfiguration der Ressourcenzuteilung
+(Absichtliche) Fehlkonfiguration der Ressourcenzuteilung = (Intentional) resource allocation misconfiguration
 (D)DoS = (D)DoS
-(Vor Fahrtantritt)\nLokalen Zugang auf Bordnetzwerk erlangen\n(freier Netzwerkport)
-1
-2
-3
-4
-5
+(Vor Fahrtantritt)\nLokalen Zugang auf Bordnetzwerk erlangen\n(freier Netzwerkport) = (Before setting off)\nAcquire local access to the on-board network\n(free network port)
 5G Jamming = 5G Jamming
 5G/FRMCS Jamming = 5G/FRMCS Jamming
 Aktualisierbarkeit der Algorithmen = Updateability of Algorithms
 Als Chatbot ausgeben = Masquerade as Chatbot
 Anderen LWL anstecken = Connect another Optical Fiber
 Angriff Funkfernsteuerung = Attack Remote Control
-Angriff auf das\nMeldeportal (Online-Portal) selbst
+Angriff auf das\nMeldeportal (Online-Portal) selbst = Attack on the reporting portal (online)
 Angriff des nächstgelegenen Provider Knotens = Attack the nearest provider node
 Angriffsziel\nAutomatisierte Ablaufsteuerung = Attack Target\nAutomated Hump Control
 Angriffsziel\nAutomatisierte Planung und Planprüfung = Attack Target\nAutomated Planning and Plan Review
@@ -36,10 +30,10 @@ Angriffsziel\nVirtuelles Kuppeln = Attack Target\nVirtual Coupling
 Angriffsziel\nVollautomatisiertes Fahren = Attack Target\nAutomated Driving
 Angriffsziel\nVorort-Informationen = Attack Target\nOn-Site Information
 Angriffsziel\nZugsicherung mit ETCS (L2oS, L3) = Attack Target\nETCS Train Protection
-Anhalten von Zügen auf der freien Strecke
+Anhalten von Zügen auf der freien Strecke = Stopping trains on the open route
 Annahme: Arbeitszeit wird in Resourcen abgebildet = Assumption: working hours are expressed as ressources
 Annahme: Rein zustandsbasierte Instandhaltung und Instandsetzung. Das heißt, eine 100% datenbasierte Instandhaltung ohne feste Zyklen. Hintergrund: Reduktion Aufwand. Risiko: keine unabhänige Kontrolle der Istwerte. = Assumption: Purely condition-based maintenance and repair. This means 100% data-based maintenance without fixed cycles. Background: Reduction in effort. Risk: no independent control of actual values.
-Anzeigetafeln manipulieren
+Anzeigetafeln manipulieren = Manipulate information boards
 App manipulieren = Manipulate App
 Aufdecken privater Daten = Disclosing Private Data
 Aufdeckung privater Daten\n(Standort, Biometrische Daten) = Disclosure of Private Data\n(Location, Biometric Data)
@@ -70,14 +64,14 @@ Business Continuity Management = Business Continuity Management
 Chaos schüren = Incite Chaos
 Chatbot manipulieren = Manipulate Chatbot
 Code Signing = Code Signing
-Daten ausleiten
+Daten ausleiten = Extract Data
 Daten löschen = Delete Data
 Daten unlesbar machen = Corrupt Data
 Datenaustausch manipulieren = Manipulate Data Exchange
 Datenbestand (Customer-Experience-Werte) manipulieren\n(siehe Kontaktlose Fahrscheinkontrolle) = Manipulate Data Stock (Customer-Experience-Data)\n(cf. Contactless Ticket Control)
 Datenerfassung Manipulieren = Manipulate Data Collection
 Datenkommunikation physisch stören = Physical disruption of transmission
-Datenquelle austauschen
+Datenquelle austauschen = Exchange data source
 Datensparsamkeit = Data Minimization
 Datenspeicher modifizieren = Modify Data Storage
 Datensätze korrelieren = Correlate Data Sets
@@ -464,7 +458,7 @@ Vortäuschung der Betriebsbereitschaft\n(Lebenszeichen, Fail-Safe) = Pretend ope
 Weiche zur Unzeit umstellen = Change point at the wrong time
 Weniger Fahrzeuge werden bereitgestellt als benötigt = Fewer vehicles are provided than needed
 Werte von Dezentralem Stellwerk = Values from decentralized interlocking
-Werte von Intermodale Reisekette \n(Gepäckziel manipulieren) = Values from Intermodal Travel Chain
+Werte von Intermodale Reisekette\n(Gepäckziel manipulieren) = Values from Intermodal Travel Chain
 Wissen über Datensatz, Ziel und Art der notwendigen Manipulation (Verständnis Algorithmus) = Knowledge about the data set, goal and type of necessary manipulation (understanding of the algorithm)
 Zerstörung = Destruction
 Zerstörung der Güterwagen = Destruction of freight wagon
