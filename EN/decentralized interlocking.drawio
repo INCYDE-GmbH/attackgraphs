@@ -1,0 +1,1107 @@
+<mxfile host="Electron" modified="2023-05-23T15:55:02.054Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.2 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36" etag="-B9ku-ax8DtQmQb_ajxa" compressed="false" version="19.0.2" type="device">
+  <diagram id="bJp0U2BYxJu8FbHyDJQ4" name="Seite-1">
+    <mxGraphModel dx="595" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <object tooltip="" id="0">
+          <ag_global_attributes>
+            <ag_global_attribute name="Resources" value="" iconName="hammer" min="0" max="5" />
+            <ag_global_attribute name="Knowledge" value="" iconName="lightbulb" min="0" max="5" />
+            <ag_global_attribute name="Location" value="" iconName="map_pin_ellipse" min="0" max="1" />
+            <ag_global_attribute name="Impact" value="" iconName="flame" min="0" max="5" />
+          </ag_global_attributes>
+          <ag_attributes />
+          <ag_computed_attributes />
+          <ag_aggregation_functions>
+            <ag_aggregation_function name="default" id="6b1d22791hih8" default="activity_w;link" fn="function (collection) { &#10;    var result = null; &#10;    if (collection.childAttributes.length == 1) { &#10;        result = collection.childAttributes[0].attributes;&#10;        result._marking = collection.childAttributes[0].id;&#10;    } else { &#10;        var candidates = []; &#10;        var worstValue = 0; &#10;        collection.childAttributes.forEach(function(child) { &#10;            var value = parseInt(child.computedAttribute); &#10;            if (value &gt; worstValue) { &#10;                worstValue = value; &#10;                candidates = []; &#10;                candidates.push(child); &#10;            } else if (value == worstValue) { &#10;                candidates.push(child); &#10;            } &#10;        }); &#10;        var tiebreaker = function(candidates, name, max) { &#10;            var min_value = max; &#10;            candidates.forEach(function(node) { &#10;                min_value = Math.min(min_value, node.attributes[name]); &#10;            }); &#10;            result = []; &#10;            candidates.forEach(function(node) { &#10;                if (node.attributes[name] == min_value) { &#10;                    result.push(node); &#10;                } &#10;            }); &#10;            return result; &#10;        }; &#10;        if (candidates.length &gt; 1) { &#10;            candidates = tiebreaker(candidates, &quot;Resources&quot;, collection.globalAttributes[&quot;Resources&quot;].max); &#10;            if (candidates.length &gt; 1) { &#10;                candidates = tiebreaker(candidates, &quot;Knowledge&quot;, collection.globalAttributes[&quot;Knowledge&quot;].max); &#10;            } &#10;        } &#10;        result = candidates[0].attributes;&#10;        result._marking = candidates[0].id;&#10;    } &#10;    return result; &#10;}" />
+            <ag_aggregation_function name="AND" id="gf0d4f199018" default="and" fn="function (collection) { &#10;    var result = {}; &#10;    var ids = [];&#10;    collection.childAttributes.forEach(function(child) { &#10;    for (var attribute in child.attributes) { &#10;            if (attribute in result) { &#10;                result[attribute] += parseInt(child.attributes[attribute]); &#10;            } else { &#10;                result[attribute] = parseInt(child.attributes[attribute]); &#10;            } &#10;        }&#10;        ids.push(child.id);&#10;    }); &#10;    for (var attribute in result) { &#10;        if (attribute in collection.globalAttributes) { &#10;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#10;        } &#10;    }&#10;    result._marking = ids.join(&quot;;&quot;);&#10;    return result; &#10;}" />
+            <ag_aggregation_function name="Security Control" id="73f575i0ghij5" default="activity_g;activity_y" fn="function (collection) { &#10;    var result = {}; &#10;    for (var attribute in collection.localAttributes) { &#10;        result[attribute] = parseInt(collection.localAttributes[attribute]); &#10;    } &#10;    collection.childAttributes.forEach(function(child) { &#10;        for (var attribute in child.attributes) { &#10;            if (attribute in collection.globalAttributes) { &#10;                if (attribute in result) { &#10;                    result[attribute] += parseInt(child.attributes[attribute]); &#10;                } &#10;            } &#10;        } &#10;    }); &#10;    for (var attribute in result) { &#10;        if (attribute in collection.globalAttributes) { &#10;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#10;        } &#10;    } &#10;    return result; &#10;}" />
+            <ag_aggregation_function name="Risk" id="egf49jfgj408" default="consequence" fn="function (collection) {  &#10;    var maxRisk = &quot;L&quot;; &#10;    var matrix = [ &#10;        [&quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;], &#10;        [&quot;L&quot;, &quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;], &#10;        [&quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;S&quot;, &quot;S&quot;], &#10;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#10;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#10;    ];&#10;    var updatedImpacts = [];&#10;    var ids = [];&#10; &#10;    var compareRisk = function(risk1, risk2) { &#10;        /*&#10;        * Returns:&#10;        *  - Null: if one of the parameters is not a character representing a risk&#10;        *  - Negativ integer: if risk1 &lt; risk2&#10;        *  - Zero: if risks are equal&#10;        *  - Positive integer: if risk1 &gt; risk2&#10;        */&#10;        var values = [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;]; &#10;        var index_risk1 = values.indexOf(risk1); &#10;        var index_risk2 = values.indexOf(risk2); &#10; &#10;        if (index_risk1 == -1 || index_risk2 == -1) { &#10;            return null; &#10;        } &#10;        return index_risk1 - index_risk2; &#10; &#10;    } &#10;     &#10;    collection.childAttributes.forEach(function(child) {  &#10;        var impact = 1;  &#10;        if (child.edgeWeight !== null) {  &#10;            impact = parseInt(child.edgeWeight);  &#10;        }&#10;        var _impact = parseInt(child.attributes._impact) || 0;&#10;        impact = Math.max(impact - _impact, 1);&#10;        updatedImpacts.push(child.id + ':' + impact);&#10;        var af = parseInt(child.computedAttribute) || parseInt(child.attributes._af);&#10;        risk = matrix[af - 1][impact - 1];&#10;        result = compareRisk(risk, maxRisk);&#10;        if (result &gt; 0) { &#10;            maxRisk = risk;&#10;            ids = [child.id];&#10;        } else if (result == 0){&#10;            ids.push(child.id);&#10;        }&#10;    });  &#10;  &#10;    var result = {'_risk': maxRisk, &quot;_marking&quot;: ids.join(&quot;;&quot;)};&#10;    if (updatedImpacts.length &gt; 0) {&#10;        result._weight = updatedImpacts.join(';');&#10;    }&#10;    return result;&#10;}" />
+            <ag_aggregation_function name="Impact" id="397423adceb0f" default="" fn="function(collection) {&#10;    var impact = 0;&#10;    var result = {}&#10;    &#10;    collection.childAttributes.forEach(function(child) {&#10;        if (&quot;Impact&quot; in child.attributes) {&#10;            impact += parseInt(child.attributes[&quot;Impact&quot;]);&#10;        } else if (&quot;Resources&quot; in child.attributes &amp;&amp; &quot;Knowledge&quot; in child.attributes &amp;&amp; &quot;Location&quot; in child.attributes) {&#10;            result._af = child.computedAttribute&#10;            result._marking = child.id;&#10;        }&#10;    });&#10;    result._impact = Math.min(impact, collection.globalAttributes[&quot;Impact&quot;].max);&#10;    &#10;    return result;&#10;}" />
+          </ag_aggregation_functions>
+          <ag_computed_attributes_functions>
+            <ag_computed_attributes_function name="default" id="dbg60ff69g9a" default="activity_w;activity_g;activity_y" fn="function (collection) { &#10;    var colorMatrix = {&#10;        5: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        4: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        3: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;        2: {&quot;fillColor&quot;: &quot;#d4ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;        1: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;}&#10;    }&#10;    var matrix = [ &#10;        [5, 5, 4, 3, 2], &#10;        [5, 4, 4, 3, 2], &#10;        [5, 4, 4, 3, 2], &#10;        [4, 3, 3, 2, 1], &#10;        [3, 2, 2, 1, 1], &#10;    ];&#10;    var result = {};&#10;    &#10;    if (&quot;Knowledge&quot; in collection.cellAttributes &amp;&amp; &quot;Resources&quot; in collection.cellAttributes) {&#10;        var knowledgeIndex = parseInt(collection.cellAttributes[&quot;Knowledge&quot;]) - 1; &#10;        var resourcesIndex = parseInt(collection.cellAttributes[&quot;Resources&quot;]) - 1;&#10;        &#10;        var value = Math.min(5, &#10;            Math.max(collection.globalAttributes[&quot;Location&quot;].max, &#10;                Math.max( matrix[knowledgeIndex][resourcesIndex] - parseInt(collection.cellAttributes[&quot;Location&quot;])) &#10;            ));&#10;        result = colorMatrix[value] || result;&#10;        result[&quot;value&quot;] = value;&#10;    }&#10;    &#10;    return result;&#10;}" />
+            <ag_computed_attributes_function name="Risk" id="6c831697g9i0a" default="" fn="function(collection){&#10;    var riskMatrix = {&#10;        &quot;V&quot;: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        &quot;S&quot;: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        &quot;M&quot;: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;        &quot;L&quot;: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;    };&#10;    var result = {};&#10;    &#10;    if (&quot;_risk&quot; in collection.cellAttributes) {&#10;        var risk = collection.cellAttributes[&quot;_risk&quot;];&#10;        result = riskMatrix[risk] || result;&#10;        result[&quot;value&quot;] = risk;&#10;    }&#10;    &#10;    return result; &#10;}" />
+          </ag_computed_attributes_functions>
+          <mxCell />
+        </object>
+        <object id="1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell parent="0" />
+        </object>
+        <object label="4" id="HO09paWQtQ8aA_VJCihO-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-2" target="HO09paWQtQ8aA_VJCihO-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" id="eo-EwUSCdZ1exYj2hIaM-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-2" target="HO09paWQtQ8aA_VJCihO-5" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" id="eo-EwUSCdZ1exYj2hIaM-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-2" target="wuFwHVqsx3Kr4lyMLA3o-2" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1810" y="320" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="4" id="eo-EwUSCdZ1exYj2hIaM-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-2" target="HO09paWQtQ8aA_VJCihO-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" id="eo-EwUSCdZ1exYj2hIaM-16">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-2" target="eo-EwUSCdZ1exYj2hIaM-15" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" id="eo-EwUSCdZ1exYj2hIaM-18">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-2" target="eo-EwUSCdZ1exYj2hIaM-17" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Violation of Physical Integrity" id="fspGmHOXtjN8gbxVSLJ7-2">
+          <ag_attributes _risk="L" _marking="HO09paWQtQ8aA_VJCihO-1;HO09paWQtQ8aA_VJCihO-5;wuFwHVqsx3Kr4lyMLA3o-2;HO09paWQtQ8aA_VJCihO-3;eo-EwUSCdZ1exYj2hIaM-15;eo-EwUSCdZ1exYj2hIaM-17" _weight="HO09paWQtQ8aA_VJCihO-1:4;HO09paWQtQ8aA_VJCihO-5:4;wuFwHVqsx3Kr4lyMLA3o-2:4;HO09paWQtQ8aA_VJCihO-3:4;eo-EwUSCdZ1exYj2hIaM-15:4;eo-EwUSCdZ1exYj2hIaM-17:4" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
+            <mxGeometry x="1947" y="140" width="242" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="eo-EwUSCdZ1exYj2hIaM-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-3" target="HO09paWQtQ8aA_VJCihO-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="eo-EwUSCdZ1exYj2hIaM-19">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-3" target="HO09paWQtQ8aA_VJCihO-5" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="eo-EwUSCdZ1exYj2hIaM-21">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-3" target="eo-EwUSCdZ1exYj2hIaM-17" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="eo-EwUSCdZ1exYj2hIaM-23">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-3" target="eo-EwUSCdZ1exYj2hIaM-15" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="plyIKMAmDw_uasNs-4-3-30">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-3" target="HO09paWQtQ8aA_VJCihO-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="plyIKMAmDw_uasNs-4-3-31">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-3" target="HO09paWQtQ8aA_VJCihO-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="I_t2c8aG_AG6cYA6QWFG-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" parent="plyIKMAmDw_uasNs-4-3-31" vertex="1" connectable="0">
+            <mxGeometry x="0.3632" relative="1" as="geometry">
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Reputational Damage Operator" id="fspGmHOXtjN8gbxVSLJ7-3">
+          <ag_attributes _risk="L" _marking="HO09paWQtQ8aA_VJCihO-6;HO09paWQtQ8aA_VJCihO-5;eo-EwUSCdZ1exYj2hIaM-17;eo-EwUSCdZ1exYj2hIaM-15;HO09paWQtQ8aA_VJCihO-1" _weight="HO09paWQtQ8aA_VJCihO-6:3;HO09paWQtQ8aA_VJCihO-5:3;eo-EwUSCdZ1exYj2hIaM-17:3;eo-EwUSCdZ1exYj2hIaM-15:2;HO09paWQtQ8aA_VJCihO-1:3;HO09paWQtQ8aA_VJCihO-3:NaN" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
+            <mxGeometry x="2810" y="140" width="242" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="eo-EwUSCdZ1exYj2hIaM-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-4" target="HO09paWQtQ8aA_VJCihO-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="eo-EwUSCdZ1exYj2hIaM-8">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-4" target="HO09paWQtQ8aA_VJCihO-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="plyIKMAmDw_uasNs-4-3-29">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-4" target="HO09paWQtQ8aA_VJCihO-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="Dt1DZInUWchX5-2LLVrT-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="fspGmHOXtjN8gbxVSLJ7-4" target="Dt1DZInUWchX5-2LLVrT-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Disruption of a Critical Service" id="fspGmHOXtjN8gbxVSLJ7-4">
+          <ag_attributes _risk="L" _marking="HO09paWQtQ8aA_VJCihO-6;HO09paWQtQ8aA_VJCihO-3;HO09paWQtQ8aA_VJCihO-1;Dt1DZInUWchX5-2LLVrT-1" _weight="HO09paWQtQ8aA_VJCihO-6:3;HO09paWQtQ8aA_VJCihO-3:3;HO09paWQtQ8aA_VJCihO-1:2;Dt1DZInUWchX5-2LLVrT-1:3" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
+            <mxGeometry x="3170" y="140" width="242" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="1Eub8yADe1-0UL1Ypj2I-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="HO09paWQtQ8aA_VJCihO-1" target="eo-EwUSCdZ1exYj2hIaM-11" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="1Eub8yADe1-0UL1Ypj2I-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="HO09paWQtQ8aA_VJCihO-1" target="eo-EwUSCdZ1exYj2hIaM-13" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Manipulation of train integrity check" Resources="" Knowledge="" Location="" id="HO09paWQtQ8aA_VJCihO-1">
+          <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" _marking="beV7eknHXk7o7M9lF_l--1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2869" y="400" width="161" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="eo-EwUSCdZ1exYj2hIaM-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="HO09paWQtQ8aA_VJCihO-3" target="eo-EwUSCdZ1exYj2hIaM-1" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="3520" y="460" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="eo-EwUSCdZ1exYj2hIaM-12">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;strokeColor=#000000;" parent="1" source="CK-zvY0Y53uaMbwdMFfM-12" target="eo-EwUSCdZ1exYj2hIaM-11" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="MnZq775cGOOVB-bRokLV-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#000000;" parent="1" source="HO09paWQtQ8aA_VJCihO-3" target="CK-zvY0Y53uaMbwdMFfM-12" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="3220" y="500" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Manipulation of localization" Resources="" Knowledge="" Location="" id="HO09paWQtQ8aA_VJCihO-3">
+          <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" _marking="eo-EwUSCdZ1exYj2hIaM-1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3170" y="400" width="160" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="1Eub8yADe1-0UL1Ypj2I-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="HO09paWQtQ8aA_VJCihO-5" target="1Eub8yADe1-0UL1Ypj2I-5" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Manipulation of V2V communication" Resources="" Knowledge="" Location="" id="HO09paWQtQ8aA_VJCihO-5">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="1Eub8yADe1-0UL1Ypj2I-5" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1694" y="400" width="140" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="eo-EwUSCdZ1exYj2hIaM-14">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="HO09paWQtQ8aA_VJCihO-6" target="eo-EwUSCdZ1exYj2hIaM-13" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Disruption of V2V and V2I communication" Resources="" Knowledge="" Location="" id="HO09paWQtQ8aA_VJCihO-6">
+          <ag_attributes label="NaN" Resources="4" Knowledge="5" Location="1" _marking="eo-EwUSCdZ1exYj2hIaM-13" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2700" y="400" width="140" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Forge Stationary Reference Points" Resources="4" Knowledge="4" Location="1" id="eo-EwUSCdZ1exYj2hIaM-1">
+          <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3438" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-26">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="eo-EwUSCdZ1exYj2hIaM-11" target="hi5dGj4ao-bZcze_6LL2-25" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="GNSS Spoofing" Resources="3" Knowledge="3" Location="1" id="eo-EwUSCdZ1exYj2hIaM-11">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="rounded=0;whiteSpace=wrap;fillColor=#FEE599;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3030" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-24">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="eo-EwUSCdZ1exYj2hIaM-13" target="hi5dGj4ao-bZcze_6LL2-23" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FRMCS Jamming" Resources="2" Knowledge="2" Location="1" id="eo-EwUSCdZ1exYj2hIaM-13">
+          <ag_attributes label="NaN" Resources="4" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="rounded=0;whiteSpace=wrap;fillColor=#FEE599;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2690" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="1Eub8yADe1-0UL1Ypj2I-14">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#000000;" parent="1" source="eo-EwUSCdZ1exYj2hIaM-15" target="1Eub8yADe1-0UL1Ypj2I-13" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="2450" y="540" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Manipulation of digital map material" Resources="" Knowledge="" Location="" id="eo-EwUSCdZ1exYj2hIaM-15">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="1Eub8yADe1-0UL1Ypj2I-13" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2300" y="400" width="160" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="1Eub8yADe1-0UL1Ypj2I-10">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#000000;" parent="1" source="eo-EwUSCdZ1exYj2hIaM-17" target="1Eub8yADe1-0UL1Ypj2I-9" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="2080" y="610" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Manipulation of V2I communication" Resources="" Knowledge="" Location="" id="eo-EwUSCdZ1exYj2hIaM-17">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="1Eub8yADe1-0UL1Ypj2I-9" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1997" y="400" width="140" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="plyIKMAmDw_uasNs-4-3-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="wuFwHVqsx3Kr4lyMLA3o-2" target="plyIKMAmDw_uasNs-4-3-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="plyIKMAmDw_uasNs-4-3-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="wuFwHVqsx3Kr4lyMLA3o-2" target="plyIKMAmDw_uasNs-4-3-4" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1530" y="540" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="ptvyqzhh6_QlkKdHmj06-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="wuFwHVqsx3Kr4lyMLA3o-2" target="ptvyqzhh6_QlkKdHmj06-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ptvyqzhh6_QlkKdHmj06-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="wuFwHVqsx3Kr4lyMLA3o-2" target="ptvyqzhh6_QlkKdHmj06-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Compromise Field Element" Resources="" Knowledge="" Location="" id="wuFwHVqsx3Kr4lyMLA3o-2">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="plyIKMAmDw_uasNs-4-3-1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;strokeColor=#000000;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1300" y="400" width="140" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="plyIKMAmDw_uasNs-4-3-10">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;strokeColor=#000000;" parent="1" source="CK-zvY0Y53uaMbwdMFfM-12" target="plyIKMAmDw_uasNs-4-3-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="plyIKMAmDw_uasNs-4-3-18">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="1Eub8yADe1-0UL1Ypj2I-5" target="plyIKMAmDw_uasNs-4-3-17" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="plyIKMAmDw_uasNs-4-3-22">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="1Eub8yADe1-0UL1Ypj2I-5" target="plyIKMAmDw_uasNs-4-3-19" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Use Infrastructure without Route Protection" Resources="" Knowledge="" Location="" id="1Eub8yADe1-0UL1Ypj2I-5">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="plyIKMAmDw_uasNs-4-3-17" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;rounded=0;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1689" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="plyIKMAmDw_uasNs-4-3-25">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="1Eub8yADe1-0UL1Ypj2I-9" target="plyIKMAmDw_uasNs-4-3-24" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="plyIKMAmDw_uasNs-4-3-28">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="1Eub8yADe1-0UL1Ypj2I-9" target="plyIKMAmDw_uasNs-4-3-23" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Wrong Notification about Position of Track Elements or Occupancy of Track Sections" Resources="" Knowledge="" Location="" id="1Eub8yADe1-0UL1Ypj2I-9">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="plyIKMAmDw_uasNs-4-3-24" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1954" y="560" width="226" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="plyIKMAmDw_uasNs-4-3-13">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="1Eub8yADe1-0UL1Ypj2I-13" target="plyIKMAmDw_uasNs-4-3-12" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="plyIKMAmDw_uasNs-4-3-15">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="1Eub8yADe1-0UL1Ypj2I-13" target="plyIKMAmDw_uasNs-4-3-14" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Change Route Characteristics or Delete Danger Spots" Resources="" Knowledge="" Location="" id="1Eub8yADe1-0UL1Ypj2I-13">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="plyIKMAmDw_uasNs-4-3-12" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2280" y="560" width="200" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="plyIKMAmDw_uasNs-4-3-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="beV7eknHXk7o7M9lF_l--1" target="plyIKMAmDw_uasNs-4-3-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Compromise vehicle communication bus" Resources="" Knowledge="" Location="" id="beV7eknHXk7o7M9lF_l--1">
+          <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" _marking="plyIKMAmDw_uasNs-4-3-6" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="rounded=0;whiteSpace=wrap;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2859" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="beV7eknHXk7o7M9lF_l--3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="HO09paWQtQ8aA_VJCihO-1" target="beV7eknHXk7o7M9lF_l--1" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="2958.5714285714284" y="500" as="sourcePoint" />
+              <mxPoint x="3061.4285714285716" y="580" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-1" target="hi5dGj4ao-bZcze_6LL2-2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Enforce wrong Point Position" Resources="2" Knowledge="3" Location="0" id="plyIKMAmDw_uasNs-4-3-1">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1506" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-4" target="hi5dGj4ao-bZcze_6LL2-2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Change point at the wrong time" Resources="3" Knowledge="3" Location="0" id="plyIKMAmDw_uasNs-4-3-4">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1337" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Spoofing the digital tail end indicator" Resources="4" Knowledge="4" Location="1" id="plyIKMAmDw_uasNs-4-3-6">
+          <ag_attributes label="NaN" Resources="4" Knowledge="4" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2830" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="Dt1DZInUWchX5-2LLVrT-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-9" target="Dt1DZInUWchX5-2LLVrT-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="Dt1DZInUWchX5-2LLVrT-9">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-9" target="Dt1DZInUWchX5-2LLVrT-10" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="3290.8" y="695" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="MnZq775cGOOVB-bRokLV-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-9" target="MnZq775cGOOVB-bRokLV-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="MnZq775cGOOVB-bRokLV-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-9" target="MnZq775cGOOVB-bRokLV-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Compromise FOS-unit" Resources="" Knowledge="" Location="" id="plyIKMAmDw_uasNs-4-3-9">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="Dt1DZInUWchX5-2LLVrT-6" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;rounded=0;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3220" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-18">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-12" target="hi5dGj4ao-bZcze_6LL2-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Insert wrong Update" Resources="3" Knowledge="3" Location="0" id="plyIKMAmDw_uasNs-4-3-12">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2240" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-21">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-14" target="hi5dGj4ao-bZcze_6LL2-20" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-22">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-14" target="hi5dGj4ao-bZcze_6LL2-19" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Modify Data Storage" Resources="3" Knowledge="3" Location="0" id="plyIKMAmDw_uasNs-4-3-14">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2400" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-10">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-17" target="hi5dGj4ao-bZcze_6LL2-7" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-11">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-17" target="hi5dGj4ao-bZcze_6LL2-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="MitM on V2V communication" Resources="1" Knowledge="2" Location="0" id="plyIKMAmDw_uasNs-4-3-17">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1600" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-12">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-19" target="hi5dGj4ao-bZcze_6LL2-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-13">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-19" target="hi5dGj4ao-bZcze_6LL2-7" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Insert forged V2V-Packet" Resources="1" Knowledge="2" Location="0" id="plyIKMAmDw_uasNs-4-3-19">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1760" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-15">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-23" target="hi5dGj4ao-bZcze_6LL2-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-16">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-23" target="hi5dGj4ao-bZcze_6LL2-7" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Insert forged V2I-Packet" Resources="1" Knowledge="2" Location="0" id="plyIKMAmDw_uasNs-4-3-23">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2080" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-14">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-24" target="hi5dGj4ao-bZcze_6LL2-9" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-17">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-24" target="hi5dGj4ao-bZcze_6LL2-7" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="MitM on V2I communication" Resources="1" Knowledge="2" Location="0" id="plyIKMAmDw_uasNs-4-3-24">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1920" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="Dt1DZInUWchX5-2LLVrT-22">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-1" target="Dt1DZInUWchX5-2LLVrT-19" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Creation of Ghost Trains" Resources="" Knowledge="" Location="" id="Dt1DZInUWchX5-2LLVrT-1">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="Dt1DZInUWchX5-2LLVrT-19" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
+          <mxCell style="whiteSpace=wrap;rounded=0;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3710" y="400" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-29">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-6" target="hi5dGj4ao-bZcze_6LL2-28" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-40">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-6" target="hi5dGj4ao-bZcze_6LL2-25" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Connect another Optical Fiber" Resources="2" Knowledge="1" Location="1" id="Dt1DZInUWchX5-2LLVrT-6">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3155" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-27">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;sourcePortConstraint=none;strokeColor=#000000;curved=1;" parent="1" source="Dt1DZInUWchX5-2LLVrT-10" target="hi5dGj4ao-bZcze_6LL2-2" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="3040" y="870" as="sourcePoint" />
+              <Array as="points">
+                <mxPoint x="2650" y="1190" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Enter vibrations" Resources="3" Knowledge="3" Location="1" id="Dt1DZInUWchX5-2LLVrT-10">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="2993" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-31">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-13" target="hi5dGj4ao-bZcze_6LL2-25" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-35">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-13" target="hi5dGj4ao-bZcze_6LL2-33" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-37">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-13" target="hi5dGj4ao-bZcze_6LL2-32" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Spoofing V2I communication" Resources="2" Knowledge="4" Location="1" id="Dt1DZInUWchX5-2LLVrT-13">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3830" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="Dt1DZInUWchX5-2LLVrT-18">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-1" target="Dt1DZInUWchX5-2LLVrT-13" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="3785.3856739833486" y="540.3350000000002" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-30">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-19" target="hi5dGj4ao-bZcze_6LL2-25" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-34">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-19" target="hi5dGj4ao-bZcze_6LL2-32" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-36">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-19" target="hi5dGj4ao-bZcze_6LL2-33" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Spoofing V2V communication" Resources="2" Knowledge="4" Location="1" id="Dt1DZInUWchX5-2LLVrT-19">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="rounded=0;whiteSpace=wrap;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3630" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Attack Target&#10;Decentralized Interlocking" id="9oEdh1MyGVBt2nT8Ydrc-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="verticalAlign=middle;align=center;fillColor=#FFFFFF;gradientColor=none;labelBackgroundColor=none;rounded=0;whiteSpace=wrap;shape=trapezoid;size=0.07500000000000001;" parent="1" vertex="1">
+            <mxGeometry x="2189" y="30" width="300" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="ptvyqzhh6_QlkKdHmj06-1" target="hi5dGj4ao-bZcze_6LL2-2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Release reserved points early" Resources="3" Knowledge="3" Location="0" id="ptvyqzhh6_QlkKdHmj06-1">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1169" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="ptvyqzhh6_QlkKdHmj06-3" target="hi5dGj4ao-bZcze_6LL2-2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Release the reserved section of route early" Resources="3" Knowledge="3" Location="0" id="ptvyqzhh6_QlkKdHmj06-3">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="1000" y="560" width="150" height="75" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-38">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="MnZq775cGOOVB-bRokLV-1" target="hi5dGj4ao-bZcze_6LL2-33" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="hi5dGj4ao-bZcze_6LL2-39">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="MnZq775cGOOVB-bRokLV-1" target="hi5dGj4ao-bZcze_6LL2-32" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Manipulate Data Transmission of the Evaluation" Resources="3" Knowledge="3" Location="0" id="MnZq775cGOOVB-bRokLV-1">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3480" y="760" width="170" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Change Detection Signatures" Resources="4" Knowledge="4" Location="1" id="MnZq775cGOOVB-bRokLV-3">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="73f575i0ghij5" />
+          <mxCell style="whiteSpace=wrap;rounded=0;fillColor=#D7E3BF;shape=attackgraphs.node;verticalAlign=top;spacingRight=20;" parent="1" vertex="1">
+            <mxGeometry x="3318" y="760" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="ARno10TD8BgZtA0jZ4e0-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="ARno10TD8BgZtA0jZ4e0-1" target="HO09paWQtQ8aA_VJCihO-5" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="ARno10TD8BgZtA0jZ4e0-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="ARno10TD8BgZtA0jZ4e0-1" target="eo-EwUSCdZ1exYj2hIaM-17" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="ARno10TD8BgZtA0jZ4e0-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="ARno10TD8BgZtA0jZ4e0-1" target="eo-EwUSCdZ1exYj2hIaM-15" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="ARno10TD8BgZtA0jZ4e0-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="ARno10TD8BgZtA0jZ4e0-1" target="HO09paWQtQ8aA_VJCihO-6" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="ARno10TD8BgZtA0jZ4e0-6">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="ARno10TD8BgZtA0jZ4e0-1" target="HO09paWQtQ8aA_VJCihO-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="ARno10TD8BgZtA0jZ4e0-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=15;strokeColor=#000000;" parent="1" source="ARno10TD8BgZtA0jZ4e0-1" target="HO09paWQtQ8aA_VJCihO-3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Financial Damage Operator" id="ARno10TD8BgZtA0jZ4e0-1">
+          <ag_attributes _risk="L" _marking="HO09paWQtQ8aA_VJCihO-5;eo-EwUSCdZ1exYj2hIaM-17;eo-EwUSCdZ1exYj2hIaM-15;HO09paWQtQ8aA_VJCihO-1;HO09paWQtQ8aA_VJCihO-3" _weight="HO09paWQtQ8aA_VJCihO-5:3;eo-EwUSCdZ1exYj2hIaM-17:3;eo-EwUSCdZ1exYj2hIaM-15:2;HO09paWQtQ8aA_VJCihO-6:NaN;HO09paWQtQ8aA_VJCihO-1:3;HO09paWQtQ8aA_VJCihO-3:3" />
+          <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
+          <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="egf49jfgj408" />
+          <mxCell style="rounded=1;whiteSpace=wrap;shape=attackgraphs.node;" parent="1" vertex="1">
+            <mxGeometry x="2400" y="140" width="242" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="CK-zvY0Y53uaMbwdMFfM-12">
+          <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="eo-EwUSCdZ1exYj2hIaM-11;plyIKMAmDw_uasNs-4-3-9" />
+          <ag_computed_attributes />
+          <ag_aggregation_function_reference ag_aggregation_function_reference="gf0d4f199018" />
+          <mxCell style="shape=or;whiteSpace=wrap;html=1;rotation=-90;fontColor=#FF0000;strokeColor=#000000;" parent="1" vertex="1">
+            <mxGeometry x="3200" y="490" width="30.5" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" id="hi5dGj4ao-bZcze_6LL2-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#000000;" parent="1" edge="1">
+            <mxGeometry width="50" height="50" relative="1" as="geometry">
+              <mxPoint x="1030" y="1050" as="sourcePoint" />
+              <mxPoint x="4030" y="1050" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Plausibility Check" Resources="2" Knowledge="2" Location="0" id="hi5dGj4ao-bZcze_6LL2-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1290" y="1080" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Encryption" Resources="2" Knowledge="2" Location="0" id="hi5dGj4ao-bZcze_6LL2-7">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1580.0000000000002" y="960" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Digital Signature" Resources="2" Knowledge="2" Location="1" id="hi5dGj4ao-bZcze_6LL2-9">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1950.0000000000002" y="960" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Secure Storage" Resources="2" Knowledge="2" Location="1" id="hi5dGj4ao-bZcze_6LL2-19">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;align=left;spacingLeft=2;" parent="1" vertex="1">
+            <mxGeometry x="2350" y="960" width="124" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Access Control&#10;Secure Data Storage" Resources="1" Knowledge="2" Location="0" id="hi5dGj4ao-bZcze_6LL2-20">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="2490" y="960" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Resilience" Resources="2" Knowledge="3" Location="0" id="hi5dGj4ao-bZcze_6LL2-23">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="2690" y="1080" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Plausibility Check&#10;Redundancy" Resources="2" Knowledge="2" Location="0" id="hi5dGj4ao-bZcze_6LL2-25">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <ag_enabled ag_enabled="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="3510" y="1080" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Access Restriction" Resources="1" Knowledge="1" Location="0" id="hi5dGj4ao-bZcze_6LL2-28">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <ag_enabled ag_enabled="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="3052" y="960" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Encryption" Resources="2" Knowledge="2" Location="0" id="hi5dGj4ao-bZcze_6LL2-32">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="3712" y="960" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Digital Signature" Resources="2" Knowledge="2" Location="1" id="hi5dGj4ao-bZcze_6LL2-33">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="3910" y="960" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Access Restriction&#10;Access Control&#10;Secure Storage&#10;Secure Boot&#10;Security Monitoring" Resources="1" Knowledge="1" Location="1" id="yNB-P_EOcYSjyhABZEWa-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="1091" y="930" width="150" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="yNB-P_EOcYSjyhABZEWa-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-4" target="yNB-P_EOcYSjyhABZEWa-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="yNB-P_EOcYSjyhABZEWa-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="ptvyqzhh6_QlkKdHmj06-1" target="yNB-P_EOcYSjyhABZEWa-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="yNB-P_EOcYSjyhABZEWa-4">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="ptvyqzhh6_QlkKdHmj06-3" target="yNB-P_EOcYSjyhABZEWa-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="yNB-P_EOcYSjyhABZEWa-5">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="plyIKMAmDw_uasNs-4-3-1" target="yNB-P_EOcYSjyhABZEWa-1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Check physical properties of the fiber optic cable" Resources="1" Knowledge="4" Location="0" id="wZf1Gvf3sTQKfeDeHu5M-1">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <ag_enabled ag_enabled="1" />
+          <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="3220" y="1080" width="150" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="wZf1Gvf3sTQKfeDeHu5M-2">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="Dt1DZInUWchX5-2LLVrT-6" target="wZf1Gvf3sTQKfeDeHu5M-1" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="3230" y="850" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object id="wZf1Gvf3sTQKfeDeHu5M-3">
+          <ag_attributes />
+          <ag_computed_attributes />
+          <mxCell style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;curved=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="MnZq775cGOOVB-bRokLV-3" target="hi5dGj4ao-bZcze_6LL2-20" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="2990" y="950" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

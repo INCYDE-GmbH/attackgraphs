@@ -2,6 +2,8 @@
 
 This repository contains attack graphs for the 21 use cases identified in the project "Security Requirements Forecast and Evaluation of Possible Security Concepts" (German title: "Prognose Securitybedarf und Bewertung möglicher Sicherheitskonzepte").
 The use cases are describe in the report available here: [Report] (German only).
+As the research project's language was Germen, the original attack graphs were written in German (see folder `DE/`).
+We provide an English translation of the attack graphs in the folder `EN/`.
 The methodology to derive the attack graphs published in this repository will be publicly available after completion of the research project in December 2023.
 Also, this repository will experience updates while the project proceeds.
 
