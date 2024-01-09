@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-01-05T13:35:57.647Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="6JZgES_qgEsq8eDfcDXo" compressed="false" version="22.1.16" type="device">
+<mxfile host="Electron" modified="2024-01-08T16:44:35.762Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="3h2lwOWiN7abnTS2r4lM" compressed="false" version="22.1.16" type="device">
   <diagram id="_IrKB-7pmVLJ8V-EMXvs" name="Seite-1">
     <mxGraphModel dx="2603" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -12,15 +12,15 @@
           <ag_attributes />
           <ag_computed_attributes />
           <ag_aggregation_functions>
-            <ag_aggregation_function name="default" id="6b1d22791hih8" default="activity_w;link" fn="function (collection) { &#xa;    var result = null; &#xa;    if (collection.childAttributes.length == 1) { &#xa;        result = collection.childAttributes[0].attributes;&#xa;        result._marking = collection.childAttributes[0].id;&#xa;    } else { &#xa;        var candidates = []; &#xa;        var worstValue = 0; &#xa;        collection.childAttributes.forEach(function(child) { &#xa;            var value = parseInt(child.computedAttribute); &#xa;            if (value &gt; worstValue) { &#xa;                worstValue = value; &#xa;                candidates = []; &#xa;                candidates.push(child); &#xa;            } else if (value == worstValue) { &#xa;                candidates.push(child); &#xa;            } &#xa;        }); &#xa;        var tiebreaker = function(candidates, name, max) { &#xa;            var min_value = max; &#xa;            candidates.forEach(function(node) { &#xa;                min_value = Math.min(min_value, node.attributes[name]); &#xa;            }); &#xa;            result = []; &#xa;            candidates.forEach(function(node) { &#xa;                if (node.attributes[name] == min_value) { &#xa;                    result.push(node); &#xa;                } &#xa;            }); &#xa;            return result; &#xa;        }; &#xa;        if (candidates.length &gt; 1) { &#xa;            candidates = tiebreaker(candidates, &quot;Resources&quot;, collection.globalAttributes[&quot;Resources&quot;].max); &#xa;            if (candidates.length &gt; 1) { &#xa;                candidates = tiebreaker(candidates, &quot;Knowledge&quot;, collection.globalAttributes[&quot;Knowledge&quot;].max); &#xa;            } &#xa;        } &#xa;        result = candidates[0].attributes;&#xa;        result._marking = candidates[0].id;&#xa;    } &#xa;    return result; &#xa;}" />
-            <ag_aggregation_function name="AND" id="gf0d4f199018" default="and" fn="function (collection) { &#xa;    var result = {}; &#xa;    var ids = [];&#xa;    collection.childAttributes.forEach(function(child) { &#xa;    for (var attribute in child.attributes) { &#xa;            if (attribute in result) { &#xa;                result[attribute] += parseInt(child.attributes[attribute]); &#xa;            } else { &#xa;                result[attribute] = parseInt(child.attributes[attribute]); &#xa;            } &#xa;        }&#xa;        ids.push(child.id);&#xa;    }); &#xa;    for (var attribute in result) { &#xa;        if (attribute in collection.globalAttributes) { &#xa;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#xa;        } &#xa;    }&#xa;    result._marking = ids.join(&quot;;&quot;);&#xa;    return result; &#xa;}" />
-            <ag_aggregation_function name="Security Control" id="73f575i0ghij5" default="activity_g;activity_y" fn="function (collection) { &#xa;    var result = {}; &#xa;    for (var attribute in collection.localAttributes) { &#xa;        result[attribute] = parseInt(collection.localAttributes[attribute]); &#xa;    } &#xa;    collection.childAttributes.forEach(function(child) { &#xa;        for (var attribute in child.attributes) { &#xa;            if (attribute in collection.globalAttributes) { &#xa;                if (attribute in result) { &#xa;                    result[attribute] += parseInt(child.attributes[attribute]); &#xa;                } &#xa;            } &#xa;        } &#xa;    }); &#xa;    for (var attribute in result) { &#xa;        if (attribute in collection.globalAttributes) { &#xa;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#xa;        } &#xa;    } &#xa;    return result; &#xa;}" />
-            <ag_aggregation_function name="Risk" id="egf49jfgj408" default="consequence" fn="function (collection) {  &#xa;    var maxRisk = &quot;L&quot;; &#xa;    var matrix = [ &#xa;        [&quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;], &#xa;        [&quot;L&quot;, &quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;S&quot;, &quot;S&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#xa;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#xa;    ];&#xa;    var updatedImpacts = [];&#xa;    var ids = [];&#xa; &#xa;    var compareRisk = function(risk1, risk2) { &#xa;        /*&#xa;        * Returns:&#xa;        *  - Null: if one of the parameters is not a character representing a risk&#xa;        *  - Negativ integer: if risk1 &lt; risk2&#xa;        *  - Zero: if risks are equal&#xa;        *  - Positive integer: if risk1 &gt; risk2&#xa;        */&#xa;        var values = [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;]; &#xa;        var index_risk1 = values.indexOf(risk1); &#xa;        var index_risk2 = values.indexOf(risk2); &#xa; &#xa;        if (index_risk1 == -1 || index_risk2 == -1) { &#xa;            return null; &#xa;        } &#xa;        return index_risk1 - index_risk2; &#xa; &#xa;    } &#xa;     &#xa;    collection.childAttributes.forEach(function(child) {  &#xa;        var impact = 1;  &#xa;        if (child.edgeWeight !== null) {  &#xa;            impact = parseInt(child.edgeWeight);  &#xa;        }&#xa;        var _impact = parseInt(child.attributes._impact) || 0;&#xa;        impact = Math.max(impact - _impact, 1);&#xa;        updatedImpacts.push(child.id + &#39;:&#39; + impact);&#xa;        var af = parseInt(child.computedAttribute) || parseInt(child.attributes._af);&#xa;        risk = matrix[af - 1][impact - 1];&#xa;        result = compareRisk(risk, maxRisk);&#xa;        if (result &gt; 0) { &#xa;            maxRisk = risk;&#xa;            ids = [child.id];&#xa;        } else if (result == 0){&#xa;            ids.push(child.id);&#xa;        }&#xa;    });  &#xa;  &#xa;    var result = {&#39;_risk&#39;: maxRisk, &quot;_marking&quot;: ids.join(&quot;;&quot;)};&#xa;    if (updatedImpacts.length &gt; 0) {&#xa;        result._weight = updatedImpacts.join(&#39;;&#39;);&#xa;    }&#xa;    return result;&#xa;}" />
-            <ag_aggregation_function name="Impact" id="3j7heb16d5f6" default="" fn="function(collection) {&#xa;    var impact = 0;&#xa;    var result = {}&#xa;    &#xa;    collection.childAttributes.forEach(function(child) {&#xa;        if (&quot;Impact&quot; in child.attributes) {&#xa;            impact += parseInt(child.attributes[&quot;Impact&quot;]);&#xa;        } else if (&quot;Resources&quot; in child.attributes &amp;&amp; &quot;Knowledge&quot; in child.attributes &amp;&amp; &quot;Location&quot; in child.attributes) {&#xa;            result._af = child.computedAttribute&#xa;            result._marking = child.id;&#xa;        }&#xa;    });&#xa;    result._impact = Math.min(impact, collection.globalAttributes[&quot;Impact&quot;].max);&#xa;    &#xa;    return result;&#xa;}" />
+            <ag_aggregation_function name="default" id="6b1d22791hih8" default="activity_w;link" fn="function (collection) { &#10;    var result = null; &#10;    if (collection.childAttributes.length == 1) { &#10;        result = collection.childAttributes[0].attributes;&#10;        result._marking = collection.childAttributes[0].id;&#10;    } else { &#10;        var candidates = []; &#10;        var worstValue = 0; &#10;        collection.childAttributes.forEach(function(child) { &#10;            var value = parseInt(child.computedAttribute); &#10;            if (value &gt; worstValue) { &#10;                worstValue = value; &#10;                candidates = []; &#10;                candidates.push(child); &#10;            } else if (value == worstValue) { &#10;                candidates.push(child); &#10;            } &#10;        }); &#10;        var tiebreaker = function(candidates, name, max) { &#10;            var min_value = max; &#10;            candidates.forEach(function(node) { &#10;                min_value = Math.min(min_value, node.attributes[name]); &#10;            }); &#10;            result = []; &#10;            candidates.forEach(function(node) { &#10;                if (node.attributes[name] == min_value) { &#10;                    result.push(node); &#10;                } &#10;            }); &#10;            return result; &#10;        }; &#10;        if (candidates.length &gt; 1) { &#10;            candidates = tiebreaker(candidates, &quot;Resources&quot;, collection.globalAttributes[&quot;Resources&quot;].max); &#10;            if (candidates.length &gt; 1) { &#10;                candidates = tiebreaker(candidates, &quot;Knowledge&quot;, collection.globalAttributes[&quot;Knowledge&quot;].max); &#10;            } &#10;        } &#10;        result = candidates[0].attributes;&#10;        result._marking = candidates[0].id;&#10;    } &#10;    return result; &#10;}" />
+            <ag_aggregation_function name="AND" id="gf0d4f199018" default="and" fn="function (collection) { &#10;    var result = {}; &#10;    var ids = [];&#10;    collection.childAttributes.forEach(function(child) { &#10;    for (var attribute in child.attributes) { &#10;            if (attribute in result) { &#10;                result[attribute] += parseInt(child.attributes[attribute]); &#10;            } else { &#10;                result[attribute] = parseInt(child.attributes[attribute]); &#10;            } &#10;        }&#10;        ids.push(child.id);&#10;    }); &#10;    for (var attribute in result) { &#10;        if (attribute in collection.globalAttributes) { &#10;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#10;        } &#10;    }&#10;    result._marking = ids.join(&quot;;&quot;);&#10;    return result; &#10;}" />
+            <ag_aggregation_function name="Security Control" id="73f575i0ghij5" default="activity_g;activity_y" fn="function (collection) { &#10;    var result = {}; &#10;    for (var attribute in collection.localAttributes) { &#10;        result[attribute] = parseInt(collection.localAttributes[attribute]); &#10;    } &#10;    collection.childAttributes.forEach(function(child) { &#10;        for (var attribute in child.attributes) { &#10;            if (attribute in collection.globalAttributes) { &#10;                if (attribute in result) { &#10;                    result[attribute] += parseInt(child.attributes[attribute]); &#10;                } &#10;            } &#10;        } &#10;    }); &#10;    for (var attribute in result) { &#10;        if (attribute in collection.globalAttributes) { &#10;            result[attribute] = Math.min(collection.globalAttributes[attribute].max, result[attribute]); &#10;        } &#10;    } &#10;    return result; &#10;}" />
+            <ag_aggregation_function name="Risk" id="egf49jfgj408" default="consequence" fn="function (collection) {  &#10;    var maxRisk = &quot;L&quot;; &#10;    var matrix = [ &#10;        [&quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;, &quot;L&quot;], &#10;        [&quot;L&quot;, &quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;], &#10;        [&quot;L&quot;, &quot;M&quot;, &quot;M&quot;, &quot;S&quot;, &quot;S&quot;], &#10;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#10;        [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;, &quot;V&quot;], &#10;    ];&#10;    var updatedImpacts = [];&#10;    var ids = [];&#10; &#10;    var compareRisk = function(risk1, risk2) { &#10;        /*&#10;        * Returns:&#10;        *  - Null: if one of the parameters is not a character representing a risk&#10;        *  - Negativ integer: if risk1 &lt; risk2&#10;        *  - Zero: if risks are equal&#10;        *  - Positive integer: if risk1 &gt; risk2&#10;        */&#10;        var values = [&quot;L&quot;, &quot;M&quot;, &quot;S&quot;, &quot;V&quot;]; &#10;        var index_risk1 = values.indexOf(risk1); &#10;        var index_risk2 = values.indexOf(risk2); &#10; &#10;        if (index_risk1 == -1 || index_risk2 == -1) { &#10;            return null; &#10;        } &#10;        return index_risk1 - index_risk2; &#10; &#10;    } &#10;     &#10;    collection.childAttributes.forEach(function(child) {  &#10;        var impact = 1;  &#10;        if (child.edgeWeight !== null) {  &#10;            impact = parseInt(child.edgeWeight);  &#10;        }&#10;        var _impact = parseInt(child.attributes._impact) || 0;&#10;        impact = Math.max(impact - _impact, 1);&#10;        updatedImpacts.push(child.id + ':' + impact);&#10;        var af = parseInt(child.computedAttribute) || parseInt(child.attributes._af);&#10;        risk = matrix[af - 1][impact - 1];&#10;        result = compareRisk(risk, maxRisk);&#10;        if (result &gt; 0) { &#10;            maxRisk = risk;&#10;            ids = [child.id];&#10;        } else if (result == 0){&#10;            ids.push(child.id);&#10;        }&#10;    });  &#10;  &#10;    var result = {'_risk': maxRisk, &quot;_marking&quot;: ids.join(&quot;;&quot;)};&#10;    if (updatedImpacts.length &gt; 0) {&#10;        result._weight = updatedImpacts.join(';');&#10;    }&#10;    return result;&#10;}" />
+            <ag_aggregation_function name="Impact" id="3j7heb16d5f6" default="" fn="function(collection) {&#10;    var impact = 0;&#10;    var result = {}&#10;    &#10;    collection.childAttributes.forEach(function(child) {&#10;        if (&quot;Impact&quot; in child.attributes) {&#10;            impact += parseInt(child.attributes[&quot;Impact&quot;]);&#10;        } else if (&quot;Resources&quot; in child.attributes &amp;&amp; &quot;Knowledge&quot; in child.attributes &amp;&amp; &quot;Location&quot; in child.attributes) {&#10;            result._af = child.computedAttribute&#10;            result._marking = child.id;&#10;        }&#10;    });&#10;    result._impact = Math.min(impact, collection.globalAttributes[&quot;Impact&quot;].max);&#10;    &#10;    return result;&#10;}" />
           </ag_aggregation_functions>
           <ag_computed_attributes_functions>
-            <ag_computed_attributes_function name="default" id="dbg60ff69g9a" default="activity_w;activity_g;activity_y" fn="function (collection) { &#xa;    var colorMatrix = {&#xa;        5: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        4: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        3: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        2: {&quot;fillColor&quot;: &quot;#d4ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        1: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;}&#xa;    }&#xa;    var matrix = [ &#xa;        [5, 5, 4, 3, 2], &#xa;        [5, 4, 4, 3, 2], &#xa;        [5, 4, 4, 3, 2], &#xa;        [4, 3, 3, 2, 1], &#xa;        [3, 2, 2, 1, 1], &#xa;    ];&#xa;    var result = {};&#xa;    &#xa;    if (&quot;Knowledge&quot; in collection.cellAttributes &amp;&amp; &quot;Resources&quot; in collection.cellAttributes) {&#xa;        var knowledgeIndex = parseInt(collection.cellAttributes[&quot;Knowledge&quot;]) - 1; &#xa;        var resourcesIndex = parseInt(collection.cellAttributes[&quot;Resources&quot;]) - 1;&#xa;        &#xa;        var value = Math.min(5, &#xa;            Math.max(collection.globalAttributes[&quot;Location&quot;].max, &#xa;                Math.max( matrix[knowledgeIndex][resourcesIndex] - parseInt(collection.cellAttributes[&quot;Location&quot;])) &#xa;            ));&#xa;        result = colorMatrix[value] || result;&#xa;        result[&quot;value&quot;] = value;&#xa;    }&#xa;    &#xa;    return result;&#xa;}" />
-            <ag_computed_attributes_function name="Risk" id="6c831697g9i0a" default="consequence" fn="function(collection){&#xa;    var riskMatrix = {&#xa;        &quot;V&quot;: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        &quot;S&quot;: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#xa;        &quot;M&quot;: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;        &quot;L&quot;: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#xa;    };&#xa;    var result = {};&#xa;    &#xa;    if (&quot;_risk&quot; in collection.cellAttributes) {&#xa;        var risk = collection.cellAttributes[&quot;_risk&quot;];&#xa;        result = riskMatrix[risk] || result;&#xa;        result[&quot;value&quot;] = risk;&#xa;    }&#xa;    &#xa;    return result; &#xa;}" />
+            <ag_computed_attributes_function name="default" id="dbg60ff69g9a" default="activity_w;activity_g;activity_y" fn="function (collection) { &#10;    var colorMatrix = {&#10;        5: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        4: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        3: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;        2: {&quot;fillColor&quot;: &quot;#d4ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;        1: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;}&#10;    }&#10;    var matrix = [ &#10;        [5, 5, 4, 3, 2], &#10;        [5, 4, 4, 3, 2], &#10;        [5, 4, 4, 3, 2], &#10;        [4, 3, 3, 2, 1], &#10;        [3, 2, 2, 1, 1], &#10;    ];&#10;    var result = {};&#10;    &#10;    if (&quot;Knowledge&quot; in collection.cellAttributes &amp;&amp; &quot;Resources&quot; in collection.cellAttributes) {&#10;        var knowledgeIndex = parseInt(collection.cellAttributes[&quot;Knowledge&quot;]) - 1; &#10;        var resourcesIndex = parseInt(collection.cellAttributes[&quot;Resources&quot;]) - 1;&#10;        &#10;        var value = Math.min(5, &#10;            Math.max(collection.globalAttributes[&quot;Location&quot;].max, &#10;                Math.max( matrix[knowledgeIndex][resourcesIndex] - parseInt(collection.cellAttributes[&quot;Location&quot;])) &#10;            ));&#10;        result = colorMatrix[value] || result;&#10;        result[&quot;value&quot;] = value;&#10;    }&#10;    &#10;    return result;&#10;}" />
+            <ag_computed_attributes_function name="Risk" id="6c831697g9i0a" default="consequence" fn="function(collection){&#10;    var riskMatrix = {&#10;        &quot;V&quot;: {&quot;fillColor&quot;: &quot;#cc0000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        &quot;S&quot;: {&quot;fillColor&quot;: &quot;#ff4000&quot;, &quot;fontColor&quot;: &quot;#ffffff&quot;},&#10;        &quot;M&quot;: {&quot;fillColor&quot;: &quot;#ffdd00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;        &quot;L&quot;: {&quot;fillColor&quot;: &quot;#40ff00&quot;, &quot;fontColor&quot;: &quot;#000000&quot;},&#10;    };&#10;    var result = {};&#10;    &#10;    if (&quot;_risk&quot; in collection.cellAttributes) {&#10;        var risk = collection.cellAttributes[&quot;_risk&quot;];&#10;        result = riskMatrix[risk] || result;&#10;        result[&quot;value&quot;] = risk;&#10;    }&#10;    &#10;    return result; &#10;}" />
           </ag_computed_attributes_functions>
           <mxCell />
         </object>
@@ -43,14 +43,14 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Siehe Anwendungsfall Ferngesteuerte Fahrzeuge" id="lqs9lEzcYMTn2uexpbQ0-18">
+        <object label="cf. Remote Controlled Rolling Stock" id="lqs9lEzcYMTn2uexpbQ0-18">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="rounded=0;whiteSpace=wrap;align=left;verticalAlign=top;container=1;collapsible=0;" parent="1" vertex="1">
             <mxGeometry x="550" y="270" width="700" height="150" as="geometry" />
           </mxCell>
         </object>
-        <object label="Täuschung der Fahrwegbeobachtung&#xa;Verhinderung der Hinderniserkennung" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-15">
+        <object label="Deception of route observation&#10;Prevention of obstacle detection" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-15">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -59,7 +59,7 @@
             <mxGeometry x="25" y="47.058823529411754" width="150" height="90" as="geometry" />
           </mxCell>
         </object>
-        <object label="Täuschung der Störungserkennung&#xa;(Falsche physische Hindernisse aufstellen)" Resources="1" Knowledge="1" Location="1" id="lqs9lEzcYMTn2uexpbQ0-13">
+        <object label="Disturbance detection deception (setting up false physical obstacles)" Resources="1" Knowledge="1" Location="1" id="lqs9lEzcYMTn2uexpbQ0-13">
           <ag_attributes label="NaN" Resources="4" Knowledge="3" Location="1" />
           <ag_computed_attributes fillColor="#d4ff00" fontColor="#000000" value="2" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -68,7 +68,7 @@
             <mxGeometry x="193" y="47.06" width="150" height="90" as="geometry" />
           </mxCell>
         </object>
-        <object label="Vortäuschen oder Herbeiführen eines Hindernis" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-16">
+        <object label="Pretending or causing of an obstacle" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-16">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -77,7 +77,7 @@
             <mxGeometry x="362" y="47.06" width="150" height="90" as="geometry" />
           </mxCell>
         </object>
-        <object label="Vortäuschen einer betrieblichen Störung&#xa;(bspw. Türstörung)" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-14">
+        <object label="Faking an operational malfunction&#10;(e.g. door malfunction)" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-14">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -86,7 +86,7 @@
             <mxGeometry x="530" y="47.058823529411754" width="150" height="90" as="geometry" />
           </mxCell>
         </object>
-        <object label="Angriffsziel&#xa;Vollautomatisiertes Fahren" id="reGFVTUNuUcH1NaiU9KH-1">
+        <object label="Attack Target&#10;Automated Driving" id="reGFVTUNuUcH1NaiU9KH-1">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="whiteSpace=wrap;shape=trapezoid;size=0.075;" parent="1" vertex="1">
@@ -109,7 +109,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Zugposition fälschen" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-2">
+        <object label="Forge train position" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-2">
           <ag_attributes label="Fälschung ortsfester Referenzpunkte" Resources="4" Knowledge="4" Location="1" _marking="lqs9lEzcYMTn2uexpbQ0-11" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
@@ -132,7 +132,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Zug durch Verhindern der Positionsmeldung verschwinden lassen" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-3">
+        <object label="Make the train disappear by preventing the position report" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-3">
           <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="0" _marking="lqs9lEzcYMTn2uexpbQ0-39" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
@@ -152,7 +152,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Spoofing der digitalen Zugschlussscheibe" Resources="4" Knowledge="4" Location="1" id="reGFVTUNuUcH1NaiU9KH-11">
+        <object label="Spoofing the digital tail end indicator" Resources="4" Knowledge="4" Location="1" id="reGFVTUNuUcH1NaiU9KH-11">
           <ag_attributes />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -171,7 +171,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Jamming der digitalen Zugschlussscheibe" Resources="2" Knowledge="2" Location="1" id="reGFVTUNuUcH1NaiU9KH-13">
+        <object label="Jamming the digital train rear disc" Resources="2" Knowledge="2" Location="1" id="reGFVTUNuUcH1NaiU9KH-13">
           <ag_attributes label="NaN" Resources="4" Knowledge="5" Location="1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -201,7 +201,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Unterdrückung/Umleitung der Bezahlung des Trassenentgeltes" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-16">
+        <object label="Suppression/diversion of payment of the path fee" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-16">
           <ag_attributes label="Fälschung ortsfester Referenzpunkte" Resources="4" Knowledge="4" Location="1" _marking="lqs9lEzcYMTn2uexpbQ0-31" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -231,7 +231,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Täuschung der Fahrwegsicherung" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-18">
+        <object label="Deception of the route protection" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-18">
           <ag_attributes label="Fälschung ortsfester Referenzpunkte" Resources="4" Knowledge="4" Location="1" _marking="reGFVTUNuUcH1NaiU9KH-2" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
@@ -296,7 +296,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Verhinderung des Zugriffs auf den Distributed Ledger zur Fahrwegsicherung durch Verhinderung der Kommunikation" Resources="2" Knowledge="2" Location="0" id="reGFVTUNuUcH1NaiU9KH-29">
+        <object label="Preventing access to the distributed ledger for route protection by preventing communication" Resources="2" Knowledge="2" Location="0" id="reGFVTUNuUcH1NaiU9KH-29">
           <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -347,7 +347,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Finanzieller Schaden Betreiber" id="reGFVTUNuUcH1NaiU9KH-31">
+        <object label="Financial Damage Operator" id="reGFVTUNuUcH1NaiU9KH-31">
           <ag_attributes _risk="L" _marking="reGFVTUNuUcH1NaiU9KH-16;lqs9lEzcYMTn2uexpbQ0-15;lqs9lEzcYMTn2uexpbQ0-13;lqs9lEzcYMTn2uexpbQ0-16;lqs9lEzcYMTn2uexpbQ0-14;lqs9lEzcYMTn2uexpbQ0-2" _weight="reGFVTUNuUcH1NaiU9KH-16:4;lqs9lEzcYMTn2uexpbQ0-15:4;lqs9lEzcYMTn2uexpbQ0-13:2;lqs9lEzcYMTn2uexpbQ0-16:2;lqs9lEzcYMTn2uexpbQ0-14:2;lqs9lEzcYMTn2uexpbQ0-2:3" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
@@ -377,7 +377,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Verletzung der körperlichen Unversehrtheit" id="reGFVTUNuUcH1NaiU9KH-33">
+        <object label="Violation of Physical Integrity" id="reGFVTUNuUcH1NaiU9KH-33">
           <ag_attributes _risk="L" _marking="reGFVTUNuUcH1NaiU9KH-18;lqs9lEzcYMTn2uexpbQ0-2;lqs9lEzcYMTn2uexpbQ0-15" _weight="reGFVTUNuUcH1NaiU9KH-18:3;lqs9lEzcYMTn2uexpbQ0-2:4;lqs9lEzcYMTn2uexpbQ0-15:3" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
@@ -413,7 +413,7 @@
             <mxGeometry x="60" y="960" width="150" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="FOS-Einheit kompromittieren&#xa;(siehe Dezentrales Stellwerk)" Resources="2" Knowledge="1" Location="1" id="reGFVTUNuUcH1NaiU9KH-40">
+        <object label="Compromise FOS-unit&#10;(cf. Decentralized Interlocking)" Resources="2" Knowledge="1" Location="1" id="reGFVTUNuUcH1NaiU9KH-40">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -436,7 +436,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Fälschung/Manipulation der Fahrwegempfehlungen (Journey Profiles) oder des Fahrplans" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-8">
+        <object label="Forge/Manipulate Route Recommendations (Journey Profiles) or Train Schedule" Resources="" Knowledge="" Location="" id="reGFVTUNuUcH1NaiU9KH-8">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="lqs9lEzcYMTn2uexpbQ0-37" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -445,7 +445,7 @@
             <mxGeometry x="2070" y="480" width="190" height="90" as="geometry" />
           </mxCell>
         </object>
-        <object label="Manipulation der Fahrsteuerung" Resources="" Knowledge="" Location="" id="lqs9lEzcYMTn2uexpbQ0-2">
+        <object label="Manipulation of ATO" Resources="" Knowledge="" Location="" id="lqs9lEzcYMTn2uexpbQ0-2">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" _marking="H-f2aqcX1pLiw3MsK8zM-1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -454,7 +454,7 @@
             <mxGeometry x="-730" y="320" width="150" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="Fälschung ortsfester Referenzpunkte" Resources="4" Knowledge="4" Location="1" id="lqs9lEzcYMTn2uexpbQ0-11">
+        <object label="Forge Stationary Reference Points" Resources="4" Knowledge="4" Location="1" id="lqs9lEzcYMTn2uexpbQ0-11">
           <ag_attributes />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -469,7 +469,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Reputationsschaden Betreiber" id="lqs9lEzcYMTn2uexpbQ0-29">
+        <object label="Reputational Damage Operator" id="lqs9lEzcYMTn2uexpbQ0-29">
           <ag_attributes _risk="L" _marking="lqs9lEzcYMTn2uexpbQ0-2" _weight="lqs9lEzcYMTn2uexpbQ0-2:3" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
@@ -478,7 +478,7 @@
             <mxGeometry x="-460" y="110" width="190" height="48" as="geometry" />
           </mxCell>
         </object>
-        <object label="Verhinderung der Erfüllung des Smart Contracts" Resources="" Knowledge="" Location="" id="lqs9lEzcYMTn2uexpbQ0-31">
+        <object label="Preventing the fulfillment of the Smart Contract" Resources="" Knowledge="" Location="" id="lqs9lEzcYMTn2uexpbQ0-31">
           <ag_attributes label="Fälschung ortsfester Referenzpunkte" Resources="4" Knowledge="4" Location="1" _marking="reGFVTUNuUcH1NaiU9KH-2" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_aggregation_function_reference ag_aggregation_function_reference="6b1d22791hih8" />
@@ -487,7 +487,7 @@
             <mxGeometry x="260" y="600" width="150" height="75" as="geometry" />
           </mxCell>
         </object>
-        <object label="Malware/Bugs in Smart Contracts" Resources="2" Knowledge="3" Location="0" id="reGFVTUNuUcH1NaiU9KH-5">
+        <object label="Malware/bugs in smart contracts" Resources="2" Knowledge="3" Location="0" id="reGFVTUNuUcH1NaiU9KH-5">
           <ag_attributes label="NaN" Resources="4" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -520,7 +520,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Manipulation/MitM des Übertragungssystems" Resources="2" Knowledge="2" Location="0" id="lqs9lEzcYMTn2uexpbQ0-37">
+        <object label="Manipulation/MitM of the transmission system" Resources="2" Knowledge="2" Location="0" id="lqs9lEzcYMTn2uexpbQ0-37">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -536,7 +536,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Bordkommunikation unterdrücken" Resources="2" Knowledge="2" Location="0" id="lqs9lEzcYMTn2uexpbQ0-39">
+        <object label="Suppress Board Communication" Resources="2" Knowledge="2" Location="0" id="lqs9lEzcYMTn2uexpbQ0-39">
           <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -545,7 +545,7 @@
             <mxGeometry x="-300" y="760" width="150" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="Fehlinformationen in Distributed Ledger einschleusen" Resources="3" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-40">
+        <object label="Insert wrong Information in Distributed Ledger" Resources="3" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-40">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -580,7 +580,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Entfernten Zugang auf Bordnetzwerk erlangen" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-45">
+        <object label="Acquire Remote Access to On-Board Network" Resources="2" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-45">
           <ag_attributes label="NaN" Resources="3" Knowledge="5" Location="1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -589,7 +589,7 @@
             <mxGeometry x="-1120" y="600" width="150" height="70" as="geometry" />
           </mxCell>
         </object>
-        <object label="Fahrsteuerung kompromittieren" Resources="4" Knowledge="4" Location="0" id="lqs9lEzcYMTn2uexpbQ0-49">
+        <object label="Compromise Drive Control" Resources="4" Knowledge="4" Location="0" id="lqs9lEzcYMTn2uexpbQ0-49">
           <ag_attributes />
           <ag_computed_attributes fillColor="#d4ff00" fontColor="#000000" value="2" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -637,7 +637,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Falsche Sensordaten einschleusen (Geschwindigkeit, Bremskraft, ...)" Resources="3" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-53">
+        <object label="Insert false Sensor Data (Speed, Brake Force, ...)" Resources="3" Knowledge="3" Location="0" id="lqs9lEzcYMTn2uexpbQ0-53">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -646,7 +646,7 @@
             <mxGeometry x="-600" y="600" width="150" height="90" as="geometry" />
           </mxCell>
         </object>
-        <object label="Falsche Steuerbefehle einschleusen (Fahrmotor, Bremssteuerung, ...)" Resources="3" Knowledge="4" Location="0" id="lqs9lEzcYMTn2uexpbQ0-55">
+        <object label="Insert false Control Command" Resources="3" Knowledge="4" Location="0" id="lqs9lEzcYMTn2uexpbQ0-55">
           <ag_attributes />
           <ag_computed_attributes fillColor="#ffdd00" fontColor="#000000" value="3" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -678,7 +678,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="(Vor Fahrtantritt)&#xa;Lokalen Zugang auf Bordnetzwerk erlangen&#xa;(freier Netzwerkport)" Resources="2" Knowledge="2" Location="0" id="lqs9lEzcYMTn2uexpbQ0-59">
+        <object label="(Before setting off)&#10;Acquire local access to the on-board network&#10;(free network port)" Resources="2" Knowledge="2" Location="0" id="lqs9lEzcYMTn2uexpbQ0-59">
           <ag_attributes label="NaN" Resources="3" Knowledge="4" Location="1" />
           <ag_computed_attributes fillColor="#d4ff00" fontColor="#000000" value="2" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -709,7 +709,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Verfügbarkeit des Cloud Computings beschränken" Resources="" Knowledge="" Location="" id="0znLiopEbYlMLDIVEbGm-1">
+        <object label="Limit availability of cloud computing" Resources="" Knowledge="" Location="" id="0znLiopEbYlMLDIVEbGm-1">
           <ag_attributes label="NaN" Resources="4" Knowledge="5" Location="1" _marking="reGFVTUNuUcH1NaiU9KH-15" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -732,7 +732,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Verbrauch der Cloud-Ressourcen durch benachbarte Anwendungen" Resources="" Knowledge="" Location="" id="0znLiopEbYlMLDIVEbGm-3">
+        <object label="Consumption of cloud resources by neighboring applications" Resources="" Knowledge="" Location="" id="0znLiopEbYlMLDIVEbGm-3">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" _marking="0znLiopEbYlMLDIVEbGm-7" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -748,7 +748,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Zerstörung/Beschädigung des Rechenzentrums" Resources="3" Knowledge="4" Location="1" id="0znLiopEbYlMLDIVEbGm-5">
+        <object label="Destruction/damage to the data center" Resources="3" Knowledge="4" Location="1" id="0znLiopEbYlMLDIVEbGm-5">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -778,7 +778,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Ausnutzen mangelhafter Trennung" Resources="2" Knowledge="2" Location="0" id="0znLiopEbYlMLDIVEbGm-7">
+        <object label="Exploit Defective Separation" Resources="2" Knowledge="2" Location="0" id="0znLiopEbYlMLDIVEbGm-7">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -801,7 +801,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="(Absichtliche) Fehlkonfiguration der Ressourcenzuteilung" Resources="3" Knowledge="3" Location="0" id="0znLiopEbYlMLDIVEbGm-8">
+        <object label="(Intentional) resource allocation misconfiguration" Resources="3" Knowledge="3" Location="0" id="0znLiopEbYlMLDIVEbGm-8">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -817,7 +817,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Manipulation des Datenspeichers" Resources="3" Knowledge="4" Location="0" id="0znLiopEbYlMLDIVEbGm-11">
+        <object label="Data storage manipulation" Resources="3" Knowledge="4" Location="0" id="0znLiopEbYlMLDIVEbGm-11">
           <ag_attributes label="NaN" Resources="5" Knowledge="5" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -840,7 +840,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Einschränkung einer kritischen Dienstleistung" id="reGFVTUNuUcH1NaiU9KH-22">
+        <object label="Disruption of a Critical Service" id="reGFVTUNuUcH1NaiU9KH-22">
           <ag_attributes _risk="L" _marking="reGFVTUNuUcH1NaiU9KH-13;reGFVTUNuUcH1NaiU9KH-6;reGFVTUNuUcH1NaiU9KH-29;reGFVTUNuUcH1NaiU9KH-8;lqs9lEzcYMTn2uexpbQ0-16;lqs9lEzcYMTn2uexpbQ0-14;0znLiopEbYlMLDIVEbGm-1;reGFVTUNuUcH1NaiU9KH-15;wWlVExiMDXkXYdkp4BO6-2" _weight="reGFVTUNuUcH1NaiU9KH-13:2;reGFVTUNuUcH1NaiU9KH-6:2;reGFVTUNuUcH1NaiU9KH-29:3;reGFVTUNuUcH1NaiU9KH-8:3;lqs9lEzcYMTn2uexpbQ0-16:3;lqs9lEzcYMTn2uexpbQ0-14:2;0znLiopEbYlMLDIVEbGm-1:3;reGFVTUNuUcH1NaiU9KH-15:3;wWlVExiMDXkXYdkp4BO6-2:1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="L" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="6c831697g9i0a" />
@@ -856,7 +856,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Jamming des Kommunikationsnetzwerkes" Resources="2" Knowledge="2" Location="1" id="reGFVTUNuUcH1NaiU9KH-15">
+        <object label="Jamming the communication network" Resources="2" Knowledge="2" Location="1" id="reGFVTUNuUcH1NaiU9KH-15">
           <ag_attributes label="NaN" Resources="4" Knowledge="5" Location="1" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -897,7 +897,7 @@
             <mxGeometry x="200" y="860" width="30" height="50" as="geometry" />
           </mxCell>
         </object>
-        <object label="Integritätsschutz der Umwelterfassung&#xa;Redundanz&#xa;Plausibilitätsprüfung" Resources="3" Knowledge="2" Location="0" id="MrJTc4iwlkmeg3qvCo2h-1">
+        <object label="Integrity Protection of Environment Monitoring&#10;Redundancy&#10;Plausibility Check" Resources="3" Knowledge="2" Location="0" id="MrJTc4iwlkmeg3qvCo2h-1">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
@@ -909,13 +909,6 @@
           <ag_computed_attributes />
           <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=diamondThin;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="lqs9lEzcYMTn2uexpbQ0-15" target="MrJTc4iwlkmeg3qvCo2h-1" edge="1">
             <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="Kombination aus&#xa;Security Controls für&#xa;zwei Blattknoten&#xa;" id="MrJTc4iwlkmeg3qvCo2h-3">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-            <mxGeometry x="625" y="1328" width="130" height="52" as="geometry" />
           </mxCell>
         </object>
         <object id="MrJTc4iwlkmeg3qvCo2h-6">
@@ -932,7 +925,7 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Integritätsschutz der Umwelterfassung" Resources="3" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-1">
+        <object label="Integrity Protection of Environment Monitoring" Resources="3" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-1">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
@@ -946,13 +939,6 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object label="Hier nur&#xa;Security Control für&#xa;einen Blattknoten&#xa;" id="NY-WaI75QKOfGS1F8uei-3">
-          <ag_attributes />
-          <ag_computed_attributes />
-          <mxCell style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-            <mxGeometry x="905" y="1328" width="130" height="42" as="geometry" />
-          </mxCell>
-        </object>
         <object label="" id="NY-WaI75QKOfGS1F8uei-4">
           <ag_attributes />
           <ag_computed_attributes />
@@ -963,63 +949,63 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Digitale Signatur" Resources="2" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-6">
+        <object label="Digital Signature" Resources="2" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-6">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="-70" y="1000" width="120" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="Redundanz" Resources="3" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-9">
+        <object label="Redundancy" Resources="3" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-9">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="-300" y="1000" width="150" height="45" as="geometry" />
           </mxCell>
         </object>
-        <object label="Netzsegmentierung&#xa;Security-Monitoring" Resources="1" Knowledge="1" Location="0" id="NY-WaI75QKOfGS1F8uei-12">
+        <object label="Network Segmentation&#10;Security Monitoring" Resources="1" Knowledge="1" Location="0" id="NY-WaI75QKOfGS1F8uei-12">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="1070" y="1000" width="150" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="Mitarbeiterschulung" Resources="1" Knowledge="1" Location="0" id="NY-WaI75QKOfGS1F8uei-13">
+        <object label="Awareness Training" Resources="1" Knowledge="1" Location="0" id="NY-WaI75QKOfGS1F8uei-13">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="1230" y="1000" width="150" height="45" as="geometry" />
           </mxCell>
         </object>
-        <object label="Zugriffsschutz" Resources="1" Knowledge="1" Location="0" id="NY-WaI75QKOfGS1F8uei-16">
+        <object label="Access Control" Resources="1" Knowledge="1" Location="0" id="NY-WaI75QKOfGS1F8uei-16">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="1392" y="1000" width="150" height="45" as="geometry" />
           </mxCell>
         </object>
-        <object label="Redundanz" Resources="3" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-19">
+        <object label="Redundancy" Resources="3" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-19">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="1640" y="1000" width="150" height="45" as="geometry" />
           </mxCell>
         </object>
-        <object label="Resilienz" Resources="2" Knowledge="3" Location="0" id="NY-WaI75QKOfGS1F8uei-21">
+        <object label="Resilience" Resources="2" Knowledge="3" Location="0" id="NY-WaI75QKOfGS1F8uei-21">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC" parent="1" vertex="1">
             <mxGeometry x="1300" y="1198" width="150" height="75" as="geometry" />
           </mxCell>
         </object>
-        <object label="Digitale Signatur" Resources="2" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-24">
+        <object label="Digital Signature" Resources="2" Knowledge="2" Location="0" id="NY-WaI75QKOfGS1F8uei-24">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="2020" y="1000" width="150" height="45" as="geometry" />
           </mxCell>
         </object>
-        <object label="Zugriffsschutz" Resources="1" Knowledge="1" Location="0" id="cTA5m-jb8gUGxeVt_BSC-1">
+        <object label="Access Control" Resources="1" Knowledge="1" Location="0" id="cTA5m-jb8gUGxeVt_BSC-1">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
@@ -1055,7 +1041,7 @@
             <mxGeometry x="1030" y="125" width="150" height="55" as="geometry" />
           </mxCell>
         </object>
-        <object label="Redundanz&#xa;Plausibilitätsprüfung" Resources="2" Knowledge="2" Location="0" id="XMnL7oD_qqrlnk2i4hbT-1">
+        <object label="Redundancy&#10;Plausibility Check" Resources="2" Knowledge="2" Location="0" id="XMnL7oD_qqrlnk2i4hbT-1">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;align=left;" parent="1" vertex="1">
@@ -1072,7 +1058,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Zugriffsschutz&#xa;Sicherer Datenspeicher&#xa;Zugangsbeschränkung&#xa;Physische Eigenschaften des LWL prüfen&#xa;Plausibilitätsprüfung&#xa;Redundanz&#xa;Verschlüsselung&#xa;Digitale Signatur" Resources="3" Knowledge="4" Location="0" id="XMnL7oD_qqrlnk2i4hbT-4">
+        <object label="Access Control&#10;Secure Data Storage&#10;Access Restriction&#10;Check physical properties of the fiber optic cable&#10;Plausibility Check&#10;Redundancy&#10;Encryption&#10;Digital Signature" Resources="3" Knowledge="4" Location="0" id="XMnL7oD_qqrlnk2i4hbT-4">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
@@ -1089,7 +1075,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Systemhärtung&#xa;Physischer Schutz&#xa;Zugangsbeschränkung" Resources="1" Knowledge="2" Location="1" id="XMnL7oD_qqrlnk2i4hbT-6">
+        <object label="System hardening&#10;Physical Protection&#10;Access Restriction" Resources="1" Knowledge="2" Location="1" id="XMnL7oD_qqrlnk2i4hbT-6">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;align=left;" parent="1" vertex="1">
@@ -1106,7 +1092,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Zugriffsschutz&#xa;Zugangsschutz&#xa;Security-Monitoring" Resources="1" Knowledge="2" Location="1" id="XMnL7oD_qqrlnk2i4hbT-8">
+        <object label="Access Control&#10;Physical Access Control&#10;Security Monitoring" Resources="1" Knowledge="2" Location="1" id="XMnL7oD_qqrlnk2i4hbT-8">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;align=left;" parent="1" vertex="1">
@@ -1123,14 +1109,14 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object label="Integritätsschutz der Umwelterfassung" Resources="3" Knowledge="2" Location="0" id="4U9F1CLsy6yUegcDI4D1-1">
+        <object label="Integrity Protection of Environment Monitoring" Resources="3" Knowledge="2" Location="0" id="4U9F1CLsy6yUegcDI4D1-1">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;" parent="1" vertex="1">
             <mxGeometry x="-645" y="1198" width="240" height="45" as="geometry" />
           </mxCell>
         </object>
-        <object label="Verzögerung durch Distributed Ledger Consensus" Resources="2" Knowledge="2" Location="0" id="reGFVTUNuUcH1NaiU9KH-6">
+        <object label="Delay caused by distributed ledger consensus" Resources="2" Knowledge="2" Location="0" id="reGFVTUNuUcH1NaiU9KH-6">
           <ag_attributes label="NaN" Resources="5" Knowledge="4" Location="0" />
           <ag_computed_attributes fillColor="#40ff00" fontColor="#000000" value="1" />
           <ag_computed_attributes_function_reference ag_computed_attributes_function_reference="dbg60ff69g9a" />
@@ -1139,7 +1125,7 @@
             <mxGeometry x="1600" y="480" width="190" height="60" as="geometry" />
           </mxCell>
         </object>
-        <object label="Software-Tests&#xa;Verifikation von Smart Contracts" Resources="2" Knowledge="2" Location="0" id="4U9F1CLsy6yUegcDI4D1-3">
+        <object label="Softare tests&#10;Verification of Smart Contracts" Resources="2" Knowledge="2" Location="0" id="4U9F1CLsy6yUegcDI4D1-3">
           <ag_attributes />
           <ag_computed_attributes />
           <mxCell style="shape=attackgraphs.node;fillColor=#DAE8FC;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
