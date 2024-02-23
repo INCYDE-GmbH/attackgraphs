@@ -18,7 +18,8 @@ The (German) report will be referenced here once it has been published.
 
 ## Viewing and Editing
 
-To view or edit the files, Draw.io is required which is freely available:
+The graphs have been exported to PNG for your convenience.
+To view or edit the source files, Draw.io is required which is freely available:
 
 - Desktop Version: https://diagrams.net
 - Browser Version: https://app.diagrams.net
