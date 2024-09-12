@@ -6,15 +6,14 @@ As the research project's language was German, the original attack graphs were w
 We provide an English translation of the attack graphs in the folder `EN/`.
 The scripts in `scripts/` are used to automatically translate the attack graphs from German to English.
 They are not necessary to view the attack graphs in either language (see section Viewing and Editing for viewing the attack graphs).
-The methodology to derive the attack graphs published in this repository will be publicly available after completion of the research project in December 2023.
-Also, this repository will experience updates while the project proceeds.
+The methodology to derive the attack graphs published in this repository is publicly available: [Final Report].
 
 ## Update
 
 The attack graphs have been updated to reflect the state at the end of the project.
 Attribute values were assigned to the attack steps to evaluate the risk and countermeasures were added to identify how the risk can be reduced to an acceptable level.
 
-The (German) report will be referenced here once it has been published.
+The final project report is now available online: [Final report] (in German).
 
 ## Viewing and Editing
 
@@ -35,6 +34,7 @@ To view or edit the source files, Draw.io is required which is freely available:
 | Softwaregestützte Bedrohungsanalyse durch Angriffsgraphen                                        | [2]   |
 | Technologie- und Securityprognose System Bahn – Bedrohungen rechtzeitig erkennen                 | [3]   |
 | Software-gestützte Bedrohungsanalyse durch Angriffsgraphen                                       | [4]   |
+| Prognose Securitybedarf und Bewertung möglicher Sicherheitskonzepte für das System Bahn - Teil 2 | [7]   |
 
 ### English
 
@@ -66,6 +66,7 @@ Markus Heinrich – markus.heinrich@incyde.com
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 [Report]: http://dx.doi.org/10.48755/dzsf.220008.06
+[Final Report]: http://dx.doi.org/10.48755/240008.01
 [Plugin]: https://github.com/INCYDE-GmbH/drawio-plugin-attackgraphs
 
 [1]: http://dx.doi.org/10.48755/dzsf.220008.06
@@ -74,3 +75,4 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 [4]: https://doi.org/10.26083/tuprints-00022101
 [5]: http://dx.doi.org/10.48550/arXiv.2307.14114
 [6]: http://dx.doi.org/10.3390/vehicles5040069
+[7]: http://dx.doi.org/10.48755/240008.01
